@@ -1,0 +1,210 @@
+%---------------------------------------------------------------------------------
+\chapter{Mathematical Proofs in Chapter \ref{chap:HBD_UCS_Rician_Shadowed}}
+\label{chap:Appendix_C}
+%---------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Proof for the PDF of $|h|^2$ in (\ref{HBD_UCS_Rician_Shadowed_rician_shad_pdf_pwr_srs})} \label{HBD_UCS_Rician_Shadowed_pdf_theorem_proof}
+% proof of convergence of 1F1()
+To begin, we note that the confluent hypergeometric function ${}_1{F_1}(\bullet)$ is expressed as \cite{parthasarathy2017coverage}:
+\begin{eqnarray}
+ {}_1F_1(a;b;z) = \sum_{k\geq0} \frac{(a)_k z^k}{(b)_k k!}_,
+\end{eqnarray}
+where $(a)_k=\frac{\Gamma(a+k)}{\Gamma(a)}$ is the Pochhammer symbol \cite{chun2017comprehensive}. 
+
+Since $\frac{(a)_{k+1}}{(a)_k}=a+n$ \cite{Boros2004Irresistible}, and applying the identity in \cite[eq. (25)]{rached2017unified} yields $\Gamma(k+a) \approx k^a\Gamma(k)$ when $k \to \infty$, then:
+\begin{eqnarray}
+{}_1F_1(a;1;z) = \sum_{k\geq0} f(k)_,
+\end{eqnarray}
+where $f(k) = \frac{(a)_k}{\Gamma^2(k+1)}z^k$. The absolute convergence of $\sum_{k\geq0} f(k)$ is easily proven via the D'Alembert test:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray} \label{HBD_UCS_Rician_Shadowed_ratio_test}
+\lim_{k\to\infty} \frac{f(k+1)}{f(k)} = \lim_{k\to\infty} \frac{(a+k)z}{k^2} = 0.
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+From the Cauchy product theorem \cite{andras2011generalized,amann2005analysis}, (\ref{HBD_UCS_Rician_Shadowed_rician_shad_pdf}) can be expressed in truncated form, thus yielding (\ref{HBD_UCS_Rician_Shadowed_rician_shad_pdf_pwr_srs}):
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray} \label{HBD_UCS_Rician_Shadowed_rician_shad_pdf_pwr_srs_proof}
+f_h(x) & = & \bigg(\sum_{n\geq0}c(n)\bigg) \bigg(\sum_{i\geq0}d(i)\bigg) \nonumber\\
+	& \approx & \sum_{n=0}^{K_{tr}} \sum_{i=0}^{n} \frac{m^m(1+K)}{\Omega(K+m)^m} \frac{(m)_i}{\Gamma^2(i+1)} \bigg(\frac{K(1+K)}{(K+m)\Omega}\bigg)^{i} \bigg(\frac{-(1+K)}{\Omega}\bigg)^{n-i} \frac{x^n}{(n-i)!}_,
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+where $c(n) = \frac{m^m(1+K)}{\Omega(K+m)^m} \frac{(m)_n}{\Gamma^2(n+1)} \Big(\frac{K(1+K)}{(K+m)\Omega}\Big)^n x^n$, and $d(i) = \Big(\frac{-(1+K)}{\Omega}\Big)^i \frac{x^i}{i!}$. Thus, combining (\ref{HBD_UCS_Rician_Shadowed_rician_shad_pdf_pwr_srs_proof}) with (\ref{HBD_UCS_Rician_Shadowed_rician_shad_cdf_exp}) yields (\ref{HBD_UCS_Rician_Shadowed_rician_shad_pdf_pwr_srs}) which completes the proof.
+
+\section{Proof of $\widehat{a}\big(n,\Omega,K,\gamma\big)$ in (\ref{rician_fading_alpha})} \label{HBD_UCS_Rician_Shadowed_rician_fading_alpha_corollary_proof}
+To evaluate the function $\overline{a}\big(n,\Omega,K,m,\gamma\big)$ for $m \to \infty$, we first note that the asymptotic expression of $\Gamma[m+n]$, given in \cite[eq. (25)]{rached2017unified}, is $\Gamma[m+n] \approx m^n\Gamma[m]$, which yields $(m)_i \approx m^i$. Thereafter, substituting $(m)_i \approx m^i$ into (\ref{HBD_UCS_Rician_Shadowed_rician_shad_cdf_exp}) yields the following expression:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray} \label{HBD_UCS_Rician_Shadowed_rician_shad_cdf_exp2}
+\overline{a}\big(n,\Omega,K,m,\gamma\big) \approx \sum_{i=0}^n (-1)^{n-i} \bigg(\frac{m}{K+m}\bigg)^{m} \frac{K^i}{\Gamma^2(i+1)} \bigg(\frac{m}{K+m}\bigg)^{i} \bigg(\frac{1+K}{\Omega}\bigg)^{n+1} \frac{\gamma^{n+1}}{(n-i)!(n+1)}_.
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Invoking the product rule for limits, $\lim_{m\to\infty} \overline{a}\big(n,\Omega,K,m,\gamma\big)$ can be evaluated separately:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray} 
+\lim_{m \to \infty} \bigg(\frac{m}{K+m}\bigg)^{i} & = & \exp\Bigg(i \lim_{m \to \infty} \ln\bigg(\frac{m}{K+m}\bigg)\Bigg) = 1. \label{HBD_UCS_Rician_Shadowed_rician_shad_cdf_exp2_limit1} \\
+\lim_{m \to \infty} \bigg(\frac{m}{K+m}\bigg)^{m} & = & \exp\Bigg(\frac{\lim_{m\to\infty}\ln\big(\frac{m}{K+m}\big)}{\lim_{m\to\infty}\frac{1}{m}}\Bigg) = \exp(-K). \label{HBD_UCS_Rician_Shadowed_rician_shad_cdf_exp2_limit2}
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Combining (\ref{HBD_UCS_Rician_Shadowed_rician_shad_cdf_exp2_limit1}) and (\ref{HBD_UCS_Rician_Shadowed_rician_shad_cdf_exp2_limit2}) into (\ref{HBD_UCS_Rician_Shadowed_rician_shad_cdf_exp2}) yields:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray} \label{HBD_UCS_Rician_Shadowed_cdf_theorem_comp_limits}
+\widehat{a}\big(n,\Omega,K,\gamma\big) & = & \lim_{m\to\infty} \overline{a}\big(n,\Omega,K,m,\gamma\big) \nonumber\\
+ & = &  \sum_{i=0}^n \frac{(-1)^{n-i} K^i}{\Gamma^2(i+1)} \exp(-K) \bigg(\frac{1+K}{\Omega}\bigg)^{n+1} \frac{\gamma^{n+1}}{(n-i)!(n+1)}_.
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+This completes the proof.
+
+\section{Proof for the $l^{th}$ Moment of $|h^{'}|^2$ in (\ref{HBD_UCS_Rician_Shadowed_frac_moments_corollary_comp_limits})} \label{HBD_UCS_Rician_Shadowed_frac_moments_corollary_proof}
+To obtain the $l^{th}$ moment of $|h'|^2$, i.e., $E\big\{\big(|h^{'}|^2\big)^l\big\}$, from (\ref{HBD_UCS_Rician_Shadowed_rician_shad_frac_moment}), the transformation formula ${}_2F_1(a,b;c;z) = (1-z)^{c-a-b}{}_2F_1(c-a,c-b;c;z)$ \cite{gradshteyn2014table} is invoked upon (\ref{HBD_UCS_Rician_Shadowed_rician_shad_frac_moment}) to yield:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray} \label{HBD_UCS_Rician_Shadowed_rician_shad_frac_moment2}
+E\big\{\big(|h|^2\big)^l\big\} & = & \bigg(\frac{\Omega}{1+K}\bigg)^l \Gamma(1+l) \bigg(\frac{m}{K+m}\bigg)^{m-1-l} \bigg(1+\frac{K}{m}\bigg)^{m-1-l} {}_2F_1\bigg(m,-l;1;\frac{-K}{m}\bigg)_.
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Thereafter, $E\big\{\big(|h^{'}|^2\big)^l\big\}$ is obtained by evaluating $\lim_{m\to\infty} E\big\{\big(|h|^2\big)^l\big\}$ with the product rule for limits:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray} 
+\lim_{m \to \infty} \bigg(1+\frac{K}{m}\bigg)^{m-1-i} & = & \exp\Bigg(\frac{\lim_{m\to\infty}\ln\big(1+\frac{K}{m}\big)}{\lim_{m\to\infty}\frac{1}{m-1-i}}\Bigg) = \exp(K). \label{HBD_UCS_Rician_Shadowed_rician_shad_frac_moment2_limit1} \\
+\lim_{m \to \infty} \bigg(\frac{m}{K+m}\bigg)^{m-1-i} & = & \exp\Bigg(\frac{\lim_{m\to\infty}\ln\big(\frac{m}{K+m}\big)}{\lim_{m\to\infty}\frac{1}{m-1-i}}\Bigg) = \exp(-K). \label{HBD_UCS_Rician_Shadowed_rician_shad_frac_moment2_limit2}
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Additionally, using the asymptotic expression $\Gamma[m+n] \approx m^n\Gamma[m]$ \cite[eq. (25)]{rached2017unified}, yields:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray} \label{HBD_UCS_Rician_Shadowed_hyp_geo}
+{}_2F_1\bigg(m,-l;1;\frac{-K}{m}\bigg) & \approx & \sum_{n\geq0} \frac{(-l)_n}{n!(1)_n}(-K)^n.
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Therefore, combining (\ref{HBD_UCS_Rician_Shadowed_rician_shad_frac_moment2_limit1}), (\ref{HBD_UCS_Rician_Shadowed_rician_shad_frac_moment2_limit2}), and (\ref{HBD_UCS_Rician_Shadowed_hyp_geo}) into (\ref{HBD_UCS_Rician_Shadowed_rician_shad_frac_moment2}) leads to (\ref{HBD_UCS_Rician_Shadowed_frac_moments_corollary_comp_limits}), which completes the proof.
+
+\section{Proof of Convergence for (\ref{HBD_UCS_Rician_Shadowed_P_out_GS_HBD})} \label{HBD_UCS_Rician_Shadowed_P_out_GS_HBD_conv}
+It is useful to note that (\ref{HBD_UCS_Rician_Shadowed_P_out_GS_HBD}) can be expanded as:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray}
+Pr\big(\mathcal{O}_{gs}^{HBD}\big) & \approx & \sum_{n=0}^{K_{tr}} \sum_{i=0}^n \sum_{l_1 + l_2 + l_3 = n+1} (-1)^{n-i} \bigg(\frac{m_{X_1}}{K_{X_1}+m_{X_1}}\bigg)^{m_{X_1}} \frac{(m_{X_1})_i}{\Gamma^2(i+1)} \bigg(\frac{K_{X_1}}{K_{X_1}+m_{X_1}}\bigg)^{i} \nonumber \\
+ & & \hspace{1cm} \times  \bigg(\frac{1+K_{X_1}}{\Omega_X}\bigg)^{n+1} \frac{\big(\gamma_{th,gs}^{HBD}\big)^{n+1}}{(n-i)!(n+1)} \frac{(l_1 + l_2 + l_3)!}{l_1! \cdot l_2! \cdot l_3!} E\{Y_{si,1}^{l_1}\} E\{Y_{si,2}^{l_2}\} \nonumber \\
+ & \approx & \sum_{n=0}^{K_{tr}} \sum_{i=0}^n \sum_{l_1 + l_2 + l_3 = n+1} \Xi(n,i,l_1,l_2,l_3)_. \label{HBD_UCS_Rician_Shadowed_P_out_GS_HBD_conv_proof_eq1}
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+Taking the D'Alembert test, it is easily shown that:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray}
+\lim_{n \to \infty} \frac{|\Xi(n+1,i,l_1,l_2,l_3)|}{|\Xi(n,i,l_1,l_2,l_3)|} & \eqa & \lim_{n \to \infty} \bigg(\frac{1+K_{X_1}}{\Omega_X}\bigg) \bigg(\frac{n+1}{n+2}\bigg) \bigg(\frac{\gamma_{th,gs}^{HBD}}{n} \bigg) = 0, \label{HBD_UCS_Rician_Shadowed_P_out_GS_HBD_conv_proof_eq2}
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+where (a) is obtained using the identity $\Gamma[m+n] \approx m^n\Gamma[m]$ \cite[eq. (25)]{rached2017unified}. Therefore, (\ref{HBD_UCS_Rician_Shadowed_P_out_GS_HBD}) is absolutely convergent. This completes the proof.
+
+\section{Proof of Outage Probability at the GS over Rician Shadowed Fading and Rician Fading channels} \label{HBD_UCS_Rician_Shadowed_corollary_P_out_GS_HBD_asymp_proof}
+We begin by first proving (\ref{HBD_UCS_Rician_Shadowed_P_out_GS_HBD_asymp}). Starting from (\ref{HBD_UCS_Rician_Shadowed_P_out_GS_HBD}), the outage probability expression can be written as:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray} \label{HBD_UCS_Rician_Shadowed_corollary_P_out_GS_HBD_asymp_proof_eq1}
+Pr\big(\mathcal{O}_{gs}^{HBD}\big) & \approx & \sum_{n=0}^{K_{tr}} \sum_{l_1 + l_2 + l_3 = n+1} \overline{a}\big(n,1,K_{X_1},m_{X_1},\gamma_{th,gs}^{HBD}\big) \nonumber\\
+ & & \hspace{1cm} \times \frac{(n+1)!}{l_1! \cdot l_2! \cdot l_3!} M\{Y_{si,1}^{l_1}\} M\{Y_{si,2}^{l_2}\} (\Omega_X)^{l_1 + l_2 - n - 1}.
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+To obtain the asymptotic outage probability at the GS, one will need to evaluate (\ref{HBD_UCS_Rician_Shadowed_corollary_P_out_GS_HBD_asymp_proof_eq1}) as $\Omega_X \to \infty$. However, it is useful to note that $\lim_{\Omega_X \to \infty} (\Omega_X)^{l_1 + l_2 - n - 1} = 0$ when $l_1 + l_2 < n+1$, i.e., $l_3 >0$. On the other hand, $\lim_{\Omega_X \to \infty} (\Omega_X)^{l_1 + l_2 - n - 1} = 1$ when $l_1 + l_2 = n+1$, i.e., $l_3 = 0$. Thus, evaluating (\ref{HBD_UCS_Rician_Shadowed_corollary_P_out_GS_HBD_asymp_proof_eq1}) for multinomial index $l_1 + l_2 = n+1$ yields the asymptotic outage probability expression in (\ref{HBD_UCS_Rician_Shadowed_P_out_GS_HBD_asymp}). The same technique is also used to obtain (\ref{HBD_UCS_Rician_Shadowed_P_out_GS_HBD_rician_asymp}). This completes the proof.
+
+\section{Proof of Outage Probability for the Joint Detector at UAV-2 over Rician shadowed fading channels} \label{HBD_UCS_Rician_Shadowed_JD_proof}
+\subsection{Outage Probability Derivation}
+Before evaluating the closed-form outage probability expression for the joint detector $\big(Pr\big(\mathcal{O}_{2}^{HBD(JD)}\big)\big)$, it is useful to first obtain the PDFs of $X_{gs}$ and $Y_1$. From (\ref{HBD_UCS_Rician_Shadowed_rician_shad_pdf_pwr_srs}), the PDFs of $X_{gs}$ and $Y_1$ are given in (\ref{HBD_UCS_Rician_Shadowed_pdf_xgs}) and (\ref{HBD_UCS_Rician_Shadowed_pdf_y1}), respectively:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray} 
+f_{X_{gs}}(x) \hspace{-0.2cm} & \approx & \hspace{-0.2cm} \sum_{n=0}^{K_{tr}} \overline{a}\big(n,\Omega_X\alpha_{g,2},K_{X_{gs}},m_{X_{gs}},1\big)(n+1) x^n. \label{HBD_UCS_Rician_Shadowed_pdf_xgs} \\
+f_{Y_1}(y) \hspace{-0.2cm} & \approx & \hspace{-0.2cm} \sum_{n=0}^{K_{tr}} \overline{a}\big(n,\Omega_X\alpha_{1,2},K_{Y_1},m_{Y_1},1\big)(n+1) y^n. \label{HBD_UCS_Rician_Shadowed_pdf_y1}
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Then, $Pr\big(\mathcal{O}_{2}^{HBD(JD)}\big)$ is obtained from \cite[eq. (17)]{narasimhan2007individual} as:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray}
+Pr\big(\mathcal{O}_{2}^{HBD(JD)}\big) & = & Pr\big\{ \mathcal{O}_{JD}^{1} \big\} + Pr\big\{ \mathcal{O}_{JD}^{2}\big\} \nonumber\\
+	& \hspace{-1.2cm} = & \hspace{-0.75cm} F_{X_{gs}}\big(\gamma_{th,2}^{HBD}\big) + \int_{\gamma_{th,2}^{HBD}}^{b_1} f_{X_{gs}}(x)\bigg[ F_{Y_1}\bigg(b_2 - x\bigg) - F_{Y_1}\bigg(\frac{x}{\gamma_{th,2}^{HBD}}-1\bigg) \bigg] dx, \label{HBD_UCS_Rician_Shadowed_appdx_JD_1}
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+where $\mathcal{O}_{JD}^{1}$ and $\mathcal{O}_{JD}^{2}$ are defined in (\ref{HBD_UCS_Rician_Shadowed_outage_JD_soi}) and (\ref{HBD_UCS_Rician_Shadowed_outage_JD_int}), respectively, and both $b_1$ and $b_2$ are defined in (\ref{HBD_UCS_Rician_Shadowed_P_out_uav2_JD_HBD}). The functions $F_{X_{gs}}(\bullet)$ and $F_{Y_1}(\bullet)$ are the CDFs of $X_{gs}$ and $Y_1$, respectively, obtainable from (\ref{HBD_UCS_Rician_Shadowed_rician_shad_cdf_pwr_srs}). To simplify the integral on the RHS of (\ref{HBD_UCS_Rician_Shadowed_appdx_JD_1}), we note that $\big(b_2 - x\big)^{n+1} - \Big(\frac{x}{\gamma_{th,2}^{HBD}}-1\Big)^{n+1} = (-1)^{n+1} \sum_{k=0}^{n+1} \binom{n+1}{k}[(-b_2)^{n+1-k}-(-\gamma_{th,2}^{HBD})^{-k}]x^k$, and thus:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray}
+F_{Y_1}\big(b_2 - x\big) - F_{Y_1}\bigg(\frac{x}{\gamma_{th,2}^{HBD}}-1\bigg) & \approx & \sum_{n=0}^{K_{tr}}\sum_{k=0}^{n+1} \overline{a}\big(n,\Omega_X\alpha_{1,2},K_{Y_1},m_{Y_1},1\big) \binom{n+1}{k} \nonumber\\
+ & & \hspace{1cm} \times [(-b_2)^{n+1-k}-(-\gamma_{th,2}^{HBD})^{-k}]x^k. \label{HBD_UCS_Rician_Shadowed_appdx_JD_2}
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage 
+Let $c(n)$ and $d(n)$ be defined as:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray} 
+c(n) & = &\sum_{k=0}^{n+1} \overline{a}\big(n,\Omega_X\alpha_{1,2},K_{Y_1},m_{Y_1},1\big) \binom{n+1}{k} [(-b_2)^{n+1-k}-(-\gamma_{th,2}^{HBD})^{-k}]{x^k}_, \\
+d(n) & = & \overline{a}\big(n,\Omega_X\alpha_{g,2},K_{X_{gs}},m_{X_{gs}},1\big)(n+1) {x^n}_. 
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Then, applying the Cauchy product theorem onto the integral in (\ref{HBD_UCS_Rician_Shadowed_appdx_JD_1}) yields \cite{andras2011generalized,amann2005analysis}:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray}
+ & & \hspace{-2cm} \int_{\gamma_{th,2}^{HBD}}^{b_1} f_{X_{gs}}(x)\bigg[ F_{Y_1}\bigg(b_2 - x\bigg)- F_{Y_1}\bigg(\frac{x}{\gamma_{th,2}^{HBD}}-1\bigg) \bigg] dx \nonumber \\
+ & \approx & \int_{\gamma_{th,2}^{HBD}}^{b_1} \Bigg( \sum_{n=0}^{K_{tr}} c(n) \Bigg) \Bigg( \sum_{q=0}^{K_{tr}} d(q)\Bigg) dx \nonumber\\
+ & \approx & \int_{\gamma_{th,2}^{HBD}}^{b_1} \sum_{n=0}^{K_{tr}} \sum_{q=0}^{n} c(q) d(n-q) dx \label{HBD_UCS_Rician_Shadowed_appdx_JD_3}\\
+ & \approx & \sum_{n=0}^{K_{tr}}\sum_{q=0}^{n}\sum_{k=0}^{q+1} \overline{a}\big(q,\Omega_X\alpha_{1,2},K_{Y_1},m_{Y_1},1\big) \overline{a}\big(n-q,\Omega_X\alpha_{g,2},K_{X_{gs}},m_{X_{gs}},1\big) \nonumber\\
+ & & \times (n+1) \binom{q+1}{k}(-1)^{q+1} G_1\big(q,k,b_2,\gamma_{th,2}^{HBD}\big) \frac{G_2\big(k+n-q,b_1,\gamma_{th,2}^{HBD}\big)}{k+n-q+1}, \label{HBD_UCS_Rician_Shadowed_appdx_JD_4}
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+where $G_1\big(q,k,b_2,\gamma_{th,2}^{HBD}\big)$ and $G_2\big(k+n-q+1,b_1,\gamma_{th,2}^{HBD}\big)$ are defined in (\ref{HBD_UCS_Rician_Shadowed_P_out_uav2_JD_HBD}). It should be pointed out that (\ref{HBD_UCS_Rician_Shadowed_appdx_JD_4}) is obtained by interchanging the summation and integration in (\ref{HBD_UCS_Rician_Shadowed_appdx_JD_3}), i.e., term-wise integration \cite{gradshteyn2014table}, which is valid for $ \gamma_{th,2}^{HBD} \leq x \leq b_1 $. Substituting (\ref{HBD_UCS_Rician_Shadowed_appdx_JD_4}) into (\ref{HBD_UCS_Rician_Shadowed_appdx_JD_1}) yields the closed-form outage probability expression for $Pr\big(\mathcal{O}_{2}^{HBD(JD)}\big)$ in (\ref{HBD_UCS_Rician_Shadowed_P_out_uav2_JD_HBD}) which completes the proof.
+
+\subsection{Convergence of (\ref{HBD_UCS_Rician_Shadowed_P_out_uav2_JD_HBD})} \label{HBD_UCS_Rician_Shadowed_P_out_uav2_JD_HBD_conv}
+We start by expanding the joint detector outage probability expression in (\ref{HBD_UCS_Rician_Shadowed_P_out_uav2_JD_HBD}) as:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray} 
+Pr\big(\mathcal{O}_{2}^{HBD(JD)}\big) & \approx & \sum_{n=0}^{K_{tr}} \sum_{i=0}^n (-1)^{n-i} \bigg(\frac{m_{X_{gs}}}{K_{X_{gs}}+m_{X_{gs}}}\bigg)^{m_{X_{gs}}} \frac{(m_{X_{gs}})_i}{\Gamma^2(i+1)} \nonumber\\
+ & & \hspace{0.5cm} \times \bigg(\frac{K_{X_{gs}}}{K_{X_{gs}}+m_{X_{gs}}}\bigg)^{i} \bigg(\frac{1+K_{X_{gs}}}{\Omega_X\alpha_{g,2}}\bigg)^{n+1} \frac{\big(\gamma_{th,2}^{HBD}\big)^{n+1}}{(n-i)!(n+1)} \nonumber \\
+ & & + \sum_{n=0}^{K_{tr}}\sum_{q=0}^{n}\sum_{k=0}^{q+1} \sum_{s=0}^q \sum_{z=0}^{n-q} \bigg(\frac{m_{Y_1}}{K_{Y_1}+m_{Y_1}}\bigg)^{m_{Y_1}} \frac{(m_{Y_1})_s}{\Gamma^2(s+1)} \bigg(\frac{K_{Y_1}}{K_{Y_1}+m_{Y_1}}\bigg)^{s} \nonumber\\
+ & & \hspace{0.5cm} \times \bigg(\frac{1+K_{Y_1}}{\Omega_X\alpha_{1,2}}\bigg)^{q+1} \frac{(-1)^{q-s}}{(q-s)!(q+1)} \bigg(\frac{m_{X_{gs}}}{K_{X_{gs}}+m_{X_{gs}}}\bigg)^{m_{X_{gs}}} \frac{(m_{X_{gs}})_z}{\Gamma^2(z+1)} \nonumber \\
+ & & \hspace{0.5cm} \times \bigg(\frac{K_{X_{gs}}}{K_{X_{gs}}+m_{X_{gs}}}\bigg)^{z} \bigg(\frac{1+K_{X_{gs}}}{\Omega_X\alpha_{g,2}}\bigg)^{n-q+1} \frac{(-1)^{n-q-z} (n+1) \binom{q+1}{k}(-1)^{q+1}}{(n-q-z)!(n-q+1)} \nonumber\\
+ & & \hspace{0.5cm} \times G_1\big(q,k,b_2,\gamma_{th,2}^{HBD}\big) \frac{G_2\big(k+n-q+1,b_1,\gamma_{th,2}^{HBD}\big)}{k+n-q+1} \nonumber \\
+ & \approx & \sum_{n=0}^{K_{tr}} \sum_{i=0}^n \Theta(n,i) + \sum_{n=0}^{K_{tr}}\sum_{q=0}^{n}\sum_{k=0}^{q+1} \sum_{s=0}^q \sum_{z=0}^{n-q} \Delta(n,q,k,s,z)_. \label{HBD_UCS_Rician_Shadowed_P_out_uav2_JD_HBD_conv_proof_eq1}
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+For the first term in (\ref{HBD_UCS_Rician_Shadowed_P_out_uav2_JD_HBD_conv_proof_eq1}), applying the D'Alembert test yields:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray}
+ \lim_{n \to \infty} \frac{|\Theta(n+1,i)|}{|\Theta(n,i)|} \eqa \lim_{n \to \infty} \gamma_{th,2}^{HBD} \bigg(\frac{1+K_{X_{gs}}}{\Omega_X\alpha_{g,2}}\bigg) \bigg(\frac{n+1}{n+2}\bigg) \bigg(\frac{1}{n}\bigg) = 0,
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+where (a) results from the identity $\Gamma[m+n] \approx m^n\Gamma[m]$ \cite[eq. (25)]{rached2017unified}. Therefore, the first term in (\ref{HBD_UCS_Rician_Shadowed_P_out_uav2_JD_HBD_conv_proof_eq1}) is absolutely convergent.
+
+For the second term in (\ref{HBD_UCS_Rician_Shadowed_P_out_uav2_JD_HBD_conv_proof_eq1}), applying the D'Alembert test yields:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray}
+\lim_{n \to \infty} \frac{|\Delta(n+1,q,k,s,z)|}{|\Delta(n,q,k,s,z)|} & \eqa & \lim_{n \to \infty} \frac{(n-q+1)(n+2)(k+n-q+1)}{(n-q+2)(n+1)(k+n-q+2)}\bigg(\frac{1}{n}\bigg) \nonumber \\
+ & & \hspace{1cm} \times \frac{G_2\big(k+n-q+2,b_1,\gamma_{th,2}^{HBD}\big)}{G_2\big(k+n-q+1,b_1,\gamma_{th,2}^{HBD}\big)} \nonumber \\
+ & \hspace{-4cm} \eqb & \hspace{-2cm} \lim_{n \to \infty} \frac{(n-q+1)(n+2)(k+n-q+1)}{(n-q+2)(n+1)(k+n-q+2)} \bigg(\frac{\gamma_{th,2}^{HBD} 2^{R_1^{HBD}}}{n}\bigg) = 0, \label{HBD_UCS_Rician_Shadowed_P_out_uav2_JD_HBD_conv_proof_eq2}
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+where (a) is due to the identity $\Gamma[m+n] \approx m^n\Gamma[m]$ \cite[eq. (25)]{rached2017unified}, and (b) is due to the fact that:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray}
+\lim_{n \to \infty} \frac{G_2\big(k+n-q+2,b_1,\gamma_{th,2}^{HBD}\big)}{G_2\big(k+n-q+1,b_1,\gamma_{th,2}^{HBD}\big)} & = & \lim_{n \to \infty} \frac{\big(\gamma_{th,2}^{HBD}\big)^{k+n-q+2} \big[ \big( 2^{R_1^{HBD}}\big)^{k+n-q+2} - 1 \big]}{\big(\gamma_{th,2}^{HBD}\big)^{k+n-q+1} \big[ \big( 2^{R_1^{HBD}}\big)^{k+n-q+1} - 1 \big]} \nonumber \\
+ & = &  \gamma_{th,2}^{HBD} { 2^{R_1^{HBD}} }_.
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+As such, (\ref{HBD_UCS_Rician_Shadowed_P_out_uav2_JD_HBD_conv_proof_eq2}) shows that the second term in (\ref{HBD_UCS_Rician_Shadowed_P_out_uav2_JD_HBD_conv_proof_eq1}) is absolutely convergent. Therefore, (\ref{HBD_UCS_Rician_Shadowed_P_out_uav2_JD_HBD}) is also absolutely convergent. This completes the proof.
+
+\section{Proof of Outage Probability Error Floor for the Joint Detector at UAV-2 over Rician Shadowed Fading and Rician Fading channels} \label{HBD_UCS_Rician_Shadowed_corollary_P_out_uav2_JD_HBD_asymp_proof}
+Starting with the case of the joint detector over Rician shadowed fading channels, the outage probability expression from (\ref{HBD_UCS_Rician_Shadowed_P_out_uav2_JD_HBD}) can be expressed as:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray} \label{HBD_UCS_Rician_Shadowed_corollary_P_out_uav2_JD_HBD_asymp_proof_eq1}
+Pr\big(\mathcal{O}_{2}^{HBD(JD)}\big) & \approx & \sum_{n=0}^{K_{tr}} \overline{a}\big(n,\alpha_{g,2},K_{X_{gs}},m_{X_{gs}},\gamma_{th,2}^{HBD}\big) (\Omega_X)^{-n-1} \nonumber\\
+ & & \hspace{-3cm} + \sum_{n=0}^{K_{tr}}\sum_{q=0}^{n}\sum_{k=0}^{q+1} \overline{a}\big(q,\alpha_{1,2},K_{Y_1},m_{Y_1},1\big) \overline{a}\big(n-q,\alpha_{g,2},K_{X_{gs}},m_{X_{gs}},1\big) (n+1) \nonumber\\
+ & & \hspace{-2cm} \times \binom{q+1}{k}(-1)^{q+1} G_1\big(q,k,b_2,\gamma_{th,2}^{HBD}\big) \frac{G_2\big(k+n-q,b_1,\gamma_{th,2}^{HBD}\big)}{k+n-q+1} (\Omega_X)^{-n-2}.
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+From (\ref{HBD_UCS_Rician_Shadowed_corollary_P_out_uav2_JD_HBD_asymp_proof_eq1}), it can be seen that $\lim_{\Omega_X \to \infty} Pr\big(\mathcal{O}_{2}^{HBD(JD)}\big) = 0$, since $\lim_{\Omega_X \to \infty} (\Omega_X)^{-n-1} = 0$ and $\lim_{\Omega_X \to \infty} (\Omega_X)^{-n-2} = 0$. As such, the joint detector achieves zero outage probability at asymptotic SNR regimes. For the case of the joint detector over Rician fading channels, repeating the above steps also yield zero outage probability at asymptotic SNR regimes. This completes the proof.
+

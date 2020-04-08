@@ -1,0 +1,67 @@
+%---------------------------------------------------------------------------------
+\appendixpage
+\addappheadtotoc
+
+\chapter{Mathematical Proofs in Chapter \ref{chap:interference_management_HBD_ACS}} 
+\label{chap:Appendix_A}
+%---------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Proof of Outage Probability with SIC detector at AS-2} \label{interference_management_HBD_ACS_SIC_proof}
+Let $X_{gs}$ be the average received power of the SOI with non-centered chi-squared PDF $f_{X_{gs}}(x) = \frac{K_{X_{gs}}+1}{\Omega_{X}\alpha_{g,2}} \exp\left(-K_{X_{gs}}-\frac{K_{X_{gs}} + 1}{\Omega_{X}\alpha_{g,2}}x\right) I_{0}\left(2\sqrt{\frac{K_{X_{gs}}(K_{X_{gs}}+1)}{\Omega_{X}\alpha_{g,2}}x}\right)$, where $I_{0}\left(\cdot\right)$ is the modified Bessel function of the first kind with zero order \cite[Eq. (8.445)]{gradshteyn2014table}. Similarly, let $Y_1$ be the average received power of the interfering signal with non-centered chi-squared PDF $f_{Y_1}(y) = \frac{K_{Y_1}+1}{\Omega_{X}\alpha_{1,2}}\exp\left(-K_{Y_1}-\frac{K_{Y_1} + 1}{\Omega_{X}\alpha_{1,2}}y\right) I_{0}\left(2\sqrt{\frac{K_{Y_1}(K_{Y_1}+1)}{\Omega_{X}\alpha_{1,2}}y}\right)$. 
+
+The closed-form SIC outage probability at AS-2 is equivalent to computing the sum of the areas of outage regions $P_1$ and $P_2$, i.e.,$Pr(\mathcal{O}_{2}^{HBD(SIC)}) = P_1 + P_2$. Let the outage regions be defined as $P_1 = Pr\left\{Y_1 < \gamma_{th,gs}^{HBD}\left(1+X_{gs}\right) \right\}$ and $P_2 = Pr\left\{Y_1 \geq \gamma_{th,2}^{HBD}(1+X_{gs}), X_{gs} < \gamma_{th,2}^{HBD} \right\}$. The expression for $P_1$ can be rewritten as \cite{rached2017unified}:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray} \label{interference_management_HBD_ACS_eq_P1_2}
+P_1 & \hspace{-0.25cm} = & \hspace{-0.25cm} \int_{0}^{\infty} \int_{0}^{\gamma_{th,gs}^{HBD}(1+X_{gs})} f_{Y_1}(y) f_{X_{gs}}(x) dydx \nonumber \\
+ & \hspace{-0.25cm} = & \hspace{-0.25cm} \sum_{q\geq0}\sum_{l=0}^{q+1}\alpha(q,\Omega_X\alpha_{1,2},K_{Y_{1}},\gamma_{th,gs}^{HBD})\binom{q+1}{l}E\{X_{gs}^l\}_,
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+where $E\{\cdot\}$ represents the expectation function. The expression for $P_2$ can be expressed as:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray} \label{interference_management_HBD_ACS_eq_P2_2}
+P_2 & = & \int_{0}^{\gamma_{th,2}^{HBD}} \int_{\gamma_{th,gs}^{HBD}(1+X_{gs})}^{\infty} f_{Y_1}(y) f_{X_{gs}}(x) dydx \nonumber\\
+ & = & \int_{0}^{\gamma_{th,2}^{HBD}} \hspace{-0.2cm} Q_1\left( \sqrt{2K_{Y_1}}, \sqrt{\frac{2(K_{Y_1}+1)\gamma_{th,gs}^{HBD}(1+x)}{\Omega_{X}\alpha_{1,2}}} \right) f_{X_{gs}}(x) dx_. 
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+From \cite{andras2011generalized}, $f_{X_{gs}}(x) = \sum_{j\geq0}\alpha(j,\Omega_X\alpha_{g,2},K_{X_{gs}},1)x^j$. Thus, (\ref{interference_management_HBD_ACS_eq_P2_2}) can be rewritten as:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray} \label{interference_management_HBD_ACS_eq_P2_3}
+P_2 & = & 1 - Q_1\left( \sqrt{2K_{X_{gs}}}, \sqrt{\frac{2(K_{X_{gs}}+1)\gamma_{th,2}^{HBD}}{\Omega_{X}\alpha_{g,2}}} \right) \nonumber \\
+ & & \hspace{0.5cm} - \int_{0}^{\gamma_{th,2}^{HBD}} \left(\sum_{j\geq0}\alpha(j,\Omega_X\alpha_{g,2},K_{X_{gs}},1)x^j\right) \nonumber\\
+ & & \hspace{1cm} \times \Bigg(\sum_{n\geq0}\alpha(n,\Omega_X\alpha_{1,2},K_{Y_1},\gamma_{th,gs}^{HBD})\sum_{i=0}^{n+1}\binom{n+1}{i}x^{i}\Bigg) dx_.
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Let $c(n) = \alpha(n,\Omega_X\alpha_{1,2},K_{Y_1},\gamma_{th,gs}^{HBD})\sum_{i=0}^{n+1}\binom{n+1}{i}x^{i}$ and $ d(j) = \alpha(j,\Omega_X\alpha_{g,2},K_{X_{gs}},1)x^j$, then the integral in (\ref{interference_management_HBD_ACS_eq_P2_3}) can be written as \cite{andras2011generalized, bartoszewicz2012algebrability}:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray} \label{interference_management_HBD_ACS_eq_P2_4}
+ & & \hspace{-1cm} \int_{0}^{\gamma_{th,2}^{HBD}}\left(\sum_{n\geq0}c(n)\right)\left(\sum_{j\geq0}d(j)\right) dx \nonumber \\
+ & = & \int_{0}^{\gamma_{th,2}^{HBD}} \sum_{n\geq0}\sum_{i=0}^{n}c(i)d(n-i) dx \nonumber\\
+ & = & \sum_{n\geq0}\sum_{i=0}^{n}\alpha(i,\Omega_X\alpha_{1,2},K_{Y_1},\gamma_{th,gs}^{HBD}) \alpha(n-i,\Omega_X\alpha_{g,2},K_{X_{gs}},1) \sum_{j=0}^{i+1}\binom{i+1}{j}\int_{0}^{\gamma_{th,2}^{HBD}}x^{j+n-i}dx \nonumber\\
+ & = & \sum_{n\geq0}\sum_{i=0}^{n}\sum_{j=0}^{i+1} \alpha(i,\Omega_X\alpha_{1,2},K_{Y_1},\gamma_{th,gs}^{HBD}) \alpha(n-i,\Omega_X\alpha_{g,2},K_{X_{gs}},1)\binom{i+1}{j}\frac{(\gamma_{th,2}^{HBD})^{j+n-i+1}}{j+n-i+1}_.
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Combining (\ref{interference_management_HBD_ACS_eq_P1_2}) and (\ref{interference_management_HBD_ACS_eq_P2_4}), the expression in (\ref{interference_management_HBD_ACS_P_out_as2_SIC}) can be obtained.
+
+In (\ref{interference_management_HBD_ACS_eq_P2_2}), $Q_1\left( \sqrt{2K_{Y_1}}, \sqrt{\frac{2(K_{Y_1}+1)\gamma_{th,gs}^{HBD}(1+x)}{\Omega_{X}\alpha_{1,2}}} \right) = 1 - \sum_{n\geq0}{\alpha(n,\Omega_X\alpha_{1,2},K_{Y_1},\gamma_{th,gs}^{HBD})(1+x)^{n+1}}$ if $\frac{K_{Y_1}+1}{\Omega_{X}\alpha_{1,2}}(\gamma_{th,gs}^{HBD})(1+x)\geq0$ \cite{andras2011generalized}. In addition, the PDF $f_{X_{gs}}(x)$ can be expressed as a convergent power series if $\frac{K_{X_{gs}}+1}{\Omega_{X}\alpha_{g,2}}x\geq0$ \cite{andras2011generalized}. Assuming the power series in (\ref{interference_management_HBD_ACS_eq_P2_3}) is convergent, the resultant product of the power series in (\ref{interference_management_HBD_ACS_eq_P2_4}) will also be convergent \cite{bartoszewicz2012algebrability}. Similarly in (\ref{interference_management_HBD_ACS_eq_P1_2}), the power series is convergent if $\gamma_{th,gs}^{HBD}\leq \frac{(\Omega_{X}\alpha_{1,2})/(1+K_{Y_1})}{2(\Omega_{X}\alpha_{g,2})/(1+K_{X_{gs}})}$ \cite{rached2017unified}. Therefore, the closed-form expression in (\ref{interference_management_HBD_ACS_P_out_as2_SIC}) holds if the power series in (\ref{interference_management_HBD_ACS_eq_P1_2}) and (\ref{interference_management_HBD_ACS_eq_P2_4}) are convergent. This completes the proof.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Proof of Asymptotic Diversity Gain at the FD-enabled GS} \label{interference_management_HBD_ACS_coro_asymp_df_fixed_GS_proof}
+From (\ref{interference_management_HBD_ACS_P_out_gs_II}) and (\ref{interference_management_HBD_ACS_df_fixed_GS}), $\left(\Omega_X\right)^{l_1+l_2-q-1} < 1$ when $l_1 + l_2 + l_3 \leq q$. Thus, $\lim_{\Omega_X\to\infty} \left(\Omega_X\right)^{l_1+l_2-q-1} \\ = 0, l_1 + l_2 + l_3 \leq q$. Therefore, only $l_1 + l_2  + l_3 = q + 1$ needs to be considered, which consequently leads to the numerator in (\ref{interference_management_HBD_ACS_df_fixed_GS}) to be zero, i.e., $l_1 + l_2 - q - 1 = 0$. This completes the proof.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Proof of Asymptotic Diversity Gain for the II and SIC detectors at AS-2} \label{interference_management_HBD_ACS_coro_asymp_df_fixed_AS2_proof}
+To evaluate $\lim_{\Omega_X\to\infty} d_{f,2}^{HBD(II)}$, the approach seen in (\ref{interference_management_HBD_ACS_asymp_df_fixed_GS}) can be used. Starting with the denominator of $d_{f,2}^{HBD(II)}$, $\left(\Omega_X\right)^{l-q-1} < 1$ when $l \leq q$. Thus, $\lim_{\Omega_X\to\infty} \left(\Omega_X\right)^{l-q-1} = 0$ when $l \leq q$. In the numerator, $(l-q-1) \left(\Omega_X\right)^{l-q-2} = 0$ when $l=q+1$. Similarly, to evaluate $\lim_{\Omega_X\to\infty} d_{f,2}^{HBD(SIC)}$, we first begin with the denominator of $d_{f,2}^{HBD(SIC)}$. Specifically, $\lim_{\Omega_X\to\infty}(\Omega_X)^{l-q-1}=0 $ when $l\leq{q}$ and $(\Omega_X)^{l-q-1}=1$ when $l=q+1$. For $(\Omega_X)^{-m-1}$, $\lim_{\Omega_X\to\infty}(\Omega_X)^{-m-1}=0 $ for $m\geq0$ and for $(\Omega_X)^{-n-2}$, $\lim_{\Omega_X\to\infty}(\Omega_X)^{-n-2}=0 $ for $n\geq0$. In the numerator, $(l-q-1) \left(\Omega_X\right)^{l-q-2} = 0$ when $l=q+1$. Additionally, $\lim_{\Omega_X\to\infty} (\Omega_X)^{-m-2}=0$ when $m\geq0$ and $\lim_{\Omega_X\to\infty} (\Omega_X)^{-n-3}=0$ when $n\geq0$. This completes the proof.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Proof of Asymptotic Diversity Gain at the GS and AS-2 in the HD-ACS} \label{interference_management_HBD_ACS_coro_lim_df_fixed_hd_proof}
+At GS, the asymptotic behavior of $d_{f,gs}^{HD}$ can be easily evaluated after some simplifications as shown below:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray} \label{interference_management_HBD_ACS_lim_df_fixed_hd_GS}
+\lim_{\Omega_X \to \infty} d_{f,gs}^{HD} & = & \lim_{\Omega_X \to \infty} \frac{ -\sum_{m\geq0} \alpha\big(m,1,K_{X_1},\gamma_{th,gs}^{HD}\big) (-m-1) (\Omega_{X})^{-m} }{\sum_{m\geq0} \alpha\big(m,1,K_{X_1},\gamma_{th,gs}^{HD}\big) (\Omega_{X})^{-m} }_. 
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+From (\ref{interference_management_HBD_ACS_lim_df_fixed_hd_GS}), It can be seen that $\lim_{\Omega_X\to\infty} (\Omega_{X})^{-m}=1 $ when $m=0$, and $\lim_{\Omega_X\to\infty} (\Omega_{X})^{-m} = 0 $ when $m>0$. Thus, when evaluating (\ref{interference_management_HBD_ACS_lim_df_fixed_hd_GS}), only $m=0$ needs to be considered. The asymptotic behavior of $d_{f,2}^{HD}$ can also be proven using the same approach. This completes the proof.

@@ -1,0 +1,147 @@
+%----------------------------------------------------------------------------
+% File          PpHd.tex
+% Author        Ong Kok Leong
+% Description   preamble: the global settings
+%-----------------------------------------------------------------------------
+
+% 1. Define your report format here
+\documentclass[12pt,a4paper,twoside]{report}
+
+% 2. Specify the packages to be included
+\usepackage{amssymb,amsmath,epsfig,fancyheadings,cite,float,dblfloatfix,appendix}
+%\usepackage[dvips]{graphicx}
+\usepackage[caption=false,font=footnotesize]{subfig}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{rotating}
+\usepackage{chngcntr}
+\usepackage[multiple]{footmisc}
+\usepackage[hyphens]{url}
+
+\oddsidemargin  +0.10in %
+\evensidemargin +0.00in %
+\topmargin      +0.15in %
+\textheight     +8.50in %
+\textwidth      +6.25in %
+
+\pagestyle{plain}
+
+\font\Bold=cmbx10 scaled \magstep3
+\def\EndOfProof{\nolinebreak\ \hfill\rule{1.5mm}{2.7mm}}
+\def\endOfProof{\ \hfill\rule{1.5mm}{2.7mm}}
+
+\def\proof{\noindent \textbf{Proof:}\quad}
+
+\newcounter{theorem}
+\newtheorem{theorem}{Theorem}
+\renewcommand{\thetheorem}{\thechapter.\arabic{theorem}}
+
+\newcounter{lemma}
+\newtheorem{lemma}{Lemma}
+\renewcommand{\thelemma}{\thechapter.\arabic{lemma}}
+
+\newcounter{corollary}
+\newtheorem{corollary}{Corollary}
+\renewcommand{\thecorollary}{\thechapter.\arabic{corollary}}
+
+\newcounter{proposition}
+\newtheorem{proposition}{Proposition}
+\renewcommand{\theproposition}{\thechapter.\arabic{proposition}}
+
+\newcounter{observation}
+\newtheorem{observation}{Observation}
+\renewcommand{\theobservation}{\thesubsection.\arabic{observation}}
+
+\newcounter{remark}
+\newtheorem{remark}{Remark}
+\renewcommand{\theremark}{\thechapter.\arabic{remark}}
+
+\newcounter{result}
+\newtheorem{result}{Result}
+\renewcommand{\theresult}{\thesubsection.\arabic{result}}
+
+\newcounter{summary}
+\newtheorem{summary}{Summary}
+\renewcommand{\thesummary}{\thesection.\arabic{summary}}
+
+\renewcommand{\figurename}{Fig.}
+
+\newcounter{mytempeqncnt}
+\newcommand\eqa{\stackrel{(a)}{=}}
+\newcommand\eqb{\stackrel{(b)}{=}}
+\newcommand\eqaequal{\stackrel{(a)}{=}}
+\newcommand\eqbequal{\stackrel{(b)}{=}}
+\newcommand\eqcequal{\stackrel{(c)}{=}}
+
+
+\counterwithin*{theorem}{chapter}
+\counterwithin*{corollary}{chapter}
+\counterwithin*{lemma}{chapter} 
+\counterwithin*{proposition}{chapter}
+\counterwithin*{observation}{subsection}
+\counterwithin*{remark}{chapter}
+\counterwithin*{result}{subsection}
+\counterwithin*{summary}{section}
+
+%\renewcommand{\thefigure}{\thechapter.\arabic{figure}}
+%\renewcommand{\thesubfigure}{\thefigure.\alph{subfigure}}
+%\makeatletter
+%\renewcommand{\@thesubfigure}{\thesubfigure:\space}
+%\renewcommand{\p@subfigure}{}
+
+%\def\LEQ.#1.#2.#3{#1\!\leqslant\!#2\!\leqslant\!#3}
+%\def\GEQ.#1.#2.#3{#1\!\geqslant\!#2\!\geqslant\!#3}
+%\def\emptyset{\varnothing}
+%\renewcommand{\theenumi}{\rm \roman{enumi}}
+%\renewcommand{\labelenumi}{\rm (\theenumi)}
+%\renewcommand{\theenumii}{\rm \alph{enumii}}
+%\renewcommand{\labelenumii}{\rm (\theenumii)}
+%
+%\renewcommand{\topfraction}{0.75}
+%\renewcommand{\bottomfraction}{0.75}
+%\renewcommand{\textfraction}{0.10}
+
+%
+% Report specific definitions
+%
+
+%
+% Definition in the context of this report.
+%
+%\def\reporttitle    {An Algorithmic Framework for Web Data Mining}
+%\def\supp           {\varphi}
+%\def\psupp          {\varphi^{\mathcal{P}}}
+%\def\conf           {\delta}
+%\def\pconf          {\delta^{\mathcal{P}}}
+%\def\tab            {\hspace{0.8cm}}
+
+%
+% Define the set of symbols for the constraint set.
+%
+%\def\map            {\Pi}
+%\def\gen            {\Upsilon}
+%\def\prune          {\Phi}
+%\def\selcand        {\Psi}
+%\def\compute        {\Theta}
+%\def\check          {\Omega}
+
+%
+% The set of operators
+%
+%\def\select         {\sigma}
+%\def\proj           {\pi}
+%\def\join           {\bowtie}
+%\def\apply          {\mu}
+%\def\undo           {\eta}
+%\def\rename         {\leftarrow}
+%
+%\def\linespaceNormal        {\baselineskip=24pt}
+%\def\linespaceTight         {\baselineskip=21pt}
+%\def\linespaceVeryTight     {\baselineskip=19pt}
+
+\renewcommand{\bibname}{References}
+
+% Define some new macros
+%\def\addnotation #1: #2#3{$#1$\indent \parbox{5in}{#2 \dotfill  \pageref{#3}}}
+\def\addnotation #1: #2#3{$#1$ & #2 & \pageref{#3}}
+\def\newnot#1{\label{#1}}

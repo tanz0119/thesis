@@ -1,0 +1,106 @@
+% ------------------------------------------------------------
+% This latex template is based on the version created by Xiao Xiong (NTU).
+% Compile main_QE_report.tex to generate the QE report.
+%
+% Author: Tan Zheng Hui Ernest, NTU, Singapore
+% Date: 8 Apr 2020
+% ------------------------------------------------------------
+
+
+\input{setting}     % Input Global settings
+\usepackage{amsmath}
+\usepackage[cmintegrals]{newtxmath}
+\usepackage{longtable}
+\usepackage{graphicx}
+
+%\usepackage{subfigure}
+%
+%\usepackage{float}
+%\usepackage{dblfloatfix}
+%\ifCLASSOPTIONcompsoc
+  %\usepackage[caption=false,font=normalsize,labelfont=sf,textfont=sf]{subfig}
+%\else
+  %\usepackage[caption=false,font=footnotesize]{subfig}
+%\fi
+
+
+\begin{document}    % Start of the text
+
+
+
+% -------------------------------------------------------------------------------- %
+% --------------------------- Part I. Front Matters ------------------------------ %
+% -------------------------------------------------------------------------------- %
+\input{fm1-cover.tex}       % Input the Cover page
+
+\setlength{\baselineskip}{20pt plus 1pt minus 1pt} % Use 1-1/2 spacing for whole document
+\pagenumbering{roman}   % Use small roman digits for the page number of front matters
+
+\input{fm2-abstract.tex}    % Input the abstract and acknowledgement
+\input{fm3-ack.tex}
+
+\setcounter{secnumdepth}{3} % section numbering depth
+\setcounter{tocdepth}{4}    % count to the depth of sections
+\tableofcontents            % table of contents appears here
+
+\newpage
+\addcontentsline{toc}{section}{\numberline{}\hspace{-.35in}{\bf List of Figures}}
+\listoffigures              % list of figures appears here
+
+\newpage
+\addcontentsline{toc}{section}{\numberline{}\hspace{-.35in}{\bf List of Tables}}
+\listoftables              % list of tables appears here
+
+\newpage
+\addcontentsline{toc}{section}{\numberline{}\hspace{-.35in}{\bf List of Abbreviations}}
+\input{fm4-abbrev.tex}      % Input the list of abbreviations and notations
+
+\newpage
+\addcontentsline{toc}{section}{\numberline{}\hspace{-.35in}{\bf List of Publications}}
+\include{fm6-publication}
+
+
+
+
+% -------------------------------------------------------------------------------- %
+% --------------------------- Part II.  The Body ---- ---------------------------- %
+% -------------------------------------------------------------------------------- %
+\input{format-main-body}    % Input the formating
+\include{ch1-intro}         % Include the chapters
+\include{ch2-literature_review}
+\include{ch3-efficiency_improvements}
+\include{ch4-HBD_ACS}
+\include{ch5-conclu}
+
+
+
+
+
+% -------------------------------------------------------------------------------- %
+% --------------------------- Part III. The Back Matters ------------------------- %
+% -------------------------------------------------------------------------------- %
+\appendix
+\include{bm1-appendix}      % Appendix and Publications
+
+% Include the references
+\newpage
+\addcontentsline{toc}{chapter}{References}
+%\bibliographystyle{ieeetr}      % Use the IEEE bibiography style
+%\bibliography{xiao_macro,xiao}  % Include the BibTex files
+
+
+%\newpage
+\bibliographystyle{IEEEtran}\scriptsize
+\bibliography{IEEEabrv,ref}
+
+
+
+
+
+\end{document}      % End of the text
+
+
+
+% ------------------
+% End of the File
+% ------------------

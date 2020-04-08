@@ -1,0 +1,69 @@
+%---------------------------------------------------------------------------------
+\chapter{Mathematical Proofs in Chapter \ref{chap:JD_HBD_UCS}}
+\label{chap:Appendix_B}
+%---------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Proof of Outage Probability with Joint Detector at UAV-2} \label{JD_HBD_UCS_JD_proof}
+
+Let the non-centered Chi-squared PDF of the instantaneous received SOI power ($X_{gs}$) be $f_{X_{gs}}(x) = \frac{K_{X_{gs}}+1}{\Omega_{X}\alpha_{g,2}} \exp\bigg(-K_{X_{gs}}-\frac{(K_{X_{gs}} + 1)}{\Omega_{X}\alpha_{g,2}}x\bigg)I_{0}\bigg(2\sqrt{\frac{K_{X_{gs}}(K_{X_{gs}}+1)}{\Omega_{X}\alpha_{g,2}}x}\bigg)$, where $I_{0}\left(\cdot\right)$ is the modified Bessel function of the first kind with zero order \cite{gradshteyn2014table}. Likewise, let $f_{Y_1}(y) = \frac{K_{Y_1}+1}{\Omega_{X}\alpha_{1,2}}\exp\bigg(-K_{Y_1}-\frac{(K_{Y_1} + 1)}{\Omega_{X}\alpha_{1,2}}y\bigg) I_{0}\bigg(2\sqrt{\frac{K_{Y_1}(K_{Y_1}+1)}{\Omega_{X}\alpha_{1,2}}y}\bigg)$ be the PDF of the instantaneous received interfering signal power ($Y_1$). Let $Pr\big( \mathcal{O}_{JD}^{1} \big)$ and $Pr\big( \mathcal{O}_{JD}^{2} \big)$ be outage regions, where $\mathcal{O}_{JD}^{1}$ and $\mathcal{O}_{JD}^{2}$ are defined in (\ref{JD_HBD_UCS_outage_JD_soi}) and (\ref{JD_HBD_UCS_outage_JD_int}), respectively. Then, the closed-form outage expression for the joint detector is evaluated as follows \cite[eq. (17)]{narasimhan2007individual}:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray}
+Pr\big(\mathcal{O}_{2}^{HBD(JD)}\big) & = & \int_{0}^{\gamma_{th,2}^{HBD}} f_{X_{gs}}(x) dx + \int_{\gamma_{th,2}^{HBD}}^{b_1} \int_{\frac{x}{\gamma_{th,2}^{HBD}}-1}^{b_2 - x} f_{Y_1}(y) f_{X_{gs}}(x) dydx. \label{JD_HBD_UCS_appdx_JD_1} 
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The first term on the RHS of (\ref{JD_HBD_UCS_appdx_JD_1}) is easily evaluated to be \cite[Table I]{rached2017unified}:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray}
+\int_{0}^{\gamma_{th,2}^{HBD}} \hspace{-0.35cm} f_{X_{gs}}(x) dx \hspace{-0.05cm} = \hspace{-0.05cm} 1 - Q_1\Bigg( \hspace{-0.05cm} \sqrt{2K_{X_{gs}}}, \hspace{-0.05cm} \sqrt{\frac{2(K_{X_{gs}}+1)\gamma_{th,2}^{HBD}}{\Omega_{X}\alpha_{g,2}}} \Bigg), \hspace{-0.1cm} \label{JD_HBD_UCS_appdx_JD_2}
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+which is valid for all $\frac{K_{Y_1}+1}{\Omega_{X}\alpha_{1,2}}\gamma_{th,gs}^{HBD}\geq0$ \cite{andras2011generalized}. To evaluate the second term on the RHS of (\ref{JD_HBD_UCS_appdx_JD_1}), we first express the PDF of the instantaneous received SOI power ($f_{X_{gs}}(x)$) into a power series as follows \cite[eq. (5)]{andras2011generalized}:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray}
+f_{X_{gs}}(x) \approx \sum_{q=0}^{K_{tr}} (-1)^q \exp(-K_{X_{gs}}) \frac{{L_q}^{(0)}(K_{X_{gs}})}{q!} \bigg(\frac{1+K_{X_{gs}}}{\Omega_X\alpha_{g,2}}\bigg)^{q+1} x^q \approx \sum_{q=0}^{K_{tr}} \widehat{d}(q). \label{JD_HBD_UCS_appdx_JD_3}
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Likewise, the PDF of the instantaneous received interfering signal power ($f_{Y_1}(y)$) becomes \cite[eq. (5)]{andras2011generalized}:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray}
+f_{Y_{1}}(y) \approx \sum_{n=0}^{K_{tr}} (-1)^n \exp(-K_{Y_{1}}) \frac{{L_n}^{(0)}(K_{Y_{1}})}{n!} \bigg(\frac{1+K_{Y_{1}}}{\Omega_X\alpha_{1,2}}\bigg)^{n+1} y^n. \label{JD_HBD_UCS_appdx_JD_4}
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Let $c(n) = \sum_{k=0}^{n+1} \overline{\alpha}(n,\Omega_X\alpha_{1,2},K_{Y_1},1) \binom{n+1}{k} (-1)^{n+1} \hspace{-0.05cm} \big[ \hspace{-0.05cm} (-b_2)^{n+1-k} \\ - (-\gamma_{th,2}^{HBD})^{-k} \big] x^k$. Then, the second term on the RHS of (\ref{JD_HBD_UCS_appdx_JD_1}) becomes \cite{andras2011generalized,bartoszewicz2012algebrability}:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray}
+	& & \hspace{-2cm} \int_{\gamma_{th,2}^{HBD}}^{b_1} \int_{\frac{x}{\gamma_{th,2}^{HBD}}-1}^{b_2 - x} f_{Y_1}(y) f_{X_{gs}}(x) dydx \nonumber\\
+	& \approx & \int_{\gamma_{th,2}^{HBD}}^{b_1} f_{X_{gs}}(x) \bigg[ \sum_{n=}^{K_{tr}} \sum_{k=0}^{n+1} \overline{\alpha}(n,\Omega_X\alpha_{1,2},K_{Y_1},1) \binom{n+1}{k} \nonumber \\ 
+	& & \hspace{1cm} \times (-1)^{n+1} \big[ (-b_2)^{n+1-k} - (-\gamma_{th,2}^{HBD})^{-k} \big] x^k \bigg] dx \label{JD_HBD_UCS_appdx_JD_6} \\
+	& \approx & \int_{\gamma_{th,2}^{HBD}}^{b_1} \Bigg( \sum_{n=0}^{K_{tr}} c(n) \Bigg) \Bigg( \sum_{q=0}^{K_{tr}} \widehat{d}(q)\Bigg) dx \label{JD_HBD_UCS_appdx_JD_7}\\ 
+	& \approx & \int_{\gamma_{th,2}^{HBD}}^{b_1} \sum_{n=0}^{K_{tr}} \sum_{i=0}^{n} c(i) \widehat{d}(n-i) dx \label{JD_HBD_UCS_appdx_JD_8}\\
+	& \approx & \sum_{n=0}^{K_{tr}} \sum_{i=0}^{n} \sum_{j=0}^{i+1} \overline{\alpha}(i,\Omega_X\alpha_{1,2},K_{Y_1},1) \nonumber\\
+	& & \hspace{1cm} \times \overline{\alpha}(n-i,\Omega_X\alpha_{g,2},K_{X_{gs}},1) \binom{i+1}{j}(-1)^{i+1} \nonumber\\
+	& & \hspace{1cm} \times G_1\big(i,j,b_2,\gamma_{th,2}^{HBD}\big) \frac{G_2\big(j+n-i+1,b_1,\gamma_{th,2}^{HBD}\big)}{j+n-i+1}, \label{JD_HBD_UCS_appdx_JD_9}
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+where $G_1\big(i,j,b_2,\gamma_{th,2}^{HBD}\big)$ and $G_2\big(j+n-i+1,b_1,\gamma_{th,2}^{HBD}\big)$ are defined in (\ref{JD_HBD_UCS_P_out_as2_JD}).
+It should be pointed out that (\ref{JD_HBD_UCS_appdx_JD_6}) is obtained by interchanging the order of summation and integration, which is valid for $ \gamma_{th,2}^{HBD} \leq x \leq b_2 $ \cite{andras2011generalized}, and (\ref{JD_HBD_UCS_appdx_JD_8}) is a result of the Cauchy product \cite{amann2005analysis} in (\ref{JD_HBD_UCS_appdx_JD_7}). Also, $\sum_{q \geq 0} \widehat{d}(q)$ in (\ref{JD_HBD_UCS_appdx_JD_7}) is valid for $K_{X_{gs}}\geq0$ \cite{andras2011generalized}. Combining (\ref{JD_HBD_UCS_appdx_JD_2}) and (\ref{JD_HBD_UCS_appdx_JD_9}) yields the closed-form outage probability expression for $Pr\big(\mathcal{O}_{2}^{HBD(JD)}\big)$ in (\ref{JD_HBD_UCS_P_out_as2_JD}). This completes the proof.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Proof of Convergence Radius for (\ref{JD_HBD_UCS_P_out_as2_JD})} \label{JD_HBD_UCS_JD_convg_proof}
+
+We begin by noting that (\ref{JD_HBD_UCS_appdx_JD_7}) is convergent if $\sum_{n \geq 0} c(n)$ and $\sum_{q \geq 0} \widehat{d}(q)$ are absolutely convergent \cite{andras2011generalized,amann2005analysis}. Starting with $\sum_{n \geq 0} c(n)$, we note that the PDF of the instantaneous received interfering signal power ($f_{Y_1}(y)$) can be expressed into a power series, as given in (\ref{JD_HBD_UCS_appdx_JD_4}). Also, the term-wise integration of a convergent power series is only valid within the convergence radius \cite{gradshteyn2014table}. Therefore, it is of importance to verify the convergence of (\ref{JD_HBD_UCS_appdx_JD_4}). Let $|{L_n}^{(0)}(K_{Y_{1}})| \leq \exp\bigg(\frac{K_{Y_{1}}}{2}\bigg)$ \cite{andras2011generalized} and $n! = n\Gamma(n)$ \cite{gradshteyn2014table,rached2017unified}, where $\Gamma(\cdot)$ is the Gamma function. Then, (\ref{JD_HBD_UCS_appdx_JD_4}) becomes:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray}
+	f_{Y_{1}}(y) = \sum_{n\geq0} (-1)^n \frac{\exp(-K_{Y_{1}}/2)}{n\Gamma(n)} \bigg(\frac{1+K_{Y_{1}}}{\Omega_X\alpha_{1,2}}\bigg)^{n+1} y^n = \sum_{n\geq0} f(n). \label{JD_HBD_UCS_convg_radii_2}
+	\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Employing the D'Alembert test, we get:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray}
+\lim_{n\to\infty}	\frac{|f(n+1)|}{|f(n)|} = \lim_{n\to\infty} \frac{1}{n} \bigg(\frac{1+K_{Y_{1}}}{\Omega_X\alpha_{1,2}}\bigg) y = 0. \label{JD_HBD_UCS_convg_radii_3}
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Therefore, (\ref{JD_HBD_UCS_convg_radii_2}) has a convergence radius of $\infty$, i.e., absolutely convergent, and accordingly, $\sum_{n \geq 0} c(n)$ is also absolutely convergent. The absolute convergence of $\sum_{q \geq 0} \widehat{d}(q)$ is proven in the same manner. Thus, (\ref{JD_HBD_UCS_appdx_JD_7}) and (\ref{JD_HBD_UCS_appdx_JD_9}), are also absolutely convergent. This completes the proof.

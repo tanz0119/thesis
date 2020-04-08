@@ -1,0 +1,127 @@
+%---------------------------------------------------------------------------------
+\chapter{Introduction}
+\label{chap:introduction}
+%---------------------------------------------------------------------------------
+
+\section{Background}
+In future generations of communication networks, e.g., fifth generation (5G) networks, unmanned aerial vehicles (UAVs) are expected to play an increasingly important role in the delivery of next-generation services. Already, various types of use cases for multi-UAV networks are being actively investigated. For instance, the studies in \cite{yadav2018full} and \cite{mozaffari2017wireless} have discussed the possibility of UAVs being deployed as aerial base stations, while other studies have investigated the application of UAVs for geographical surveying \cite{andre2014application}, UAV-aided relaying \cite{azari2018ultra}, and vehicular communications \cite{xiao2018uav,xiao2018user}. \textcolor{black}{The application of multi-UAV networks has been attracting keen interest from both industry and academia}. Compared to single-UAV networks, large-scale deployment of UAVs, i.e., multi-UAV networks, enables greater link redundancy \cite{wang2017taking}, while overcoming potential weight and flying time restrictions of a single UAV \cite{andre2014application}.
+
+%\subsection{Spectrum Scarcity in UAV Communications}
+% elaborate on spectrum scarcity problem in UAV communications
+% cite Matolak's papers and highlight the crowded spectrum.
+% cite IMDA and highlight the corwded spectrum for UAV communications.
+
+Although multi-UAV networks can unlock many potential benefits for next-generation networks, supporting large-scale deployments of UAVs require readily available spectrum for UAV communications. Operations related to UAV control and non-payload communication (CNPC) links, for instance, have been allocated the L-band ($0.9$ - $1.2$ GHz) and C-band ($5.03$ - $5.091$ GHz) by the International Telecommunications Union (ITU) \cite{matolak2017air_suburban}. However, it is noted that the L-band spectrum is highly congested. Taking the USA as an example, the L-band is shared by terrestrial systems ($0.9$ - $0.96$ GHz), aeronautical communication systems ($0.96$ - $1.164$ GHz), and satellite communication systems ($1.164$ - $1.215$ GHz), in addition to UAV CNPC systems \cite{fcc2019online}.
+
+In Singapore, CNPC and non-CNPC links for UAV operations can only operate in the $433.05$ - $434.79$ MHz band, $2.4$ - $2.4835$ GHz band, and the $5.725$ - $5.850$ GHz band \cite{imda_operation2019}. Similar to the USA, the allocated bands for UAV communications are also congested. Maritime mobile systems, for instance, operate in the $433.05$ - $434.79$ MHz band, while systems with Bluetooth or wireless local area network (WLAN), i.e., WiFi, capabilities operate in the $2.4$ - $2.4835$ GHz band \cite{imda2019chart_spectrum, imda_spectrum2019}. It is also noted that WLAN devices also operate in the $5.725$ - $5.850$ GHz band \cite{imda2019chart_spectrum, imda_spectrum2019}. 
+
+Given the highly congested spectrum that has been allocated for UAV communications, the potential benefits of multi-UAV networks may become negated. With limited availability of spectrum, large-scale deployment of UAVs in multi-UAV networks may not be possible. Furthermore, other wireless systems sharing the same band can cause unnecessary interference to multi-UAV networks, which in turn jeopardizes the reliability of UAV communications. Therefore, a lack of available spectrum to support UAV communications, is itself, one of the significant challenges that must be addressed in the near future.
+
+%\subsection{Spectrum Scarcity in MAV Communications}
+% background statistics on air travel growth
+Apart from UAV communications, spectrum scarcity is also a major challenge in manned aerial vehicle (MAV), i.e., civilian aircraft, communications. With the number of flights expected to increase worldwide drastically \cite{eurocontrol2013}, demand for spectrum to support the wireless communications is also expected to swell. These demands stem not only from existing avionic systems but also from upcoming avionics systems and services in the near future. For instance, the newer generation of avionic systems can provide vital statistical information which can support real-time health monitoring services to reduce aircraft maintenance time and to meet safety requirements. The newer systems can also include the provision for next-generation in-flight entertainment services as well. As a consequence, further strain is placed on existing aeronautical communication links, which are already operating under bandwidth constraints in a congested aeronautical spectrum. Also, existing aeronautical communication links have also been noted to be inadequate in providing the needed capacity to handle the expected increases in data communications \cite{neji2013survey}.
+
+% motivation behind FCI program and the identification of future candidate technology. 
+
+On this note, several initiatives are underway to identify candidate technologies that can enable the civilian aviation industry to address spectrum scarcity. Examples of such initiatives include the Future Communications Infrastructure (FCI) program by the European Organization for the Safety of Air Navigation (EUROCONTROL) and the Federal Aviation Administration (FAA), and Single European Sky ATM Research (SESAR) supported by the European Commission \cite{BarbaSesar2011}. 
+
+Although new candidate technologies have been singled out for possible use in future aeronautical communications, the issue of spectrum scarcity continues to plague the civilian aviation industry. 
+
+\section{Improving Spectrum Efficiency with \\ Hybrid-Duplex Communications}
+% Introduce HBD UAV communications
+% Explain why we call it HBD UAV communications
+
+With spectrum scarcity being a major challenge in both UAV and MAV communications, hybrid-duplex (HBD) systems can be investigated as a potential solution to improve spectrum efficiency in aeronautical communications.
+
+\textcolor{black}{In HBD systems, half-duplex (HD) uplink and downlink nodes communicate with full-duplex (FD) nodes on the same spectrum to improve spectrum efficiency. Taking UAV networks as an example, an HBD UAV communication system (UCS), i.e., HBD-UCS, can be studied as a viable means to overcome spectrum scarcity in UAV communications. Specifically, an HBD-UCS comprising uplink and downlink UAVs equipped with HD transceivers concurrently communicate with FD ground stations (GSs) in the multi-UAV network.} In this way, an HBD-UCS effectively improves spectrum utilization by doing away with the need for separate uplink and downlink bands\textcolor{black}{, i.e., uplink and downlink UAVs are assigned the same spectrum}..
+
+On the same note, it is worth pointing out that equipping UAVs with FD transceivers, i.e., FD-UCS with only FD-enabled nodes, can enable spectrum efficiency to be further boosted. Such a setup has been proposed in \cite{zhang2019framework}, where UAVs equipped with FD transceivers function as aerial base stations. However, constraints on the size, weight, and power (SWAP) of UAVs may result in FD transceivers that are either infeasible to design or non-compliant with regulatory requirements. Therefore, overcoming spectrum scarcity with an HBD-UCS allows HD transceivers on UAVs to be used, while allowing multi-UAV networks a smoother transition from HD-UCSs to HBD-UCSs.
+
+% Explain the limitations of the HBD paradigm
+Despite the associated advantages, self-interference (SI), stemming from FD transmissions at the GSs, and uplink interference at the downlink UAVs, i.e., inter-UAV interference, are the main impediments in HBD-UCSs \cite{ernest2019outage, tan2018joint, ernest2019power, ernest2019hybrid}. Although SI can be suppressed, either in the passive domain by introducing path loss, or in the analog or digital domain via interference cancellation, residual SI is unavoidable. In particular, SI mitigation at FD-enabled GSs is imperfect due to non-ideal characteristics in practical FD transceivers, such as carrier phase noise and imperfect SI channel estimation \cite{ernest2019outage, tan2018joint, ernest2019power, ernest2019hybrid, sahai2013impact}. Therefore, an essential step in enabling practical HBD-UCSs starts with SI mitigation architectures that minimize the effect of non-ideal characteristics in FD transceivers. Likewise, practical HBD-UCSs require effective strategies at the downlink UAVs to manage inter-UAV interference.
+
+\section{\textcolor{black}{Thesis Motivation and Objective}}
+\textcolor{black}{In spite of the corresponding limitations associated with HBD systems, HBD-based aeronautical networks are still tenable if SI mitigation and inter-node interference, e.g., inter-UAV or inter-MAV interference, management strategies can be effectively implemented and is the motivation of this research. Therefore, the objective of this thesis is to demonstrate the feasibility of} address spectrum scarcity for both UAVs and MAVs, e.g., civilian aircraft, through HBD communications. It should be emphasized that this thesis mainly focuses on enhancing spectrum efficiency for UAV communications. However, the resulting conclusions are also applicable to MAV communications as well.
+
+To this end, it is crucial to show that HBD UAV and MAV communications can achieve superior performance over conventional HD systems. \textcolor{black}{Hence}, a performance analysis framework, based on power series approaches, is proposed for both HBD aeronautical communication systems (HBD-ACSs) and HBD-UCSs which focuses on the particular case of one uplink and one downlink node. The proposed analytical framework is applied to analyze the outage probability and finite signal-to-noise ratio (SNR) diversity gain of UAV and aeronautical communications for various small-scale fading channels, e.g., Rician fading, and interference management strategies. Next, stochastic geometry is incorporated into the proposed analytical framework to enable outage probability and diversity gain analysis of large-scale HBD multi-UAV networks. \textcolor{black}{By considering stochastic geometry, the spatial locations of UAVs can be randomly generated in order to accurately model large-scale UAV deployments. In turn, the outage probability and finite SNR analysis of interference management strategies becomes more robust as the random spatial location of the UAV is also considered.} Apart from outage probability and diversity gain, a new analytical framework based on stochastic geometry is also proposed for the evaluation of ergodic capacities in large-scale HBD-based multi-UAV networks. 
+
+Through extensive analysis, it is shown that HBD-UCSs and HBD-ACSs achieve lower outage probability, higher diversity gain, and higher ergodic capacity when compared to conventional HD systems. For large-scale HBD-based multi-UAV networks, a higher number of UAVs can be supported on the same spectrum with superior performance over HD systems. Therefore, the feasibility and advantages of addressing spectrum scarcity through HBD communications are highlighted in this thesis for UAV and MAV networks.
+
+\section{Major Contributions}
+The major contributions of this thesis are summarized below.
+
+\begin{itemize}
+	\item HBD systems are demonstrated to be a pragmatic solution towards addressing spectrum scarcity in aeronautical communications over various types of realistic environments.
+	\item Through several proposed analytical frameworks, HBD systems are shown to achieve better performance over HD systems at low SNR regimes in terms of outage probability, finite SNR diversity gain, and finite SNR diversity-multiplexing trade-off (DMT) for the specific case of single uplink and downlink UAV/MAV in the network.
+	\item Suitable interference scenarios in UAV and MAV networks that enable HBD systems to outperform HD systems are also identified for the interference-ignorant (II), successive interference cancellation (SIC), and joint detection (JD) interference management strategies.
+	\item For multi-UAV networks with an arbitrary number of uplink and downlink UAVs, new analytical frameworks based on stochastic geometry are proposed for HBD-based UCSs and non-orthogonal multiple access aided (NOMA-aided) UCSs. Important performance matrices such as outage probability, finite SNR diversity gain, and ergodic capacity are evaluated for the proposed systems using this framework.
+	\item Extensive analysis highlights the benefits and feasibility of HBD-based and NOMA-aided multi-UAV networks, and proves its performance is equivalent or superior to HD systems.
+\end{itemize}
+
+
+To further elaborate on the above points, the main contributions of each chapter are summarized below.
+
+\subsection{Chapter \ref{chap:interference_management_HBD_ACS}}
+\begin{itemize}
+	\item This chapter presents closed-form expressions for the outage probability, finite SNR diversity gain, and finite SNR DMT of an II detector and a two-stage SIC detector in a Rician fading environment. \textcolor{black}{\footnote{\textcolor{black}{Closed-form expressions are desirable as it allows for easy computation and it can also be used to reveal the relationship between the metric of interest and the modeled variables, e.g., relationship between outage probability and transmit power.}}}
+	\item It is shown that the proposed HBD-ACS attains superior outage performance over existing HD-ACS at low SNRs. At high SNRs, however, the outage performance of the proposed HBD-ACS is eclipsed by HD-ACS as the former becomes interference-limited. Nonetheless, it is shown through numerical simulations that the HBD-ACS can meet typical Quality-of-Service (QoS) requirements, e.g., frame error rate $\leq 10^{-3}$, at high SNRs for a range of interference levels through II and SIC detectors. 
+	\item The desired and interfering signal levels are related through a scaling parameter. In contrast to the results in \cite{sirigina2016symbol}, it is shown that the asymptotic diversity gain of the SIC detector is zero for all interference levels.
+	\item The HD-ACS is shown to achieve better diversity gain than the proposed HBD-ACS at low multiplexing gains. However, at high multiplexing gains, the HD-ACS achieves zero diversity gain while the proposed HBD-ACS achieves non-zero diversity gain.
+\end{itemize}
+
+\subsection{Chapter \ref{chap:JD_HBD_UCS}}
+\begin{itemize}
+\item \textcolor{black}{As II and SIC detectors are the focus of Chapter \ref{chap:interference_management_HBD_ACS}, this chapter focuses on the analysis of the joint detector. Specifically,} a novel approach to obtain closed-form expressions for the outage probability and finite SNR diversity gain (for both fixed and variable transmission rates) of a joint detector over Rician fading channels is presented in this chapter.
+
+\item It is demonstrated that the outage probability and diversity gain of the joint detector is independent of the inter-UAV interference levels in moderate and high SNR regimes.
+
+\item At moderate and high SNR regimes, it is observed that the system level performance of the HBD-UCS with JD is suboptimal due to SI at the GS.
+
+\item It is shown that the diversity gain of the joint detector is independent of the data rate of the interfering signal when inter-UAV interference is sufficiently strong. In contrast, the SIC detector requires the data rate of the interfering signal from the HD UAV to be lower than the data rate of the signal-of-interest (SOI) from the FD-enabled GS to achieve non-zero diversity gain.
+
+\item Through multiplexing gain region (MGR) analysis, the JD-based HBD-UCS is shown to achieve superior finite SNR diversity gain, i.e., reliability, while supporting a wider range of QoS requirements than the II-based and the SIC-based HBD-UCS.
+\end{itemize}
+
+\subsection{Chapter \ref{chap:HBD_UCS_Rician_Shadowed}}
+\begin{itemize}
+\item \textcolor{black}{This} chapter proposes a novel approach towards obtaining alternative power series representations of the probability density function (PDF), cumulative distribution function (CDF), and fractional moment for both the Rician fading and the Rician shadowed fading models. \textcolor{black}{Different from the previous chapters, the analysis in the present chapter focuses on Rician shadowed fading channels which can occur in suburban environments.}
+\item From the derived equations, closed-form outage probability expressions for the II and joint detectors using alternative power series expressions for the Rician shadowed fading and Rician fading models are obtained. To the best of our knowledge, the closed-form outage probability expressions and analysis are unavailable in the literature.
+\item Although counter-intuitive, it is shown that the impact of shadowing on the SI link at the FD-enabled GS is negligible. We also show that severe shadowing on the desired link with strong LOS component, as compared to weak LOS component, causes reduction in reliability even when SI mitigation measures are implemented.
+\item At UAV-2, the effect of severe shadowing on the desired link with strong LOS components is shown to be less severe for the joint detector than for the II detector.
+\end{itemize}
+
+\subsection{Chapter \ref{chap:HBD_multi_UAV}}
+\begin{itemize}
+\item \textcolor{black}{Extending upon the common system model from prior chapters,} an analytical framework based on stochastic geometry is proposed for outage probability analysis of multi-UAV networks with HBD UAV communications. 
+\item It is demonstrated that the HBD-UCS concurrently supports more UAVs while achieving higher reliability than the HD UCS (HD-UCS). Specifically, at low transmit power regimes, it is shown that the HBD-UCS attains lower uplink and downlink outage probability than an HD-UCS, even as the UAV operating altitude is increased.
+\end{itemize}
+
+\subsection{Chapter \ref{chap:NOMA_aided_multi_UAV_FD_HetNet}}
+\begin{itemize}
+\item This chapter presents exact ergodic capacity expressions over Rician fading channels for NOMA-aided multi-UAV communications in FD heterogeneous networks (FD-HetNets) and HD heterogeneous networks (HD-HetNets) \textcolor{black}{based on the stochastic geometry framework from the previous chapter}.
+\item It is demonstrated that the FD-GS enables all nodes in the FD-HetNet to achieve higher ergodic capacity over HD-HetNets for NOMA-aided multi-UAV communications.
+\item With effective interference mitigation, it is shown that a higher number of uplink (UL) and downlink (DL) UAVs can be deployed in the FD-HetNet at lower altitudes while achieving higher ergodic sum capacity and ergodic capacity gains over HD-HetNets.
+\item The FD-HetNet is also shown to attain a higher ergodic sum capacity over the HD-HetNet despite lower levels of SI suppression and strong oscillator phase noise at the FD-GS.
+\end{itemize}
+
+\subsection{Chapter \ref{chap:NOMA_bivariate_Rician_Shadowed}}
+\begin{itemize}
+\item A comprehensive performance analysis of a NOMA-aided UCS, comprising dual-antenna UAVs with selection combining, communicating over bivariate Rician shadowed fading channels is conducted in this chapter. \textcolor{black}{Specifically, correlated channels are considered in this chapter, which was not considered in all prior chapters.}
+\item New closed-form expressions are obtained for the joint PDF and joint CDF of the bivariate Rician shadowed fading model through a power series approach. From the obtained joint CDF expression, closed-form outage probability and finite SNR diversity gain expressions for NOMA-aided and orthogonal multiple access based (OMA-based) UCSs are presented within a stochastic geometry framework.
+\item Extensive analysis demonstrates that the NOMA-aided UCS can support a larger number of UAVs on the same spectrum than OMA-based systems while achieving highly similar outage probability. Furthermore, it is shown that cross correlation only affects the diversity gain of both NOMA and OMA transmissions at low SNR regimes. 
+\end{itemize}
+ 
+\section{Thesis Organization}
+The remaining part of this thesis is organized as follows. First, the state-of-the-art concerning UAV channel modeling, SI mitigation, modeling of FD transceiver impairments, interference management strategies, and NOMA techniques are discussed in Chapter \ref{chap:lit_review}. Next, outage probability and finite SNR analysis are evaluated for an HBD-ACS and HBD UAV communications with JD in Chapter \ref{chap:interference_management_HBD_ACS} and Chapter \ref{chap:JD_HBD_UCS}, respectively. Chapter \ref{chap:HBD_UCS_Rician_Shadowed} discusses the performance of HBD UAV communications with JD and II interference management strategies over Rician shadowed fading channels, while Chapter \ref{chap:HBD_multi_UAV} presents an outage probability evaluation model based on stochastic geometry for HBD multi-UAV networks. The ergodic capacity of NOMA-aided FD-HetNets is evaluated in Chapter \ref{chap:NOMA_aided_multi_UAV_FD_HetNet}, while Chapter \ref{chap:NOMA_bivariate_Rician_Shadowed} analyzes the outage probability and finite SNR diversity gain of NOMA-aided UCSs over correlated Rician shadowed fading channels. Finally, the thesis is concluded in Chapter \ref{chap:conclu}, with discussions on relevant future directions.
+
+
+
+
+
+
+
+
+
+
+
+

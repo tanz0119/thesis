@@ -1,0 +1,194 @@
+%---------------------------------------------------------------------------------
+\chapter{Mathematical Proofs in Chapter \ref{chap:NOMA_bivariate_Rician_Shadowed}}
+\label{chap:Appendix_F}
+%---------------------------------------------------------------------------------
+
+\section{Proof for the Bivariate Rician Shadowed Joint PDF in (\ref{NOMA_bivariate_Rician_Shadowed_pwr_srs_pdf_bi_rician_shad})} \label{NOMA_bivariate_Rician_Shadowed_pdf_lemma_proof}
+We first begin by noting that $I_0\big( \frac{2r_ix}{\sigma^2(1-\rho)} \big)$ for $i=1,2$ in (\ref{NOMA_bivariate_Rician_Shadowed_pdf_bi_rician_shad}) can be represented as the following power series \cite[eq. (9.6.10)]{abramowitz1964handbook}:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray} \label{NOMA_bivariate_Rician_Shadowed_mod_bessel_pwr_series}
+I_0\bigg( \frac{2r_ix}{\sigma^2(1-\rho)} \bigg) = \sum_{n=0}^{\infty} \frac{(1/4)^n}{n! \Gamma(n+1)} \bigg( \frac{2r_ix}{\sigma^2 (1-\rho)} \bigg)^{2n} \hspace{-0.2cm} = \sum_{n=0}^{\infty} C_i(n). \hspace{-0.2cm}
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Then, using the Cauchy product theorem \cite[eq. (0.316)]{gradshteyn2014table}, $\prod_{i=1}^2 I_0\big( \frac{2r_ix}{\sigma^2(1-\rho)} \big)$ in (\ref{NOMA_bivariate_Rician_Shadowed_pdf_bi_rician_shad}) becomes:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray} \label{NOMA_bivariate_Rician_Shadowed_prod_mod_bessel_pwr_series}
+\prod_{i=1}^2 I_0\bigg( \frac{2r_ix}{\sigma^2(1-\rho)} \bigg) \approx \sum_{k=0}^{\infty} \sum_{n=0}^{k} C_1(n) C_2(k-n) \approx \sum_{k=0}^{K_{tr,1}} A(k),
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+where $A(k) = \sum_{n=0}^{k} \frac{(1/4)^k (2r_1)^{2n}(2r_2)^{2(k-n)}}{\Gamma^2(n+1)\Gamma^2(k-n+1)[\sigma^2 (1-\rho)]^{2k}}x^{2k}$.
+
+Next, ${}_1{F_1}\big(m,1;\frac{K}{\sigma^2 \rho(\rho m + K)}x^2\big)$ in (\ref{NOMA_bivariate_Rician_Shadowed_pdf_bi_rician_shad}) is also expressed as the following power series \cite[eq. (13.1.2)]{abramowitz1964handbook}:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray} \label{NOMA_bivariate_Rician_Shadowed_conf_hyp_pwr_series}
+{}_1{F_1}\bigg(m,1;\frac{K}{\sigma^2 \rho(\rho m + K)}x^2\bigg) \approx \sum_{i=0}^{\infty} B(i),
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+where $B(i) = \frac{(m)_i}{i!(1)_i}\big( \frac{K}{\sigma^2 \rho (m\rho+K)} \big)^i x^{2i}$. 
+
+Using (\ref{NOMA_bivariate_Rician_Shadowed_prod_mod_bessel_pwr_series}) and (\ref{NOMA_bivariate_Rician_Shadowed_conf_hyp_pwr_series}), along with the Cauchy product theorem \cite[eq. (0.316)]{gradshteyn2014table}, the expression $\prod_{i=1}^2 I_0\big( \frac{2r_ix}{\sigma^2(1-\rho)} \big) {}_1{F_1}\big(m,1;\frac{K}{\sigma^2 \rho(\rho m + K)}x^2\big)$ in (\ref{NOMA_bivariate_Rician_Shadowed_pdf_bi_rician_shad}) can be expressed as:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray} \label{NOMA_bivariate_Rician_Shadowed_prod_mod_bessel_conf_hyp_pwr_series}
+ & & \hspace{-3cm} \prod_{i=1}^2 I_0\bigg( \frac{2r_ix}{\sigma^2(1-\rho)} \bigg) {}_1{F_1}\bigg(m,1;\frac{K}{\sigma^2 \rho(\rho m + K)}x^2\bigg) \nonumber\\
+ & \approx & \sum_{k=0}^{K_{tr,1}} \sum_{i=0}^{k} A(i) B(k-i) \nonumber \\
+ & \approx & \sum_{k=0}^{K_{tr,1}} \sum_{i=0}^{k} \sum_{n=0}^{i} \frac{(\frac{1}{4})^i (2r_1)^{2n}(2r_2)^{2(i-n)}}{\Gamma^2(n+1)\Gamma^2(i-n+1)[\sigma^2(1-\rho)]^{2i}(1)_{k-i}} \nonumber \\
+ & & \hspace{2.3cm} \times \frac{(m_{k-i})}{(k-i)!} \bigg(\frac{K}{\sigma^2 \rho (\rho m + K)}\bigg)^{k-i}x^{2k}.
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Substituting (\ref{NOMA_bivariate_Rician_Shadowed_prod_mod_bessel_conf_hyp_pwr_series}) into (\ref{NOMA_bivariate_Rician_Shadowed_pdf_bi_rician_shad}) and utilizing the fact that $\int_0^{\infty} x^{2k+1} \exp\Big( \frac{-(1-\rho)}{\sigma^2 \rho(1-\rho)}x^2 \Big)dx = \frac{k!}{2}\Big(\frac{1-\rho}{\sigma^2 \rho(1-\rho)}\Big)^{-(k+1)}$ \cite[eq. (3.461.3)]{gradshteyn2014table}, one obtains the expression in (\ref{NOMA_bivariate_Rician_Shadowed_pwr_srs_pdf_bi_rician_shad}). This completes the proof.
+
+\section{Proof of Convergence Radius for (\ref{NOMA_bivariate_Rician_Shadowed_pwr_srs_pdf_bi_rician_shad})} \label{NOMA_bivariate_Rician_Shadowed_pdf_corollary_convergence_proof}
+To show that (\ref{NOMA_bivariate_Rician_Shadowed_pwr_srs_pdf_bi_rician_shad}) is convergent, the D'Alembert test is invoked to show that $\\ \lim_{n \to \infty} \frac{|\alpha(k,i,n+1) r_1^{2(n+1)+1} r_2^{2(i-n-1)+1}|}{|\alpha(k,i,n) r_1^{2n+1} r_2^{2(i-n)+1}|} = 0$, $\lim_{i \to \infty} \frac{|\alpha(k,i+1,n) r_2^{2(i-n+1)+1}|}{|\alpha(k,i,n) r_2^{2(i-n)+1}|} = 0$, and $\lim_{k \to \infty} \frac{|\alpha(k+1,i,n)|}{|\alpha(k,i,n)|} = 0$.
+
+Starting with $\lim_{n \to \infty} \frac{|\alpha(k,i,n+1) r_1^{2(n+1)+1} r_2^{2(i-n-1)+1}|}{|\alpha(k,i,n) r_1^{2n+1} r_2^{2(i-n)+1}|}$, the limit can be evaluated as:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray}
+ \lim_{n \to \infty} \frac{\big|\alpha(k,i,n+1) r_1^{2(n+1)+1} r_2^{2(i-n-1)+1}\big|}{\big|\alpha(k,i,n) r_1^{2n+1} r_2^{2(i-n)+1}\big|} \eqaequal \lim_{n \to \infty} \frac{r_1}{r_2^2} \Bigg(\frac{n\Gamma(n)i^{1-n}\Gamma(i)}{n^2\Gamma(n)i^{-n}\Gamma(i)}\Bigg)^2  = \lim_{n \to \infty} \frac{r_1}{r_2^2} \bigg(\frac{i}{n}\bigg)^2 = 0_, \label{NOMA_bivariate_Rician_Shadowed_pdf_corollary_convergence_proof_eq1}
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+where (a) is obtained using the asymptotic identity $\Gamma[m+n] \approx m^n\Gamma[m]$ in \cite[eq. (25)]{rached2017unified}.
+
+For $\lim_{i \to \infty} \frac{|\alpha(k,i+1,n) r_2^{2(i-n+1)+1}|}{|\alpha(k,i,n) r_2^{2(i-n)+1}|}$, the limit is evaluated as:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray}
+\lim_{i \to \infty} \frac{|\alpha(k,i+1,n) r_2^{2(i-n+1)+1}|}{|\alpha(k,i,n) r_2^{2(i-n)+1}|} & \eqaequal & \lim_{i \to \infty} r_2^2 \Bigg( \frac{\Gamma(k-i-1+m) \big( \frac{K}{\sigma^2 \rho (\rho m + K)} \big)^{k-i-1}}{\Gamma^2(i-n+2)[\sigma^2 (1-\rho)]^{2i+2} \Gamma^2(k-i)} \Bigg) \nonumber \\
+ & & \hspace{0.5cm} \times \Bigg( \frac{\Gamma^2(i-n+1)[\sigma^2 (1-\rho)]^{2i} \Gamma^2(k-i+1)}{\Gamma(k-i+m) \big( \frac{K}{\sigma^2 \rho (\rho m + K)} \big)^{k-i}} \Bigg) \nonumber \\
+ & \eqbequal & \lim_{i \to \infty} r_2^2 \Bigg( \frac{k^{m-i-1}\Gamma(k) \big( \frac{K}{\sigma^2 \rho (\rho m + K)} \big)^{k-i-1}}{i^{2-n}\Gamma(i)[\sigma^2 (1-\rho)]^{2i+2} k^{-2i} \Gamma^2(k)} \Bigg) \nonumber \\
+ & & \hspace{0.5cm} \times \Bigg( \frac{i^{1-n}\Gamma(i)[\sigma^2 (1-\rho)]^{2i} k^{-2i+2} \Gamma^2(k)}{k^{m-i} \Gamma(k) \big( \frac{K}{\sigma^2 \rho (\rho m + K)} \big)^{k-i}} \Bigg) \nonumber \\
+ & = & \lim_{i \to \infty} \frac{r_2^2 k}{\Big( \frac{K}{\sigma^2 \rho (\rho m + K)} \Big) i} = 0_, \label{NOMA_bivariate_Rician_Shadowed_pdf_corollary_convergence_proof_eq2}
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+where (a) is due to $(a)_k=\frac{\Gamma(a+k)}{\Gamma(a)}$ \cite[eq. (6.1.22)]{abramowitz1964handbook} and $(k-i)! = \Gamma(k-i+1)$, and (b) is obtained using the asymptotic identity $\Gamma[m+n] \approx m^n\Gamma[m]$ in \cite[eq. (25)]{rached2017unified}.
+
+Finally, for $\lim_{k \to \infty} \frac{|\alpha(k+1,i,n)|}{|\alpha(k,i,n)|}$, the limit is evaluated as:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray}
+\lim_{k \to \infty} \frac{|\alpha(k+1,i,n)|}{|\alpha(k,i,n)|} & \eqaequal & \lim_{k \to \infty} \Bigg( \frac{\Gamma(k-i+1+m) \big( \frac{K}{\sigma^2 \rho (\rho m + K)} \big)^{k+1-i}}{\Gamma^2(k-i+2)} \Bigg) \nonumber \\
+ & & \hspace{0.5cm} \times \Bigg( \frac{\Gamma^2(k-i+1)}{\Gamma(k-i+m) \big( \frac{K}{\sigma^2 \rho (\rho m + K)} \big)^{k-i}} \Bigg) \nonumber \\
+ & \eqbequal & \lim_{k \to \infty} \Bigg( \frac{K}{\sigma^2 \rho (\rho m + K)} \Bigg) \Bigg( \frac{k^{m+1-i}\Gamma(k)}{\big[k^{2-i}\Gamma(k)\big]^2} \Bigg) \Bigg( \frac{\big[k^{1-i}\Gamma(k)\big]^2}{k^{m-i}\Gamma(k)} \Bigg) \nonumber \\
+ & = & \lim_{k \to \infty} \Bigg( \frac{K}{\sigma^2 \rho (\rho m + K)} \Bigg) \frac{1}{k} = 0_, \label{NOMA_bivariate_Rician_Shadowed_pdf_corollary_convergence_proof_eq3}
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+where (a) is due to $(a)_k=\frac{\Gamma(a+k)}{\Gamma(a)}$ \cite[eq. (6.1.22)]{abramowitz1964handbook} and $(k-i)! = \Gamma(k-i+1)$, and (b) is obtained using the asymptotic identity $\Gamma[m+n] \approx m^n\Gamma[m]$ in \cite[eq. (25)]{rached2017unified}.
+
+Thus, from (\ref{NOMA_bivariate_Rician_Shadowed_pdf_corollary_convergence_proof_eq1}), (\ref{NOMA_bivariate_Rician_Shadowed_pdf_corollary_convergence_proof_eq2}), and (\ref{NOMA_bivariate_Rician_Shadowed_pdf_corollary_convergence_proof_eq3}), the expression in (\ref{NOMA_bivariate_Rician_Shadowed_pwr_srs_pdf_bi_rician_shad}) has a convergence radius of $\infty$. Therefore, (\ref{NOMA_bivariate_Rician_Shadowed_pwr_srs_pdf_bi_rician_shad}) is shown to be convergent. This completes the proof.
+
+\section{Proof for the Bivariate Rician Shadowed Joint CDF in (\ref{NOMA_bivariate_Rician_Shadowed_pwr_srs_cdf})} \label{NOMA_bivariate_Rician_Shadowed_cdf_lemma_proof}
+We begin by noting that $\exp(x) \approx \sum_{l=0}^{K_{tr,2}} \frac{x^l}{l!}$ \cite[eq. (1.211.1)]{gradshteyn2014table}. Then, the joint CDF $F_{R_1,R_2}(\gamma_1,\gamma_2)$ can be obtained from (\ref{NOMA_bivariate_Rician_Shadowed_pwr_srs_pdf_bi_rician_shad}) as follows:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray}
+F_{R_1,R_2}(\gamma_1,\gamma_2) & \eqa & \int_{0}^{\gamma_2} \int_{0}^{\gamma_1} \sum_{k=0}^{K_{tr,1}} \sum_{i=0}^{k} \sum_{n=0}^{i} \sum_{l=0}^{K_{tr,2}} \sum_{q=0}^{l} \alpha(k,i,n) \nonumber \\
+ & & \hspace{0cm} \times \frac{(-1)^{l} \binom{l}{q}}{l![\sigma^2 (1-\rho)]^l} (r_1)^{2(q+n)+1} (r_2)^{2(l-q+i-n)+1} dr_1 dr_2 \nonumber \\
+ & \eqb & \sum_{k=0}^{K_{tr,1}} \sum_{i=0}^{k} \sum_{n=0}^{i} \sum_{l=0}^{K_{tr,2}} \sum_{q=0}^{l} \alpha(k,i,n) \nonumber \\
+ & & \hspace{0cm} \times \frac{(-1)^{l} \binom{l}{q}}{l![\sigma^2 (1-\rho)]^l 4 (q+n+1)(l-q+i-n+1)} \nonumber \\
+ & & \hspace{4cm} \times (\gamma_1)^{2(q+n+1)} (\gamma_2)^{2(l-q+i-n+1)} \label{NOMA_bivariate_Rician_Shadowed_proof_pwr_srs_cdf_bi_rician_shad}
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+where (a) is obtained by applying the identities in \cite[eq. (1.211.1)]{gradshteyn2014table} and \cite[eq. (1.111)]{gradshteyn2014table}, and (b) is obtained through term-wise intergration \cite{amann2005analysis,gradshteyn2014table}. This completes the proof.
+
+\section{Proof for the Upper Bound of the Truncation Error in (\ref{NOMA_bivariate_Rician_Shadowed_pwr_srs_pdf_bi_rician_shad})} \label{NOMA_bivariate_Rician_Shadowed_lemma_te_upper_proof}
+The upper bound of the truncation error is obtained using the same approach in \cite{o2011product}. From the expression in (\ref{NOMA_bivariate_Rician_Shadowed_te}), taking the ratio between terms $\big(\Delta(k)\big)$ as $k$ increases yields: 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray}
+\Delta(k) = \frac{|\alpha(k+1,i,n)|}{|\alpha(k,i,n)|} \eqaequal \Bigg( \frac{K}{\sigma^2 \rho (\rho m + K)} \Bigg) \frac{1}{k} = 0_, \label{NOMA_bivariate_Rician_Shadowed_lemma_te_upper_proof_eq1}
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+where (a) is obtained from (\ref{NOMA_bivariate_Rician_Shadowed_pdf_corollary_convergence_proof_eq3}). Since $\Delta(k)$ monotonically decreases as $k \to \infty$, (\ref{NOMA_bivariate_Rician_Shadowed_te}) becomes upper bounded by $\Delta\big(K_{tr,1}\big)$ as shown \cite[eq. (92)]{o2011product}:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray}
+\mathcal{T}_{\epsilon} & \leq & \sum_{i=0}^{K_{tr,1}} \sum_{n=0}^{i} \frac{\alpha\big(K_{tr,1},i,n\big)}{1-\Delta\big(K_{tr,1}\big)} \nonumber \\
+ & & \hspace{0.5cm} \times r_1^{2n+1} r_2^{2(i-n)+1} \exp\bigg( -\frac{r_1^2 + r_2^2}{\sigma^2 (1-\rho)} \bigg) \\
+ & \leq & {\mathcal{T}_{\epsilon,upper}}_. \nonumber
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+This completes the proof.
+
+\section{Proof for the Upper Bound of the Truncation Error in (\ref{NOMA_bivariate_Rician_Shadowed_pwr_srs_cdf})} \label{NOMA_bivariate_Rician_Shadowed_lemma_e_upper_proof}
+The upper bound of the truncation error $e$ is obtained using the same approach in \cite{o2011product}. From (\ref{NOMA_bivariate_Rician_Shadowed_e}), $e$ can be rewritten as: 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray}
+e & = & e_1 + e_2 + e_3 + {e_4}_, \label{NOMA_bivariate_Rician_Shadowed_lemma_e_upper_proof_eq1} \\
+\text{where }e_1 & = & \sum_{k=0}^{K_{tr}} \sum_{i=0}^{k} \sum_{n=0}^{i} \sum_{l=K_{tr}+1}^{\infty} \sum_{q=0}^{l} \mu(k,l)_, \nonumber \\
+	e_2 & = & \sum_{k=K_{tr}+1}^{\infty} \sum_{i=0}^{k} \sum_{n=0}^{i} \sum_{l=0}^{K_{tr}} \sum_{q=0}^{l} \mu(k,l)_, \nonumber \\
+	e_3 & = & \sum_{k=K_{tr}+1}^{\infty} \sum_{i=0}^{k} \sum_{n=0}^{i} \sum_{l=k}^{\infty} \sum_{q=0}^{l} \mu(k,l)_, \nonumber \\
+	e_4 & = & \sum_{l=K_{tr}+1}^{\infty} \sum_{q=0}^{l} \sum_{k=l}^{\infty} \sum_{i=0}^{k} \sum_{n=0}^{i} \mu(k,l)_. \nonumber
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Starting with $e_1$, taking the ratio between terms $\big(\Theta_1(k,l)\big)$ as $l$ increases yields: 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray}
+\Theta_1(k,l) & = & \frac{\mu(k,l+1)}{\mu(k,l)} \nonumber \\
+ & \eqaequal & \frac{(-1) (\gamma_2)^2 (l+1) (l-q+i-n+1)}{\sigma^2(1-\rho) l^2 (l-q+i-n+2)} = 0_,
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+where (a) is obtained through algebraic simplifications after applying the identities $\Gamma[m+n] \approx m^n\Gamma[m]$ \cite[eq. (25)]{rached2017unified} and $\binom{x}{y} = \frac{\Gamma(x+1)}{\Gamma(y+1)\Gamma(x-y+1)}$ \cite[eq. (3.1.2)]{abramowitz1964handbook}. Thereafter, $e_1$ is upper bounded as \cite[eq. (89)]{o2011product}:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray} 
+e_1 \leq \sum_{k=0}^{K_{tr}} \sum_{i=0}^{k} \sum_{n=0}^{i} \sum_{q=0}^{K_{tr}+1} {\frac{\mu(k,K_{tr}+1)}{1-\Theta_1(k,K_{tr}+1)}}_. \label{NOMA_bivariate_Rician_Shadowed_lemma_e_upper_proof_eq2}
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+For $e_2$, taking the ratio between terms $\big(\Theta_2(k)\big)$ as $k$ increases yields: 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray}
+\Theta_2(k) = \frac{\mu(k+1,l)}{\mu(k,l)} = \Delta(k) = 0_, \nonumber
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+where $\Delta(k)$ is given in (\ref{NOMA_bivariate_Rician_Shadowed_lemma_te_upper_proof_eq1}). Then, $e_2$ can be upper bounded as \cite[eq. (92)]{o2011product}:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray} 
+e_2 \leq \sum_{i=0}^{K_{tr}} \sum_{n=0}^{i} \sum_{l=0}^{K_{tr}} \sum_{q=0}^{l} {\frac{\mu(K_{tr},l)}{1-\Theta_2(K_{tr})}}_. \label{NOMA_bivariate_Rician_Shadowed_lemma_e_upper_proof_eq3}
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+For $e_3$ and $e_4$, the upper bound can be respectively obtained from \cite[eq. (93)]{o2011product} and \cite[eq. (102)]{o2011product} as:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray} 
+e_3 & \leq & \sum_{k=K_{tr}+1}^{\infty} \sum_{i=0}^{k} \sum_{n=0}^{i} \sum_{q=0}^{K_{tr}+1} {\frac{\mu(k,K_{tr}+1)}{1-\Theta_1(k,K_{tr}+1)}}_, \label{NOMA_bivariate_Rician_Shadowed_lemma_e_upper_proof_eq4} \\
+e_4 & \leq & \sum_{q=0}^{K_{tr}+1} \sum_{i=0}^{K_{tr}} \sum_{n=0}^{i} {\frac{\mu(K_{tr},K_{tr}+1)}{1-\Theta_2(K_{tr})}}_. \label{NOMA_bivariate_Rician_Shadowed_lemma_e_upper_proof_eq5}
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Then, combining (\ref{NOMA_bivariate_Rician_Shadowed_lemma_e_upper_proof_eq2}), (\ref{NOMA_bivariate_Rician_Shadowed_lemma_e_upper_proof_eq3}), (\ref{NOMA_bivariate_Rician_Shadowed_lemma_e_upper_proof_eq4}), and (\ref{NOMA_bivariate_Rician_Shadowed_lemma_e_upper_proof_eq5}) into (\ref{NOMA_bivariate_Rician_Shadowed_lemma_e_upper_proof_eq1}) yields the upper bound in (\ref{NOMA_bivariate_Rician_Shadowed_e_upper}). This completes the proof. 
+
+\section{Proof of Outage Probability for NOMA at Downlink UAV-$j$} \label{NOMA_bivariate_Rician_Shadowed_theorem_P_out_down_uav_proof}
+
+From the selection combining NOMA outage event at downlink UAV-$j$ $\big(\mathcal{O}_{j}^{NOMA}\big)$, the NOMA outage probability $\big(Pr\big(\mathcal{O}_{j}^{NOMA}\big)\big)$ can be obtained from the closed-form expression of $F_{R_1,R_2}(\gamma_1,\gamma_2)$ in Lemma \ref{NOMA_bivariate_Rician_Shadowed_lemma_pwr_srs_cdf_bi_rician_shad} as follows:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray}
+Pr\big(\mathcal{O}_{j}^{NOMA}\big) & = & \hspace{-0.2cm} Pr\Bigg(\max\big(R_{j,1},R_{j,2}\big) < \gamma_j^{NOMA} \sqrt{\frac{d_{j}^{L}}{P_r}}\Bigg) \nonumber \\
+ & = & \hspace{-0.2cm} \int_{L_{m,j}}^{L_{p,j}} F_{R_{j,1},R_{j,2}}\Bigg(\gamma_j^{NOMA} \sqrt{\frac{w^{L}}{P_r}}_,\gamma_j^{NOMA} \sqrt{\frac{w^{L}}{P_r}}\Bigg) f_{d_j}(w) dw \nonumber \\
+ & \approx & \hspace{-0.2cm} \int_{L_{m,j}}^{L_{p,j}} \sum_{k=0}^{K_{tr,1}} \sum_{i=0}^{k} \sum_{n=0}^{i} \sum_{l=0}^{K_{tr,2}} \sum_{q=0}^{l} \alpha(k,i,n) G(l,n,i,q) \nonumber \\
+ & & \hspace{1.5cm} \times \Bigg[\frac{\big(\gamma_j^{NOMA}\big)^2}{P_r}\Bigg]^{l+i+2} \Bigg(\frac{2}{r_a^2}\Bigg) w^{L(l+i+2)+1} dw \label{NOMA_bivariate_Rician_Shadowed_theorem_P_out_down_uav_proof_eq1}
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+From (\ref{NOMA_bivariate_Rician_Shadowed_theorem_P_out_down_uav_proof_eq1}), (\ref{NOMA_bivariate_Rician_Shadowed_P_out_down_uav_j}) is obtained by interchanging the order of integration and summation \cite{amann2005analysis,gradshteyn2014table}. This completes the proof.
+
+\section{Proof of Asymptotic Diversity Gain for NOMA at Downlink UAV-$j$} \label{NOMA_bivariate_Rician_Shadowed_corollary_df_noma_uav_j_proof}
+After some algebraic simplifications, (\ref{NOMA_bivariate_Rician_Shadowed_df_noma_uav_j}) can be expressed as:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray}
+d_{f,j}^{NOMA} & \hspace{-0.2cm} \approx & \hspace{-0.2cm} \Bigg(\sum_{k=0}^{K_{tr,1}} \sum_{i=0}^{k} \sum_{n=0}^{i} \sum_{l=0}^{K_{tr,2}} \sum_{q=0}^{l} \alpha(k,i,n) G(l,n,i,q) \Xi_j\big(l,i\big) \big(\gamma_j^{NOMA}\big)^{2(2+l+i)} (2+l+i) (P_r)^{-l-i} \Bigg) \nonumber \\
+ & & \Bigg/ \Bigg( \sum_{k=0}^{K_{tr,1}} \sum_{i=0}^{k} \sum_{n=0}^{i} \sum_{l=0}^{K_{tr,2}} \sum_{q=0}^{l} \alpha(k,i,n) G(l,n,i,q) \Xi_j\big(l,i\big) \big(\gamma_j^{NOMA}\big)^{2(2+l+i)} (P_r)^{-l-i} \Bigg) \label{NOMA_bivariate_Rician_Shadowed_corollary_df_noma_uav_j_proof_eq1}
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Next, it is straightforward to see that:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray}
+ \lim_{P_r \to \infty} (P_r)^{-l-i} \hspace{0cm} = \hspace{0cm} \begin{cases}
+    \hspace{0.2cm} 1, \hspace{0.5cm} \text{for } l=0, i=0\\
+    \hspace{0.2cm} 0, \hspace{0.5cm} \text{for } l>0, i>0\\ 
+  \end{cases} \\\nonumber
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Therefore, only $l=i=0$ needs to be considered when evaluating $d_{f,j}^{NOMA}$ at asymptotic SNR regimes. Thus, after further algebraic simplifications, (\ref{NOMA_bivariate_Rician_Shadowed_corollary_df_noma_uav_j_proof_eq1}) reduces to $d_{f,j}^{NOMA} = 2$. This completes the proof.
+
+
+

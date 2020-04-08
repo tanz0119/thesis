@@ -1,0 +1,33 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: main_thesis.aux
+A level-1 auxiliary file: fm6-publication.aux
+A level-1 auxiliary file: ch1-intro.aux
+A level-1 auxiliary file: ch2-literature_review.aux
+A level-1 auxiliary file: ch3-int_mgt_HBD_ACS.aux
+A level-1 auxiliary file: ch4-JD_HBD_UCS.aux
+A level-1 auxiliary file: ch5-HBD_UCS_Rician_Shadowed.aux
+A level-1 auxiliary file: ch6-HBD_multi_UAV.aux
+A level-1 auxiliary file: ch7-NOMA_aided_multi_UAV_FD_HetNet.aux
+A level-1 auxiliary file: ch8-NOMA_bivariate_Rician_Shadowed.aux
+A level-1 auxiliary file: ch9-conclu.aux
+A level-1 auxiliary file: bm1-appendix_A.aux
+A level-1 auxiliary file: bm2-appendix_B.aux
+A level-1 auxiliary file: bm3-appendix_C.aux
+A level-1 auxiliary file: bm4-appendix_D.aux
+A level-1 auxiliary file: bm5-appendix_E.aux
+A level-1 auxiliary file: bm6-appendix_f.aux
+The style file: IEEEtran.bst
+Database file #1: IEEEabrv.bib
+Database file #2: ref.bib
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty journal in BarbaSesar2011
+Warning--empty journal in kerczewski2012control
+Warning--missing institution in ITUR2013
+Warning--missing institution in itu2011m2233
+Warning--missing institution in caas2014manual
+Warning--missing institution in tr362017
+Warning--empty year in Boros2004Irresistible
+
+Done.
+(There were 7 warnings)

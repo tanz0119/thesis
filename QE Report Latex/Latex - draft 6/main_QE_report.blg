@@ -1,0 +1,26 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: main_QE_report.aux
+A level-1 auxiliary file: fm6-publication.aux
+A level-1 auxiliary file: ch1-intro.aux
+A level-1 auxiliary file: ch2-literature_review.aux
+A level-1 auxiliary file: ch3-efficiency_improvements.aux
+A level-1 auxiliary file: ch4-HBD_ACS.aux
+A level-1 auxiliary file: ch5-conclu.aux
+A level-1 auxiliary file: bm1-appendix.aux
+The style file: IEEEtran.bst
+Database file #1: IEEEabrv.bib
+Database file #2: ref.bib
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty journal in jacobcognitive
+Warning--empty year in jacobcognitive
+Warning--missing institution in eurocontrol2010
+Warning--empty journal in BarbaSesar2011
+Warning--empty journal in budinger2011aeronautical
+Warning--missing institution in eurocontrol2007amacs
+Warning--empty journal in budinger2005technology
+Warning--empty year in zhou2015mac
+Warning--empty journal in khatun2017millimeter
+
+Done.
+(There were 9 warnings)

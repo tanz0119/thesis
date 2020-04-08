@@ -1,0 +1,31 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Multi-user system model with a FD ground station and (a) HD receivers or (b) FD receivers.}}{17}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Multi-user system model with a HD ground station and (a) HD receivers or (b) FD receivers.}}{17}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Users in power domain multiplexing are partitioned using transmission power levels.}}{20}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces A complex valued codeword constellation with 4 elements in MUSA. \cite {yuan2016multi}}}{21}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Overview of SI mitigation architectures. \cite {sahai2013impact}.}}{24}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces BER performance of QS-PQPSK and D8PSK (En route).}}{35}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces BER performance of QS-PQPSK and D8PSK (Arrival/Take-off).}}{35}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces BER performance of QS-PQPSK and D8PSK (Taxi).}}{36}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces BER performance of QS-PQPSK and D8PSK (Parking).}}{37}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Proposed STBC QS-PQPSK two-transmit, one-receive antenna scheme.}}{38}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces BER performance of STBC QS-PQPSK, QS-PQPSK, 8PSK and RQPSK in Rayleigh flat fading channel.}}{39}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces TDD (a) and FDD (b) based communications for the proposed STBC QS-PQPSK scheme.}}{40}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces BER performance of STBC QS-PQPSK, QS-PQPSK and D8PSK in both en route (left) and arrival/take-off (right) scenarios.}}{40}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces BER performance of STBC QS-PQPSK, QS-PQPSK and D8PSK in the taxi scenario.}}{41}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces BER performance of STBC QS-PQPSK, QS-PQPSK and D8PSK in the parking scenario.}}{42}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Air-Station 1 (AS-1) and Air-Station 2 (AS-2) operating in HD mode while communicating with the FD ground station (GS).}}{46}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Outage probability at GS (II detector) for phase noise strength $\gamma _{\phi }^2=-130dBm$.}}{61}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Finite SNR diversity gain at GS (II detector) for phase noise strength $\gamma _{\phi }^2=-130dBm$.}}{62}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Outage probability at AS-2 (II and SIC detectors) for $\alpha _{g,2}=1$, i.e., link between GS and AS-2 has same distance as the reference link ($d_{1,g}$).}}{63}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Finite SNR diversity gain at AS-2 (II and SIC detectors) for $\alpha _{g,2}=1$, i.e., link between GS and AS-2 has same distance as the reference link ($d_{1,g}$).}}{63}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces System level outage probability (II and SIC detectors) for $\alpha _{g,2}=1$,$\alpha _{g,g}=1$,$\gamma _{\phi }^2=-130dBm$, $\epsilon \in \{0.01, 0.001\}$.}}{65}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces System level finite SNR diversity gain (II and SIC detectors) for $\alpha _{g,2}=1$,$\alpha _{g,g}=1$,$\gamma _{\phi }^2=-130dBm$, $\epsilon \in \{0.01, 0.001\}$.}}{66}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Finite SNR DMT at GS (II detector) for $\gamma _{\phi }^2=-130dBm$, $\Omega _X=10dB$.}}{68}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Finite SNR DMT at AS-2 (II and SIC detector) for $\alpha _{g,2}=1$, $\Omega _X=10dB$.}}{69}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces System level finite SNR DMT (II and SIC detectors) for $\alpha _{g,2}=1$, $\alpha _{g,g}=1$, $\gamma _{\phi }^2=-130dBm$, $\Omega _X=10dB$.}}{70}
+\addvspace {10\p@ }
+\addvspace {10\p@ }

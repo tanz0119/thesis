@@ -1,0 +1,37 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces Summary of UAV Channel Modeling Considerations}}{19}
+\contentsline {table}{\numberline {2.2}{\ignorespaces Summary of Advantages and Disadvantages of the UAV Channel Modeling Approaches}}{19}
+\contentsline {table}{\numberline {2.3}{\ignorespaces Summary of Studies on SI Mitigation Architectures}}{23}
+\contentsline {table}{\numberline {2.4}{\ignorespaces Summary of Studies on Interference Management Strategies}}{30}
+\contentsline {table}{\numberline {2.5}{\ignorespaces Outage probability definitions of the II, SIC, and joint detectors at UAV-2.}}{34}
+\contentsline {table}{\numberline {2.6}{\ignorespaces References of finite SNR diversity gain and finite SNR DMT expressions for the II, SIC, and joint detectors at UAV-2.}}{37}
+\contentsline {table}{\numberline {2.7}{\ignorespaces Summary of Studies on NOMA Techniques}}{41}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Summary of Important Notations}}{52}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Simulation Parameters}}{65}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Summary of Important Notations}}{79}
+\contentsline {table}{\numberline {4.2}{\ignorespaces References for the outage probability of the benchmark schemes}}{83}
+\contentsline {table}{\numberline {4.3}{\ignorespaces References for the finite SNR diversity gains of the benchmark schemes}}{89}
+\contentsline {table}{\numberline {4.4}{\ignorespaces System Level HBD-UCS Performance Bottleneck for $\epsilon \in \{0.01, 0.001\}$}}{92}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Summary of Important Notations}}{105}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Summary of presented closed-form expressions for the Rician shadowed fading and Rician fading models}}{112}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Error margin of the outage probability at GS.}}{119}
+\contentsline {table}{\numberline {5.4}{\ignorespaces Error margin of the outage probability at the ii and joint detectors for $\alpha _{1,2}=0.5$.}}{122}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1}{\ignorespaces Summary of Important Notations}}{129}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {7.1}{\ignorespaces Summary of Important Notations}}{143}
+\contentsline {table}{\numberline {7.2}{\ignorespaces Simulation Parameters}}{152}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {8.1}{\ignorespaces Summary of Important Notations}}{163}
+\contentsline {table}{\numberline {8.2}{\ignorespaces Simulation Parameters}}{174}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

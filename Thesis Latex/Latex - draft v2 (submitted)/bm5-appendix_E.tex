@@ -1,0 +1,70 @@
+%---------------------------------------------------------------------------------
+\chapter{Mathematical Proofs in Chapter \ref{chap:NOMA_aided_multi_UAV_FD_HetNet}}
+\label{chap:Appendix_E}
+%---------------------------------------------------------------------------------
+
+\section{Proof of Ergodic Capacity at the MBS in the FD-HetNet} \label{NOMA_aided_multi_UAV_FD_HetNet_theorem_erg_cap_fd_noma_mbs_proof}
+From \cite[eq. (5)]{hamdi2010useful}, the instantaneous ergodic capacity of the MBS in the FD-HetNet can be written as:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray} \label{NOMA_aided_multi_UAV_FD_HetNet_theorem_erg_cap_fd_noma_mbs_proof_eq1}
+\ln\Big(1+SINR_{mbs}^{FD}\Big) & = & \int_{0}^{\infty} \frac{\exp(-z)}{z} \big[1-\exp\big(-z\rho  d_{mbs}^{-n} X_{mbs}\big)\big] \nonumber \\
+ & & \hspace{0cm} \times \exp\Bigg(-z\Bigg( \rho \sum_{i=1}^{N_U} d_i^{-n} X_{i} + \rho_{si} Y_{si,1} + \rho_{si}  Y_{si,2} \Bigg)\Bigg) dz_.
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Thereafter, the ergodic capacity $\mathcal{C}_{mbs}^{FD}$ conditioned on $d_{mbs}$ and $d_i$ can be given as:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray} \label{NOMA_aided_multi_UAV_FD_HetNet_theorem_erg_cap_fd_noma_mbs_proof_eq2}
+E\Big\{\ln\Big(1+SINR_{mbs}^{FD}\Big)\Big|d_{mbs}, d_i \Big\} & = & \int_{0}^{\infty} \frac{\exp(-z)}{z} \Bigg(1-M_{X_{mbs}}\Big(z\rho  d_{mbs}^{-n}\Big)\Bigg) \nonumber \\
+ & & \hspace{0cm} \times \Bigg( \prod_{i=1}^{N_U} M_{X_i}\Big(z\rho  d_i^{-n}\Big) \Bigg) M_{Y_{si,1}}\Big(z\rho_{si} \Big) M_{Y_{si,2}}\Big(z\rho_{si} \Big) dz_.
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Averaging (\ref{NOMA_aided_multi_UAV_FD_HetNet_theorem_erg_cap_fd_noma_mbs_proof_eq2}) over the PDFs of $d_{mbs}$ and $d_i$ yields (\ref{NOMA_aided_multi_UAV_FD_HetNet_fd_noma_mbs}). This completes the proof.
+
+\section{Proof of Ergodic Capacity at DL UAV-$j$ in the FD-HetNet} \label{NOMA_aided_multi_UAV_FD_HetNet_theorem_erg_cap_fd_noma_DL_uav_j_proof}
+
+From (\ref{NOMA_aided_multi_UAV_FD_HetNet_fd_noma_uav_j_sinr}), $SINR_{j}^{FD}$ comprises uncorrelated RVs, i.e., $Y_{i,j}$ and $Y_{mbs,j}$, and a correlated RV $X_j$. Using \cite[eq. (5)]{hamdi2010useful}, the instantaneous ergodic capacity of DL UAV-$j$ in the FD-HetNet is:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray} \label{NOMA_aided_multi_UAV_FD_HetNet_theorem_erg_cap_fd_noma_uav_j_proof_eq1}
+\ln\Big(1+SINR_{j}^{FD}\Big) & = & \int_{0}^{\infty} \frac{\exp(-z)}{z} \Bigg[\exp\Bigg(-z \frac{\rho }{d_j^{n}} X_j \sum_{k=1}^{j-1}\alpha_k \Bigg) - \exp\Bigg(-z \frac{\rho }{d_j^{n}} X_j \sum_{k=1}^{j}\alpha_k \Bigg) \Bigg] \nonumber \\
+ & & \hspace{0cm} \times \exp\Bigg(-z \rho  \Bigg[ d_{mbs,j}^{-n} Y_{mbs,j} + \sum_{i=1}^{N_U} d_{i,j}^{-n} Y_{i,j} \Bigg]\Bigg) dz_,
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+From (\ref{NOMA_aided_multi_UAV_FD_HetNet_theorem_erg_cap_fd_noma_uav_j_proof_eq1}), the ergodic capacity $\mathcal{C}_{j}^{FD}$ conditioned on $d_j$, $d_{i,j}$, and $d_{mbs,j}$ is:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray} \label{NOMA_aided_multi_UAV_FD_HetNet_theorem_erg_cap_fd_noma_uav_j_proof_eq2}
+& & \hspace{-3cm} E\Big\{\ln\Big(1+SINR_{j}^{FD}\Big)\Big|d_j, d_{i,j}, d_{mbs,j} \Big\} \nonumber \\
+ & = & \int_{0}^{\infty} \frac{\exp(-z)}{z} \Bigg[M_{X_j}\Bigg(z \frac{\rho }{d_j^{n}} \sum_{k=1}^{j-1}\alpha_k \Bigg) - M_{X_j}\Bigg(z \frac{\rho }{d_j^{n}} \sum_{k=1}^{j}\alpha_k\Bigg)\Bigg]  \nonumber \\
+ & & \hspace{0cm} \times  M_{Y_{mbs,j}}\Big(z \rho  d_{mbs,j}^{-n} \Big) \Bigg( \prod_{i=1}^{N_U} M_{Y_{i,j}}\Big(z \rho  d_{i,j}^{-n}\Big) \Bigg) dz_,
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Subsequently, averaging (\ref{NOMA_aided_multi_UAV_FD_HetNet_theorem_erg_cap_fd_noma_uav_j_proof_eq2}) over the PDFs of $d_j$, $d_{i,j}$, and $d_{mbs,j}$ yields:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray} \label{NOMA_aided_multi_UAV_FD_HetNet_theorem_erg_cap_fd_noma_uav_i_proof_eqe3}
+E\Big\{\ln\Big(1+SINR_{j}^{FD}\Big) \Big\} & = & \int_{L_{m,j}}^{L_{p,j}} \int_{0}^{\infty} \frac{\exp(-z)}{z} \Bigg[M_{X_j}\Bigg(z \frac{\rho }{w_j^{n}} \sum_{k=1}^{j-1}\alpha_k \Bigg) - M_{X_j}\Bigg(z \frac{\rho }{w_j^{n}} \sum_{k=1}^{j}\alpha_k\Bigg)\Bigg] \nonumber \\
+ & & \times \Bigg( \int_{H_{mbs,j}}^{L_{q,mbs}}  M_{Y_{mbs,j}}\Big(z \rho  w_{mbs,j}^{-n} \Big) f_{d_{mbs,j}}(w_{mbs,j}|w_{j}) dw_{mbs,j} \nonumber \\
+ & & \hspace{1cm} + \int_{L_{q,mbs}}^{L_{r,mbs}} M_{Y_{mbs,j}}\Big(z \rho  w_{mbs,j}^{-n} \Big) f_{d_{mbs,j}}(w_{mbs,j}|w_{j}) dw_{mbs,j} \Bigg) \nonumber \\
+ & & \times \Bigg( \prod_{i=1}^{N_U} \Bigg[\int_{H_{i,j}}^{L_{q,i}} M_{Y_{i,j}}\Big(z \rho  w_{i,j}^{-n}\Big) f_{d_{i,j}}(w_{i,j}|w_{j}) dw_{i,j} \nonumber \\
+ & & \hspace{1cm} + \int_{L_{q,i}}^{L_{r,i}} M_{Y_{i,j}}\Big(z \rho  w_{i,j}^{-n}\Big) f_{d_{i,j}}(w_{i,j}|w_{j}) dw_{i,j} \Bigg] \Bigg) f_{d_{j}}(w_j) dz {dw_j}_. \nonumber \\
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Thereafter, (\ref{NOMA_aided_multi_UAV_FD_HetNet_fd_noma_DL_uav_j}) is obtained after simplifying (\ref{NOMA_aided_multi_UAV_FD_HetNet_theorem_erg_cap_fd_noma_uav_i_proof_eqe3}). This completes the proof.
+
+\section{Proof of Ergodic Capacity Gain at the MBS, UL UAV-$i$, and DL UAV-$j$ in the FD-HetNet over the HD-HetNet} \label{NOMA_aided_multi_UAV_FD_HetNet_corollary_erg_cap_gain_proof}
+
+Starting with $\Delta_{mbs}$, the exact expression can be written in terms of $\mathcal{C}_{mbs}^{FD}$ in (\ref{NOMA_aided_multi_UAV_FD_HetNet_fd_noma_mbs}) and $\mathcal{C}_{mbs}^{HD}$ in (\ref{NOMA_aided_multi_UAV_FD_HetNet_hd_noma_mbs}) as:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray} \label{NOMA_aided_multi_UAV_FD_HetNet_corollary_erg_cap_gain_proof_eq1}
+\Delta_{mbs} & = & \mathcal{C}_{mbs}^{FD} - \mathcal{C}_{mbs}^{HD} \nonumber \\
+ & = & \int_{L_{m,mbs}}^{L_{p,mbs}} \int_{0}^{\infty} \frac{\exp(-z)}{z} \Bigg(1-M_{X_{mbs}}\Big(z\rho  w_{mbs}^{-n}\Big)\Bigg) \nonumber \\
+ & & \hspace{1cm} \times \Bigg( \prod_{i=1}^{N_U} \tau_i\big(z\rho\big) \Bigg) M_{Y_{si,1}}\big(z\rho_{si}\big) M_{Y_{si,2}}\big(z\rho_{si} \big) f_{d_{mbs}}(w_{mbs}) dz dw_{mbs} \nonumber \\
+ & &  - \frac{1}{2} \int_{L_{m,mbs}}^{L_{p,mbs}} \int_{0}^{\infty} \frac{\exp(-z)}{z} \Bigg(1-M_{X_{mbs}}\Big(z\rho  w_{mbs}^{-n}\Big)\Bigg) \nonumber \\
+ & & \hspace{1cm} \times \Bigg( \prod_{i=1}^{N_U} \tau_i\big(z\rho\big) \Bigg) f_{d_{mbs}}(w_{mbs}) {dz dw_{mbs}}_.
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Thereafter, (\ref{NOMA_aided_multi_UAV_FD_HetNet_erg_cap_gain_mbs}) is obtained after some algebraic simplification. The exact expressions for $\Delta_{i}$ and $\Delta_{j}$ are also obtained in the same manner. This completes the proof.

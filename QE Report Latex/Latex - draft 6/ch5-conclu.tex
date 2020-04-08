@@ -1,0 +1,97 @@
+%---------------------------------------------------------------------------------
+\chapter{Conclusions and Future Work}
+%---------------------------------------------------------------------------------
+\section{Conclusion}
+With growing air traffic projected in the near future, the issue of spectral efficiency in aeronautical communications for both manned and unmanned aerial vehicles will be a critical problem that must be addressed in due time by the aviation industry. As a first step towards resolving the spectral efficiency problem, the state-of-the-art in aeronautical communications is presented, with AeroMACS, satellite communications and LDACS earmarked as candidate technologies for airport, remote and continental communications respectively. A literature survey of spectral efficiency techniques in general communications was conducted, encompassing concepts ranging from CR and D2D communications to NOMA and IBFD radio. The possible adaptation of earlier highlighted spectral efficiency approaches to further improve spectral efficiency in the aeronautical context was also discussed as part of the literature survey as possible research opportunities in aeronautical communications.
+
+Following the literature survey, the Quad State-Paired QPSK (QS-PQPSK) was compared against D8PSK (VDL2) under various aeronautical communication channels to evaluate aeronautical spectral efficiency. Simulations showed that QSPQPSK BER performance outclassed D8PSK under all simulated scenarios. To further improve the efficiency of aeronautical waveforms, a new modulation scheme called the Space Time Block Coded QS-PQPSK (STBC QS-PQPSK) was proposed for A/G communications. Simulations also showed STBC QS-PQPSK having superior BER performance under all simulated scenarios when compared against QSPQPSK and D8PSK, underscoring STBC QS-PQPSK as a suitable efficient aeronautical waveform. 
+
+To further improve aeronautical spectral efficiency and achievable data rate, a HBD-ACS was proposed, consisting of a FD enabled GS and interference ignorant HD ASs. Closed-form expressions pertaining to the outage probability and finite SNR diversity gain of the proposed HBD-ACS were derived and presented for both the II and SIC detectors over Rician fading channels. Similar expressions for HD-ACS were also presented as benchmark comparison. It was found that residual SI and inter-AS interference are the main performance limiting factors at both node and system level. It was also established that the II and SIC detectors are suited for weak and strong inter-AS interference scenarios, respectively. When evaluated against HD-ACS in low SNR regimes, the proposed HBD-ACS achieves superior outage probability and diversity gains. Finite SNR DMT analysis also revealed that the proposed HBD-ACS can achieve interference-free diversity gains when residual SI is sufficiently mitigated. Therefore, the present work shows that the proposed HBD-ACS attains better reliability and higher throughput than existing HD-ACS at low-to-moderate SNRs.
+
+\section{Future Work}
+
+\subsection{Advance Multiplexing Schemes for Aeronautical Communications}
+% Introduce NOMA as a potential multiplexing scheme for aeronautical communications
+In the present work, the issue of spectral efficiency in aeronautical communications was tackled from both the waveform and communication system perspective. To further improve spectral efficiency, advance multiplexing schemes is an area that can be further investigated. In particular, NOMA, which was discussed in Chapter \ref{chap:lit_review}, is an attractive multiplexing scheme to investigate in the context of aeronautical communications since it enables sharing of the same pool of spectral resources.
+
+% Modulation schemes such as the proposed QS-PQPSK can be analyzed in the context of NOMA-based aeronautical communications
+% As a first step, the theoretical performance analysis of QS-PQPSK must first be accomplished
+To this end, the QS-PQPSK modulation scheme, which was proposed in Chapter \ref{chap:improvements_waveforms}, can be adopted for use with NOMA in aeronautical communications. However, the theoretical performance analysis of QS-PQPSK must first be accomplished. In Chapter \ref{chap:improvements_waveforms}, QS-PQPSK and STBC QSPQPSK were simulated over fading channels that are commonly encountered in aeronautical communications. The resultant BER of QS-PQPSK and STBC QSPQPSK was then compared against similar modulation techniques that transmit equivalent number of bits per symbol. While such simulation-based studies are useful in evaluating BER performance in specific scenarios, theoretical analysis of QS-PQPSK and STBC QSPQPSK  must not be ignored. In this aspect, the theoretical BER of QS-PQPSK and STBC QSPQPSK over AWGN, Rician fading channels and Rayleigh fading channels can be investigated. 
+
+% The theoretical analysis of QS-PQPSK can be used to analyze multiplexing schemes proposed for NOMA
+% Specifically mention MUSA as a potential area to explore, provide more references if necessary
+% QS-PQPSK can be used in MUSA, together with polyphase codes.
+% Elaborate on the advantages of polyphase codes
+% Conclude this section
+The theoretical BER analysis can serve as a platform to evaluate the performance of QS-PQPSK and STBC QS-PQPSK in NOMA-based aeronautical communications. One potential multiplexing scheme for NOMA that can be studied is Multi-User Shared Access (MUSA) that was proposed by Yuan et al. \cite{yuan2016multi} and discussed in Chapter \ref{chap:lit_review}. In particular, QS-PQPSK can be used in MUSA together with polyphase codes and constellation rotation concepts, e.g., SSD, to further improve aeronautical spectral efficiency. In particular, it was shown by Chu \cite{chu1972polyphase} that polyphase codes can be constructed using complex-valued exponential codewords with low periodic autocorrelation. Therefore, there is great potential to explore adapting polyphase codes with QS-PQPSK in NOMA-based aeronautical communications, on top of the possibility of designing codes specific to aeronautical communications to boost BER performance. Together, the proposed solutions and future works will address the need for improved spectral utilization and managing the coexistence of existing and future aeronautical communication systems.
+
+
+\subsection{Joint Detectors for HBD-ACS}
+
+In Chapter \ref{chap:HBD_ACS}, both the II and SIC interference management approaches were analyzed. It was then established that the II and SIC approaches worked well in weak and strong inter-AS interference scenarios, respectively. However, there exists a gap in effective interference management for moderate interference scenarios. To this end, the JD approach is an alternative interference management technique that is effective when interference is sufficiently strong \cite{zahavi2017cooperation,zhou2015mac,shubhi2017joint,blomer2009transmission}. It was noted in \cite{zahavi2017cooperation} that the joint detector is optimal from the sum-rate perspective, when interference is sufficiently strong in an AWGN channel. 
+
+In the open literature, the analysis of the joint detector from the perspective of Rician fading channels is not available in the literature and thus, there is potential to evaluate the performance of a JD-based HBD-ACS over Rician fading channels. In particular, the same mathematical framework in Chapter \ref{chap:HBD_ACS} can be used to derive closed-form expression for outage probability and finite SNR diversity gain in fixed transmission rate HBD-ACS with JD. Similar closed-form expressions for finite SNR diversity gain in variable transmission rate HBD-ACS with JD can also be obtained. These closed-form expressions enable HBD-ACS to be evaluated for all inter-AS interference levels to be analyzed in detail, when SI at the FD-enabled GS is considered. The potential performance advantage of JD over II and SIC at node and system level can also be quantified for low, moderate, and high SNR regimes as well as for different Rician $K$ factors on the SOI and interfering Rician fading channels.
+ 
+\subsection{MGR Analysis of HBD-ACS}
+
+The system model in Chapter \ref{chap:HBD_ACS} assumes the same multiplexing gain ($r_f$) at all nodes in the HBD-ACS. However, such an assumption may not be realistic due to different QoS requirements at the various nodes. Therefore, future works should assume different multiplexing gains at all nodes in the HBD-ACS. Furthermore, assuming a different multiplexing gain at each node enables analysis of the MGR of the HBD-ACS. As discussed earlier in Chapter \ref{chap:lit_review}, the MGR indicates the multiplexing gains of the interfering and desired transmitters that achieves non-zero diversity gains in multi-user channels. In interference-limited systems, such as the HBD-ACS, MGRs can be used to identify the supported range of Quality-of-Service (QoS) requirements. For instance, the finite SNR diversity gains of the SIC and JD detectors can be plotted for different multiplexing gains at the desired and interfering nodes to study the impact on reliability caused by different transmission rates and Rician $K$ factors on the desired and interfering links. Based on the finite SNR diversity gains plotted for different multiplexing gains, MGRs for different inter-AS interference levels can be obtained and suitable detectors can thus be chosen based on desired QoS requirements.
+
+
+% not done for aeronautical communications, refer to JD journal to justify MGR analysis.
+% current work considers same rf in the whole system. we need to consider different rf in the system model. 
+
+\subsection{Finite SNR Analysis in HBD-ACS}
+% finite SNR DMT provides theoretical lowerbound BER performance, the next step will be to extend the mathematical framework in both journal papers to evaluate the lowerbound BER of the proposed HBD-ACS. Refer to Tse and Zheng.
+
+It is known that diversity gain, discussed in Chapter \ref{chap:HBD_ACS}, is an information theoretic-based metric that measures the decay rate of a wireless system's outage probability. However, diversity gain can also be used to analyze the theoretical BER performance of a wireless system. In particular, Zheng and Tse \cite{zheng2003diversity} noted that a wireless system with coded communications has the following lower bound detection error probability ($P_e(\Omega)$) at high SNR
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray}  \label{detect_error_lb}
+ P_e(\Omega) \geq \Omega^{-d(r)},
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+where $\Omega$, $d$ and $r$ are respectively, the average received power, diversity gain and multiplexing gain, as defined in Chapter \ref{chap:HBD_ACS}. The analysis of detection error probability in MIMO and cooperative systems has since been studied in \cite{el2006mimo} and \cite{ishibashi2015diversity}, respectively, from the diversity gain perspective. To this end, similar analysis can also be performed to analyze the theoretical BER performance of HBD-ACS at asymptotic SNRs under the same mathematical framework in Chapter \ref{chap:HBD_ACS}. Doing so will provide a platform to evaluate the effectiveness of code designs that can be optimized for aeronautical communications.
+
+\subsection{Performance Analysis of HBD-ACS in Shadowed Rician Fading Environments}
+% mobility can be ignored if AS are drones. However, shadowing is present regardless of fast or slow moving AS. 
+% include the necessary references from aeronautical communications to build this case
+
+% Can be extended to correlated shadowed Rician fading channels
+
+In Chapter \ref{chap:HBD_ACS}, both desired and interfering links were assumed to be experiencing Rician fading. However, channel impairments such as mobility and shadowing were not considered in the system model. Although it could be argued that mobility can be ignored for slow-moving or even stationary ASs, e.g., UAVs, the effect of shadowing, i.e., large-scale fading, must not be discounted since it affects communications regardless of AS mobility.
+
+In aeronautical communications, shadowing can occur due to the blockage of the LOS component by terrain, buildings or aircraft body \cite{matolak2012air,matolak2015unmanned,sun2017air_shadowing}. The effect of shadowing was also reported in a study by Sun and Matolak \cite{sun2017air_hilly}, who noted that the LOS component was occasionally blocked by mountainous terrain during empirical data collection. In other words, shadowed Rician fading was experienced, but it is worth pointing out that Sun and Matolak \cite{sun2017air_hilly} were not able to include the effects of shadowing into the resultant analysis due to hardware limitations. However, other studies related to aeronautical communications have been noted where the effect of shadowing was taken into consideration \cite{feng2006path,khatun2017millimeter,pokkunuru2017capacity,al2014optimal}. Nonetheless, the performance of ACSs, .e.g, HBD-ACS, experiencing shadowed Rician fading has not been extensively studied in the aeronautical communications literature. 
+
+To this end, the $\kappa-\mu$ shadowed fading model has been found to be well suited to model various shadowed fading environments, including shadowed Rician fading \cite{paris2014statistical,moreno2016kappa,chun2017comprehensive,kumar2017outage}, with applications noted in land-mobile satellite (LMS) \cite{moreno2016kappa,chun2017comprehensive} and body-centric fading channels \cite{moreno2016kappa,chun2017comprehensive,cotton2015human}. The $\kappa-\mu$ shadowed distribution has $\kappa$, $\mu$ and $m$ as shaping parameters. In particular, $\kappa$, $\mu$ and $m$ respectively indicate the ratio between the total power of the dominant and scattered components, the number of multipath clusters and the shadowing severity \cite{chun2017comprehensive}. The shadowed Rician fading channel ($h$), which is of interest in subsequent works, can be obtained with the following PDF by setting $\mu=1$ and $\kappa = K$ \cite[Table I]{chun2017comprehensive} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray}  \label{shad_rician_pdf}
+f_h(x) = \frac{m^m(1+K)}{\overline{h}(K+m)^m} \exp\Bigg(-\frac{1+K}{\overline{h}}x\Bigg) {}_1{F_1}\Bigg(m;1;\frac{K(1+K)}{(K+m)\overline{h}}x\Bigg),
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+where $K$ is the Rician $K$ factor and $\overline{h} = E\{h\}$. The functions, $E\{\bullet\}$ and ${}_1{F_1}(\bullet)$, represents expectation function and the confluent Hypergeometric function \cite{gradshteyn2014table}, respectively. Furthermore, it has been pointed out by Suman and Sheetal \cite{kumar2017outage} that (\ref{shad_rician_pdf}) is in agreement with the shadowed Rician fading LMS channel proposed in \cite[eq. (6)]{abdi2003new}.
+
+As mentioned earlier, the performance of the proposed HBD-ACS was studied in Chapter \ref{chap:HBD_ACS} for Rician fading channels. With the PDF given in (\ref{shad_rician_pdf}), it is now possible to extend similar analysis done in Chapter \ref{chap:HBD_ACS} to evaluate the proposed HBD-ACS under shadowed Rician fading for the II, SIC and joint detectors. However, such an endeavor requires (\ref{shad_rician_pdf}) to be expressed as a power series, and knowledge of higher order moments of $h$. For the former, it is worth pointing out that the confluent Hypergeometric function (${}_1{F_1}(a;b;z)$) can be expressed as \cite{parthasarathy2017coverage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray}  \label{hyp_geo_func}
+{}_1{F_1}(a;b;z) = \sum_{l\geq0} \frac{(a)_l}{(b)_l}\frac{z^l}{l!},
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+where $(a)_l = \frac{\Gamma(a+l)}{\Gamma(a)}$ and $\Gamma(a) = (a-1)!$. Substituting (\ref{hyp_geo_func}) into (\ref{shad_rician_pdf}), and along with Cauchy product manipulations \cite{bartoszewicz2012algebrability}, results in a mathematically tractable shadowed Rician fading PDF expressed as a power series. For knowledge of the $n$-th moment of $h$, i.e., $E\{h^n\}$, a closed-form expression expression is available, as shown below \cite{chun2017comprehensive}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray}
+E\{h^n\} = \Bigg(\frac{\overline{h}}{1+K}\Bigg)^n \Gamma(1+n) \Bigg(\frac{m}{K+m}\Bigg)^{m-1-n} {}_2{F_1}\Bigg(1-m,1+n;1;-\frac{K}{m}\Bigg),
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+where ${}_2{F_1}(a,b;c;z) = \sum_{n\geq0} \frac{(a)_n (b)_n}{(c)_n} \frac{z^n}{n!}$.
+
+With a mathematically tractable shadowed Rician fading PDF, obtained as a power series, and closed-form expression of the higher order moments of $h$, the outage probability and finite SNR DMT analysis of HBD-ACS under shadowed Rician fading can be conducted for the II, SIC and joint detectors. Furthermore, it is of interest to study the impact of severe shadowing, obtained for small values of $m$ \cite{chun2017comprehensive}, for the various detectors since LOS shadowing can be encountered in A/G communications over urban/suburban and mountainous envinronments.
+
+\subsection{Transitioning towards FD-enabled ACS}
+To attain superior spectral efficiency improvements in aeronautical communications, the transition towards an FD-enabled ACS architecture, i.e., FD-ACS, is an attractive option to explore. Having all nodes in the ACS operating in FD mode effectively doubles the spectral efficiency of ACSs. In addition, outage probability, finite SNR DMT and finite SNR MGR analysis can be readily extended towards analyzing the performance of FD-ACSs. The proposed spectral efficiency techniques in the earlier subsections, e.g., polyphase codes with QS-PQPSK in NOMA-based ACSs and JD-based HBD-ACS, can also be implemented in FD-ACS. As SI is the main limitation in FD systems, SI mitigation architectures in the aeronautical communications context will have to be properly modeled to accurately gauge system performance. To this end, the shadowed Rician fading model in (\ref{shad_rician_pdf}) can be used to model SI channels with obstructed SI links, enabling passive SI suppression architecture to be analyzed for FD-ACSs.
+
+
+
+
+
+
+
+

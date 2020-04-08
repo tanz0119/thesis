@@ -1,0 +1,86 @@
+\contentsline {section}{\hbox to\@tempdima {\hfil }\hspace {-0.35in}{\bf Abstract}}{i}
+\contentsline {section}{\hbox to\@tempdima {\hfil }\hspace {-.35in}{\bf Acknowledgments}}{iii}
+\contentsline {section}{\hbox to\@tempdima {\hfil }\hspace {-.35in}{\bf List of Figures}}{viii}
+\contentsline {section}{\hbox to\@tempdima {\hfil }\hspace {-.35in}{\bf List of Tables}}{x}
+\contentsline {section}{\hbox to\@tempdima {\hfil }\hspace {-.35in}{\bf List of Abbreviations}}{xi}
+\contentsline {section}{\hbox to\@tempdima {\hfil }\hspace {-.35in}{\bf List of Publications}}{xiv}
+\contentsline {chapter}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {1.1}Background}{1}
+\contentsline {section}{\numberline {1.2}Motivations}{4}
+\contentsline {section}{\numberline {1.3}Objective of Work}{5}
+\contentsline {subsection}{\numberline {1.3.1}Major Milestones: Modulation Schemes}{5}
+\contentsline {subsection}{\numberline {1.3.2}Major Milestones: HBD-ACS}{6}
+\contentsline {section}{\numberline {1.4}Report Outline}{7}
+\contentsline {chapter}{\numberline {2}Spectral Efficiency Techniques in Aeronautical Communications: A Literature Review}{8}
+\contentsline {section}{\numberline {2.1}Introduction}{8}
+\contentsline {section}{\numberline {2.2}An Overview of Aeronautical Communications}{9}
+\contentsline {section}{\numberline {2.3}Aeronautical Channel Modeling}{13}
+\contentsline {section}{\numberline {2.4}Potential Spectral Efficiency Techniques in Aeronautical Communications}{16}
+\contentsline {subsection}{\numberline {2.4.1}Modulation and Multiplexing Schemes for Aeronautical Communications}{18}
+\contentsline {subsubsection}{\numberline {2.4.1.1}Modulation Schemes for Aeronautical Communications}{18}
+\contentsline {subsubsection}{\numberline {2.4.1.2}Multiplexing Schemes for Aeronautical Communications}{19}
+\contentsline {subsubsection}{\numberline {2.4.1.3}Open Research Problems for Modulation and Multiplexing Schemes in Aeronautical Communications}{22}
+\contentsline {subsection}{\numberline {2.4.2}In-Band Full-Duplex Radio Systems for Aeronautical Communications}{23}
+\contentsline {subsubsection}{\numberline {2.4.2.1}SI Cancellation Architectures and the Associated Considerations in Aeronautical Communications}{23}
+\contentsline {subsubsection}{\numberline {2.4.2.2}Hybrid-Duplex Systems for Aeronautical Communications}{25}
+\contentsline {subsubsection}{\numberline {2.4.2.3}Integration of In-Band Full-Duplex Cognitive Radio Systems for Aeronautical Communications}{27}
+\contentsline {subsubsection}{\numberline {2.4.2.4}Open Research Problems of In-Band Full-Duplex Systems for Aeronautical Communications}{29}
+\contentsline {section}{\numberline {2.5}Summary}{30}
+\contentsline {chapter}{\numberline {3}Improvements to Aeronautical Waveforms}{32}
+\contentsline {section}{\numberline {3.1}Introduction}{32}
+\contentsline {section}{\numberline {3.2}Signal, Noise and Aeronautical Channel Model}{32}
+\contentsline {subsection}{\numberline {3.2.1}Signal and Noise Model}{32}
+\contentsline {subsection}{\numberline {3.2.2}Aeronautical Channel Models}{33}
+\contentsline {subsubsection}{\numberline {3.2.2.1}En route Scenario}{34}
+\contentsline {subsubsection}{\numberline {3.2.2.2}Arrival/Take-off Scenario}{34}
+\contentsline {subsubsection}{\numberline {3.2.2.3}Taxi Scenario}{34}
+\contentsline {subsubsection}{\numberline {3.2.2.4}Parking Scenario}{34}
+\contentsline {section}{\numberline {3.3}Performance of QS-PQPSK in Aeronautical Communication Channels}{34}
+\contentsline {section}{\numberline {3.4}Performance of STBC QS-PQPSK in Aeronautical Communication Channels}{36}
+\contentsline {subsection}{\numberline {3.4.1}A/G Communications}{37}
+\contentsline {subsection}{\numberline {3.4.2}G/A Communications}{38}
+\contentsline {section}{\numberline {3.5}Summary}{41}
+\contentsline {chapter}{\numberline {4}A Hybrid-Duplex System for Aeronautical Communications}{43}
+\contentsline {section}{\numberline {4.1}Introduction}{43}
+\contentsline {subsection}{\numberline {4.1.1}Related Literature}{43}
+\contentsline {section}{\numberline {4.2}System Model}{45}
+\contentsline {subsection}{\numberline {4.2.1}Ground Station}{47}
+\contentsline {subsection}{\numberline {4.2.2}Air-Station 2}{48}
+\contentsline {section}{\numberline {4.3}Calculation of Outage Probabilities}{48}
+\contentsline {subsection}{\numberline {4.3.1}Hybrid-Duplex Outage Probability}{48}
+\contentsline {subsubsection}{\numberline {4.3.1.1}Ground Station}{49}
+\contentsline {subsubsection}{\numberline {4.3.1.2}Air-Station 2 (Interference Ignorant Detector)}{50}
+\contentsline {subsubsection}{\numberline {4.3.1.3}Air-Station 2 (Successive Interference Cancellation Detector)}{51}
+\contentsline {subsection}{\numberline {4.3.2}Half-Duplex Outage Probability}{52}
+\contentsline {subsection}{\numberline {4.3.3}System Level Outage Probability}{52}
+\contentsline {section}{\numberline {4.4}Finite SNR Analysis}{53}
+\contentsline {subsection}{\numberline {4.4.1}Mathematical Preliminaries}{53}
+\contentsline {subsubsection}{\numberline {4.4.1.1}Finite SNR Diversity Gain}{53}
+\contentsline {subsubsection}{\numberline {4.4.1.2}Finite SNR DMT Parameters}{53}
+\contentsline {subsection}{\numberline {4.4.2}Finite SNR Diversity Gain for HBD Systems}{55}
+\contentsline {subsection}{\numberline {4.4.3}Finite SNR Diversity Gain for HD Systems}{57}
+\contentsline {subsection}{\numberline {4.4.4}Finite SNR DMT Analysis for HBD Systems}{58}
+\contentsline {subsection}{\numberline {4.4.5}Finite SNR DMT Analysis for HD Systems}{59}
+\contentsline {subsection}{\numberline {4.4.6}System Level Finite SNR Diversity Gain and DMT}{60}
+\contentsline {section}{\numberline {4.5}Numerical Results}{60}
+\contentsline {subsection}{\numberline {4.5.1}Finite SNR Diversity Gain and Outage Analysis}{61}
+\contentsline {subsubsection}{\numberline {4.5.1.1}Impact of Residual SI at GS}{61}
+\contentsline {subsubsection}{\numberline {4.5.1.2}Impact of Interference at AS-2}{62}
+\contentsline {subsubsection}{\numberline {4.5.1.3}Impact of Interference at System Level}{65}
+\contentsline {subsection}{\numberline {4.5.2}Finite SNR DMT Analysis}{67}
+\contentsline {subsubsection}{\numberline {4.5.2.1}Impact of Residual SI at GS}{67}
+\contentsline {subsubsection}{\numberline {4.5.2.2}Impact of Interference at AS-2}{68}
+\contentsline {subsubsection}{\numberline {4.5.2.3}Impact of Interference at System Level}{70}
+\contentsline {section}{\numberline {4.6}Summary}{71}
+\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{73}
+\contentsline {section}{\numberline {5.1}Conclusion}{73}
+\contentsline {section}{\numberline {5.2}Future Work}{74}
+\contentsline {subsection}{\numberline {5.2.1}Advance Multiplexing Schemes for Aeronautical Communications}{74}
+\contentsline {subsection}{\numberline {5.2.2}Joint Detectors for HBD-ACS}{75}
+\contentsline {subsection}{\numberline {5.2.3}MGR Analysis of HBD-ACS}{76}
+\contentsline {subsection}{\numberline {5.2.4}Finite SNR Analysis in HBD-ACS}{76}
+\contentsline {subsection}{\numberline {5.2.5}Performance Analysis of HBD-ACS in Shadowed Rician Fading Environments}{77}
+\contentsline {subsection}{\numberline {5.2.6}Transitioning towards FD-enabled ACS}{79}
+\contentsline {chapter}{\numberline {A}Appendix}{80}
+\contentsline {section}{\numberline {A.1}Proof of (4.10\hbox {})}{80}
+\contentsline {chapter}{References}{82}

@@ -1,0 +1,16 @@
+%---------------------------------------------------------------------------------
+\chapter{Mathematical Proofs in Chapter \ref{chap:HBD_multi_UAV}}
+\label{chap:Appendix_D}
+%---------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Proof of Outage Probability for the Outage Event $\mathcal{O}$ at an Arbitrary Receiver} \label{HBD_multi_UAV_lemma_P_out_proof}
+From \cite[eq. (6)]{ernest2019outage}, the conditional outage probability $Pr\big(\mathcal{O}|d_i, d_j\big)$ at receiver $i$ is: 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eqnarray} 
+Pr\big(\mathcal{O}|d_i, d_j\big) \approx \sum_{q=0}^{K_{tr}} \sum_{l_1+\ldots+l_{N-i+1}=q+1} \hspace{-0.2cm} \alpha\big(q,\overline{P}_i d_i^{-n},K_{i},\gamma\big) \binom{l_1 + \ldots + l_{N-i+1}}{l_1,\ldots, l_{N-i+1}} \prod_{j=1}^{N-i} E\Big\{\big(X_{j}d_j^{-n}\big)^{l_j}\Big\}_.
+\end{eqnarray}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Thereafter, averaging $Pr\big(\mathcal{O}|d_i, d_j\big)$ over the respective distributions of $d_i$ and $d_j$ yields Lemma \ref{HBD_multi_UAV_lemma_P_out}. This completes the proof.
+
+

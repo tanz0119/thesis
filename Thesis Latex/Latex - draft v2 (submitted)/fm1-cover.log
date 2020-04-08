@@ -1,0 +1,30 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=latex 2019.8.16)  29 NOV 2019 16:39
+entering extended mode
+**./fm1-cover.tex
+(fm1-cover.tex
+LaTeX2e <2018-12-01>
+! Undefined control sequence.
+l.28 \maketitle
+               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+)
+! Emergency stop.
+<*> ./fm1-cover.tex
+                   
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 12 strings out of 492896
+ 359 string characters out of 3122360
+ 57621 words of memory out of 3000000
+ 4028 multiletter control sequences out of 15000+200000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 5i,0n,3p,129b,8s stack positions out of 5000i,500n,10000p,200000b,50000s
+No pages of output.

@@ -1,0 +1,1730 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=latex 2020.2.19)  8 APR 2020 15:32
+entering extended mode
+**./main_thesis.tex
+(main_thesis.tex
+LaTeX2e <2018-04-01> patch level 5
+(setting.tex ("C:\Program Files\MiKTeX 2.9\tex\latex\base\report.cls"
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size12.clo"
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@chapter=\count81
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@subparagraph=\count86
+\c@figure=\count87
+\c@table=\count88
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks14
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks15
+\ex@=\dimen103
+)) ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen104
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count89
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count90
+\leftroot@=\count91
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count92
+\DOTSCASE@=\count93
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count94
+\c@MaxMatrixCols=\count95
+\dotsspace@=\muskip10
+\c@parentequation=\count96
+\dspbrk@lvl=\count97
+\tag@help=\toks16
+\row@=\count98
+\column@=\count99
+\maxfields@=\count100
+\andhelp@=\toks17
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks18
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\epsfig.sty"
+Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks20
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: dvips.def on input line 99.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\dvips.def"
+File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
+))
+\Gin@req@height=\dimen112
+\Gin@req@width=\dimen113
+)
+\epsfxsize=\dimen114
+\epsfysize=\dimen115
+) (fancyheadings.sty
+\headrulewidth=\dimen116
+\footrulewidth=\dimen117
+\plainheadrulewidth=\dimen118
+\plainfootrulewidth=\dimen119
+\headwidth=\dimen120
+)
+(C:\Users\ernes\AppData\Roaming\MiKTeX\2.9\tex\latex\cite\cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count101
+\float@exts=\toks21
+\float@box=\box28
+\@float@everytoks=\toks22
+\@floatcapt=\box29
+)
+(C:\Users\ernes\AppData\Roaming\MiKTeX\2.9\tex\latex\dblfloatfix\dblfloatfix.sty
+Package: dblfloatfix 2012/12/31 v1.0a (JAW)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\fixltx2e.sty"
+Package: fixltx2e 2016/12/29 v2.1a fixes to LaTeX (obsolete)
+Applying: [2015/01/01] Old fixltx2e package on input line 46.
+
+
+Package fixltx2e Warning: fixltx2e is not required with releases after 2015
+(fixltx2e)                All fixes are now in the LaTeX kernel.
+(fixltx2e)                See the latexrelease package for details.
+
+Already applied: [0000/00/00] Old fixltx2e package on input line 53.
+)
+\@dblbotnum=\count102
+\c@dblbotnumber=\count103
+) (C:\Users\ernes\AppData\Roaming\MiKTeX\2.9\tex\latex\appendix\appendix.sty
+Package: appendix 2020/02/08 v1.2c extra appendix facilities
+\c@@pps=\count104
+\c@@ppsavesec=\count105
+\c@@ppsaveapp=\count106
+)
+(C:\Users\ernes\AppData\Roaming\MiKTeX\2.9\tex\latex\subfig\subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(C:\Users\ernes\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen121
+\captionmargin@=\dimen122
+\captionwidth=\dimen123
+\caption@tempdima=\dimen124
+\caption@indent=\dimen125
+\caption@parindent=\dimen126
+\caption@hangindent=\dimen127
+Package caption Info: Standard document class detected.
+)
+\c@KVtest=\count107
+\sf@farskip=\skip46
+\sf@captopadj=\dimen128
+\sf@capskip=\skip47
+\sf@nearskip=\skip48
+\c@subfigure=\count108
+\c@subfigure@save=\count109
+\c@lofdepth=\count110
+\c@subtable=\count111
+\c@subtable@save=\count112
+\c@lotdepth=\count113
+\sf@top=\skip49
+\sf@bottom=\skip50
+)
+(C:\Users\ernes\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: dvips.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\rotating.sty"
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count114
+\rotFPtop=\skip51
+\rotFPbot=\skip52
+\rot@float@box=\box30
+\rot@mess@toks=\toks23
+) (C:\Users\ernes\AppData\Roaming\MiKTeX\2.9\tex\latex\chngcntr\chngcntr.sty
+Package: chngcntr 2018/04/09 v1.1a change counter resetting
+Package chngcntr Info: \counterwithout already defined.
+(chngcntr)             Quitting chngcntr on input line 21.
+)
+(C:\Users\ernes\AppData\Roaming\MiKTeX\2.9\tex\latex\footmisc\footmisc.sty
+Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
+\FN@temptoken=\toks24
+\footnotemargin=\dimen129
+\c@pp@next@reset=\count115
+Package footmisc Info: Declaring symbol style bringhurst on input line 855.
+Package footmisc Info: Declaring symbol style chicago on input line 863.
+Package footmisc Info: Declaring symbol style wiley on input line 872.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
+Package footmisc Info: Declaring symbol style lamport* on input line 903.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 924.
+)
+(C:\Users\ernes\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@theorem=\count116
+\c@theorem=\count117
+\c@lemma=\count118
+\c@lemma=\count119
+\c@corollary=\count120
+\c@corollary=\count121
+\c@proposition=\count122
+\c@proposition=\count123
+\c@observation=\count124
+\c@observation=\count125
+\c@remark=\count126
+\c@remark=\count127
+\c@result=\count128
+\c@result=\count129
+\c@summary=\count130
+\c@summary=\count131
+\c@mytempeqncnt=\count132
+)
+(C:\Users\ernes\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\newtxmath.sty
+Package: newtxmath 2020/01/25 v1.624
+
+`newtxmath' v1.624, 2020/01/25 Math macros based originally on txfonts (msharpe)
+(C:\Users\ernes\AppData\Roaming\MiKTeX\2.9\tex\latex\etoolbox\etoolbox.sty
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count133
+)
+(C:\Users\ernes\AppData\Roaming\MiKTeX\2.9\tex\generic\iftex\ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+
+(C:\Users\ernes\AppData\Roaming\MiKTeX\2.9\tex\generic\iftex\iftex.sty
+Package: iftex 2019/11/07 v1.0c TeX engine tests
+))
+(C:\Users\ernes\AppData\Roaming\MiKTeX\2.9\tex\generic\iftex\ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"
+\XKV@toks=\toks25
+\XKV@tempa@toks=\toks26
+)
+\XKV@depth=\count134
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\centernot.sty"
+Package: centernot 2016/05/16 v1.4 Centers the not symbol horizontally (HO)
+)
+\tx@cntz=\count135
+
+(C:\Users\ernes\AppData\Roaming\MiKTeX\2.9\tex\generic\binhex\binhex.tex)
+\tx@Isdigit=\count136
+\tx@IsAlNum=\count137
+\tx@tA=\toks27
+\tx@tB=\toks28
+\tx@su=\read1
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 317.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/m/n on input line 317.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/cmr/m/n on input line 317.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/b/n on input line 318.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 326.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 326.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 326.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 327.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/cmr/m/it on input line 327.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/cmr/m/it on input line 327.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 328.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 328.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 328.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 330.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/cmr/b/n on input line 330.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/cmr/b/n on input line 330.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/m/it --> OT1/cmr/b/it on input line 331.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 332.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 333.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 422.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ntxmi/m/it on input line 422.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ntxmi/m/it on input line 422.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/ntxmi/m/it --> OML/ntxmi/b/it on input line 423.
+\symlettersA=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `lettersA' in version `bold'
+(Font)                  U/ntxmia/m/it --> U/ntxmia/b/it on input line 476.
+LaTeX Font Info:    Redeclaring math alphabet \mathfrak on input line 478.
+Now handling font encoding LMS ...
+... no UTF-8 mapping file for font encoding LMS
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 497.
+LaTeX Font Info:    Encoding `OMS' has changed to `LMS' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 497.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> LMS/ntxsy/m/n on input line 497.
+LaTeX Font Info:    Encoding `OMS' has changed to `LMS' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 497.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> LMS/ntxsy/m/n on input line 497.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  LMS/ntxsy/m/n --> LMS/ntxsy/b/n on input line 498.
+\symAMSm=\mathgroup7
+LaTeX Font Info:    Overwriting symbol font `AMSm' in version `bold'
+(Font)                  U/ntxsym/m/n --> U/ntxsym/b/n on input line 521.
+\symsymbolsC=\mathgroup8
+LaTeX Font Info:    Overwriting symbol font `symbolsC' in version `bold'
+(Font)                  U/ntxsyc/m/n --> U/ntxsyc/b/n on input line 542.
+Now handling font encoding LMX ...
+... no UTF-8 mapping file for font encoding LMX
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 555.
+LaTeX Font Info:    Encoding `OMX' has changed to `LMX' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 555.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> LMX/ntxexx/m/n on input line 555.
+LaTeX Font Info:    Encoding `OMX' has changed to `LMX' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 555.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> LMX/ntxexx/m/n on input line 555.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  LMX/ntxexx/m/n --> LMX/ntxexx/b/n on input line 556.
+\symlargesymbolsTXA=\mathgroup9
+LaTeX Font Info:    Overwriting symbol font `largesymbolsTXA' in version `bold'
+(Font)                  U/ntxexa/m/n --> U/ntxexa/b/n on input line 570.
+\tx@sbptoks=\toks29
+LaTeX Font Info:    Redeclaring math delimiter \lfloor on input line 792.
+LaTeX Font Info:    Redeclaring math delimiter \rfloor on input line 793.
+LaTeX Font Info:    Redeclaring math delimiter \lceil on input line 794.
+LaTeX Font Info:    Redeclaring math delimiter \rceil on input line 795.
+LaTeX Font Info:    Redeclaring math delimiter \lbrace on input line 796.
+LaTeX Font Info:    Redeclaring math delimiter \rbrace on input line 797.
+LaTeX Font Info:    Redeclaring math delimiter \langle on input line 798.
+LaTeX Font Info:    Redeclaring math delimiter \rangle on input line 800.
+LaTeX Font Info:    Redeclaring math delimiter \arrowvert on input line 804.
+LaTeX Font Info:    Redeclaring math delimiter \vert on input line 805.
+\ntx@numstart=\count138
+\ntx@UCstart=\count139
+\ntx@lcstart=\count140
+\ntx@tmpc=\count141
+\ntx@imath=\count142
+\ntx@jmath=\count143
+LaTeX Info: Redefining \Bbbk on input line 2449.
+LaTeX Info: Redefining \not on input line 2598.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\longtable.sty"
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip53
+\LTright=\skip54
+\LTpre=\skip55
+\LTpost=\skip56
+\LTchunksize=\count144
+\LTcapwidth=\dimen130
+\LT@head=\box31
+\LT@firsthead=\box32
+\LT@foot=\box33
+\LT@lastfoot=\box34
+\LT@cols=\count145
+\LT@rows=\count146
+\c@LT@tables=\count147
+\c@LT@chunks=\count148
+\LT@p@ftn=\toks30
+) (main_thesis.aux (fm6-publication.aux) (ch1-intro.aux)
+(ch2-literature_review.aux) (ch3-int_mgt_HBD_ACS.aux
+
+LaTeX Warning: Label `interference_management_HBD_ACS_fig_sim' multiply defined.
+
+
+LaTeX Warning: Label `interference_management_HBD_ACS_fig_sim' multiply defined.
+
+) (ch4-JD_HBD_UCS.aux) (ch5-HBD_UCS_Rician_Shadowed.aux) (ch6-HBD_multi_UAV.aux) (ch7-NOMA_aided_multi_UAV_FD_HetNet.aux
+) (ch8-NOMA_bivariate_Rician_Shadowed.aux) (ch9-conclu.aux) (bm1-appendix_A.aux) (bm2-appendix_B.aux)
+(bm3-appendix_C.aux) (bm4-appendix_D.aux) (bm5-appendix_E.aux) (bm6-appendix_f.aux))
+\openout1 = `main_thesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 14.
+LaTeX Font Info:    Try loading font information for OML+ntxmi on input line 14.
+
+(C:\Users\ernes\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\omlntxmi.fd
+File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
+)
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 14.
+LaTeX Font Info:    Try loading font information for U+ntxexa on input line 14.
+
+(C:\Users\ernes\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\untxexa.fd
+File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
+)
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 14.
+LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 14.
+
+(C:\Users\ernes\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\lmsntxsy.fd
+File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
+)
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 14.
+LaTeX Font Info:    Try loading font information for LMX+ntxexx on input line 14.
+
+(C:\Users\ernes\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\lmxntxexx.fd
+File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
+)
+LaTeX Font Info:    ... okay on input line 14.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: End \AtBeginDocument code.
+ (fm1-cover.tex
+File: NTU_new_logo2.eps Graphic file (type eps)
+ <NTU_new_logo2.eps>
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <10.5> not available
+(Font)              size <10.95> substituted on input line 29.
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 29.
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 29.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+ntxmia on input line 29.
+
+(C:\Users\ernes\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\untxmia.fd
+File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
+)
+LaTeX Font Info:    Try loading font information for U+ntxsym on input line 29.
+
+(C:\Users\ernes\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\untxsym.fd
+File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
+)
+LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 29.
+
+(C:\Users\ernes\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\untxsyc.fd
+File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
+) [1
+
+]) (statement_of_originality.tex
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 3.
+
+File: statement_of_originality_pg1.eps Graphic file (type eps)
+<statement_of_originality_pg1.eps>
+Overfull \hbox (90.33612pt too wide) in paragraph at lines 6--9
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 109.06033pt on input line 9.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 13.
+
+File: statement_of_originality_pg2.eps Graphic file (type eps)
+<statement_of_originality_pg2.eps>
+Overfull \hbox (90.33612pt too wide) in paragraph at lines 16--19
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 109.06033pt on input line 19.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 23.
+
+File: statement_of_originality_pg3.eps Graphic file (type eps)
+<statement_of_originality_pg3.eps>
+Overfull \hbox (90.33612pt too wide) in paragraph at lines 26--29
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 109.06033pt on input line 29.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 32.
+
+File: statement_of_originality_pg4.eps Graphic file (type eps)
+<statement_of_originality_pg4.eps>
+Overfull \hbox (90.33612pt too wide) in paragraph at lines 35--38
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 109.06033pt on input line 38.
+
+) (fm2-abstract.tex [1] [2] [3] [4] [5
+
+]) (fm3-ack.tex [6] [7
+
+]) [8] (main_thesis.toc
+Overfull \hbox (0.71802pt too wide) detected at line 3
+ []\OT1/cmr/m/n/12 xvii
+ []
+
+
+Overfull \hbox (0.71802pt too wide) detected at line 4
+ []\OT1/cmr/m/n/12 xxii
+ []
+
+
+Overfull \hbox (3.65549pt too wide) detected at line 5
+ []\OT1/cmr/m/n/12 xxiv
+ []
+
+
+Overfull \hbox (6.91934pt too wide) detected at line 6
+ []\OT1/cmr/m/n/12 xxvii
+ []
+
+[9
+
+] [10] [11] [12] [13] [14] [15])
+\tf@toc=\write3
+\openout3 = `main_thesis.toc'.
+
+ [16] (main_thesis.lof [17
+
+] [18] [19] [20])
+\tf@lof=\write4
+\openout4 = `main_thesis.lof'.
+
+ [21] (main_thesis.lot [22
+
+])
+\tf@lot=\write5
+\openout5 = `main_thesis.lot'.
+
+ [23]
+(fm4-abbrev.tex [24
+
+] [25]) [26]
+\openout2 = `fm6-publication.aux'.
+
+ (fm6-publication.tex [27
+
+
+]
+Overfull \hbox (1.85373pt too wide) in paragraph at lines 21--22
+\OT1/cmr/m/n/12 Ku-mar Kr-ishna, \NOMA-aided UAV Com-mu-ni-ca-tions over Cor-re-lated Ri-cian Shad-
+ []
+
+[28]
+Overfull \hbox (6.94028pt too wide) in paragraph at lines 24--25
+\OT1/cmr/m/n/12 tion Sys-tems un-der Ri-cian Shad-owed Fad-ing," IEEE Ac-cess, vol. 7, pp. 76949{76966,
+ []
+
+) [29] (format-main-body.tex)
+\openout2 = `ch1-intro.aux'.
+
+ (ch1-intro.tex
+Chapter 1.
+[1
+
+
+
+] [2] [3] [4]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 54.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 54.
+
+Overfull \hbox (1.39124pt too wide) in paragraph at lines 55--56
+[]\OT1/cmr/m/n/12 Through sev-eral pro-posed an-a-lyt-i-cal frame-works, HBD sys-tems are shown to achieve
+ []
+
+[5]
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
+(Font)              size <5> substituted on input line 66.
+
+[6] [7] [8] [9]) [10]
+\openout2 = `ch2-literature_review.aux'.
+
+ (ch2-literature_review.tex
+Chapter 2.
+[11
+
+
+
+]
+File: chap2_fig/multi_MAV_network_example.eps Graphic file (type eps)
+ <chap2_fig/multi_MAV_network_example.eps>
+File: chap2_fig/multi_UAV_network_example.eps Graphic file (type eps)
+ <chap2_fig/multi_UAV_network_example.eps>
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [12]
+File: chap2_fig/taxonomy.eps Graphic file (type eps)
+ <chap2_fig/taxonomy.eps>
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [13]
+File: chap2_fig/sec_2_taxonomy.eps Graphic file (type eps)
+ <chap2_fig/sec_2_taxonomy.eps>
+Underfull \vbox (badness 3657) has occurred while \output is active []
+
+
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [14]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [15]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [16]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [17]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 148.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 171.
+
+
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [18]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [19]
+File: chap2_fig/sec_3_taxonomy.eps Graphic file (type eps)
+ <chap2_fig/sec_3_taxonomy.eps>
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [20]
+File: chap2_fig/SI_mitigation_example.eps Graphic file (type eps)
+ <chap2_fig/SI_mitigation_example.eps>
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [21]
+Overfull \hbox (1.80466pt too wide) in paragraph at lines 246--247
+\OT1/cmr/m/n/12 still draw-backs as-so-ci-ated with pas-sive do-main tech-niques. Multi-antenna FD transceivers
+ []
+
+
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [22]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 257.
+
+
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [23]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [24]
+Overfull \hbox (6.58673pt too wide) in paragraph at lines 314--314
+[]\OT1/cmr/bx/n/14.4 Modeling FD Transceiver Im-pair-ments in HBD UAV Com-
+ []
+
+
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [25]
+File: chap2_fig/sec_4_taxonomy.eps Graphic file (type eps)
+ <chap2_fig/sec_4_taxonomy.eps>
+File: chap2_fig/interference_management_example.eps Graphic file (type eps)
+
+<chap2_fig/interference_management_example.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [26]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [27]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [28]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [29]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 383.
+
+
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [30]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [31]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 427.
+
+File: chap2_fig/II_interference_management_example.eps Graphic file (type eps)
+<chap2_fig/II_interference_management_example.eps>
+File: chap2_fig/SIC_interference_management_example.eps Graphic file (type eps)
+ <chap2_fig/SIC_interference_management_example.eps>
+File: chap2_fig/JD_interference_management_example.eps Graphic file (type eps)
+
+<chap2_fig/JD_interference_management_example.eps>
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [32]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [33]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [34]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [35]
+Overfull \hbox (4.94258pt too wide) in paragraph at lines 502--503
+[]\OT1/cmr/m/n/12 In the lit-er-a-ture, sev-eral stud-ies have an-a-lyzed fi-nite SNR di-ver-sity gain over Nakagami-
+ []
+
+
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [36]
+File: chap2_fig/sec_5_taxonomy.eps Graphic file (type eps)
+ <chap2_fig/sec_5_taxonomy.eps>
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [37]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [38]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [39]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 576.
+
+
+Overfull \hbox (4.49736pt too wide) in paragraph at lines 627--628
+ [][] 
+ []
+
+File: chap2_fig/SCMA_HBD_UCS_example.eps Graphic file (type eps)
+<chap2_fig/SCMA_HBD_UCS_example.eps>
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [40]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [41]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [42]
+File: chap2_fig/power_domain_NOMA_HBD_UCS_example.eps Graphic file (type eps)
+
+<chap2_fig/power_domain_NOMA_HBD_UCS_example.eps>
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [43]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [44])
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [45]
+\openout2 = `ch3-int_mgt_HBD_ACS.aux'.
+
+ (ch3-int_mgt_HBD_ACS.tex
+Chapter 3.
+[46
+
+
+
+]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [47]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [48]
+File: chap3_fig/block_diagram.eps Graphic file (type eps)
+ <chap3_fig/block_diagram.eps>
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [49]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [50]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [51]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 83.
+
+
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [52]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [53]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [54]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [55]
+Overfull \hbox (7.61235pt too wide) in paragraph at lines 182--183
+\OT1/cmr/m/n/12 a per-for-mance met-ric to com-pare HBD and HD pro-to-cols. For $\OML/ntxmi/m/it/12  \LMS/ntxsy/m/n/12 
+2 f\OML/ntxmi/m/it/12 HBD\LMS/ntxsy/m/n/12 ¹\OML/ntxmi/m/it/12 II\LMS/ntxsy/m/n/12 º\OML/ntxmi/m/it/12 ; HBD\LMS/ntxsy/m
+/n/12 ¹\OML/ntxmi/m/it/12 SIC\LMS/ntxsy/m/n/12 ºg$\OT1/cmr/m/n/12 ,
+ []
+
+
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [56]
+Overfull \hbox (5.42468pt too wide) in paragraph at lines 208--209
+[]\OT1/cmr/m/n/12 It has since been shown by Shin et al. [105] and Hei-dar-pour et al. [108] that $[][] \OML/ntxmi/m/it/
+12 d[] \U/ntxmia/m/it/12 =
+ []
+
+
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [57]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [58]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [59]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [60]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [61]
+Underfull \vbox (badness 1881) has occurred while \output is active []
+
+
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [62]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [63]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 418.
+
+
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [64]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 444.
+
+File: chap3_fig/fixed_pout_gs.eps Graphic file (type eps)
+<chap3_fig/fixed_pout_gs.eps>
+File: chap3_fig/fixed_df_gs.eps Graphic file (type eps)
+ <chap3_fig/fixed_df_gs.eps>
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [65]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 460.
+
+File: chap3_fig/fixed_pout_as2.eps Graphic file (type eps)
+<chap3_fig/fixed_pout_as2.eps>
+File: chap3_fig/fixed_df_as2.eps Graphic file (type eps)
+ <chap3_fig/fixed_df_as2.eps>
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [66]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [67]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 485.
+
+File: chap3_fig/fixed_pout_sys.eps Graphic file (type eps)
+<chap3_fig/fixed_pout_sys.eps>
+File: chap3_fig/fixed_df_sys.eps Graphic file (type eps)
+ <chap3_fig/fixed_df_sys.eps>
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [68]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [69]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 519.
+
+File: chap3_fig/var_df_gs.eps Graphic file (type eps)
+<chap3_fig/var_df_gs.eps>
+File: chap3_fig/var_df_as2.eps Graphic file (type eps)
+ <chap3_fig/var_df_as2.eps>
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [70]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [71]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 543.
+
+File: chap3_fig/var_df_sys.eps Graphic file (type eps)
+<chap3_fig/var_df_sys.eps>
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [72]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [73])
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [74]
+\openout2 = `ch4-JD_HBD_UCS.aux'.
+
+ (ch4-JD_HBD_UCS.tex
+Chapter 4.
+[75
+
+
+
+]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [76]
+File: chap4_fig/block_diagram.eps Graphic file (type eps)
+ <chap4_fig/block_diagram.eps>
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [77]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [78]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 71.
+
+
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [79]
+File: chap4_fig/rate_regions.eps Graphic file (type eps)
+ <chap4_fig/rate_regions.eps>
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [80]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [81]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [82]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 167.
+
+
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [83]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [84]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [85]
+Overfull \hbox (4.70702pt too wide) in alignment at lines 276--280
+ [][][] []
+ []
+
+
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [86]
+Overfull \hbox (22.52756pt too wide) in alignment at lines 328--334
+ [][][] []
+ []
+
+
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [87]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [88]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 399.
+
+
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [89]
+File: chap4_fig/fixed_pout_as2.eps Graphic file (type eps)
+ <chap4_fig/fixed_pout_as2.eps>
+File: chap4_fig/fixed_df_as2.eps Graphic file (type eps)
+
+<chap4_fig/fixed_df_as2.eps>
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [90]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [91]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 501.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 516.
+
+File: chap4_fig/fixed_pout_sys.eps Graphic file (type eps)
+<chap4_fig/fixed_pout_sys.eps>
+File: chap4_fig/fixed_df_sys.eps Graphic file (type eps)
+ <chap4_fig/fixed_df_sys.eps>
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [92]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 552.
+
+File: chap4_fig/var_df_as2.eps Graphic file (type eps)
+<chap4_fig/var_df_as2.eps>
+File: chap4_fig/var_df_sys.eps Graphic file (type eps)
+ <chap4_fig/var_df_sys.eps>
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [93]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 594.
+
+File: chap4_fig/var_df_uav2_sic_surf.eps Graphic file (type eps)
+<chap4_fig/var_df_uav2_sic_surf.eps>
+File: chap4_fig/var_df_uav2_jd_surf.eps Graphic file (type eps)
+ <chap4_fig/var_df_uav2_jd_surf.eps>
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [94]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 611.
+
+File: chap4_fig/var_df_uav2_jd_ii_mgr_annot2.eps Graphic file (type eps)
+<chap4_fig/var_df_uav2_jd_ii_mgr_annot2.eps>
+File: chap4_fig/var_df_uav2_jd_sic_mgr_annot2.eps Graphic file (type eps)
+ <chap4_fig/var_df_uav2_jd_sic_mgr_annot2.eps>
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [95]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [96]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [97])
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [98]
+\openout2 = `ch5-HBD_UCS_Rician_Shadowed.aux'.
+
+ (ch5-HBD_UCS_Rician_Shadowed.tex
+Chapter 5.
+[99
+
+
+
+]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [100]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [101]
+File: chap5_fig/block_diagram.eps Graphic file (type eps)
+ <chap5_fig/block_diagram.eps>
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [102]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [103]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 83.
+
+
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [104]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [105]
+File: chap5_fig/pdf_comparison.eps Graphic file (type eps)
+ <chap5_fig/pdf_comparison.eps>
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [106]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [107]
+File: chap5_fig/alt_pdf_comparison.eps Graphic file (type eps)
+ <chap5_fig/alt_pdf_comparison.eps>
+File: chap5_fig/alt_cdf_comparison.eps Graphic file (type eps)
+
+<chap5_fig/alt_cdf_comparison.eps>
+File: chap5_fig/alt_moment_comparison.eps Graphic file (type eps)
+ <chap5_fig/alt_moment_comparison.eps>
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [108]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 291.
+
+
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [109]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [110]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [111]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [112]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [113]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [114]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [115]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [116]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [117]
+File: chap5_fig/gs_outage.eps Graphic file (type eps)
+ <chap5_fig/gs_outage.eps>
+File: chap5_fig/gs_outage_surf.eps Graphic file (type eps)
+
+<chap5_fig/gs_outage_surf.eps>
+File: chap5_fig/gs_outage_HBD_vs_HD.eps Graphic file (type eps)
+ <chap5_fig/gs_outage_HBD_vs_HD.eps>
+Underfull \vbox (badness 1314) has occurred while \output is active []
+
+
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [118]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [119]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 612.
+
+File: chap5_fig/gs_outage_mx1_vs_mysi1.eps Graphic file (type eps)
+<chap5_fig/gs_outage_mx1_vs_mysi1.eps>
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [120]
+File: chap5_fig/uav2_II_outage.eps Graphic file (type eps)
+ <chap5_fig/uav2_II_outage.eps>
+File: chap5_fig/uav2_JD_outage.eps Graphic file (type eps)
+
+<chap5_fig/uav2_JD_outage.eps>
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [121]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [122]
+File: chap5_fig/uav2_II_vs_JD_outage.eps Graphic file (type eps)
+ <chap5_fig/uav2_II_vs_JD_outage.eps>
+File: chap5_fig/uav2_outage_mxgs_vs_my1.eps Graphic file (type eps)
+
+<chap5_fig/uav2_outage_mxgs_vs_my1.eps>
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [123]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [124])
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [125]
+\openout2 = `ch6-HBD_multi_UAV.aux'.
+
+ (ch6-HBD_multi_UAV.tex
+Chapter 6.
+[126
+
+
+
+]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 22.
+
+File: chap6_fig/UL_UAV_deployment.eps Graphic file (type eps)
+<chap6_fig/UL_UAV_deployment.eps> [127] [128]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 71.
+
+[129] [130]
+Overfull \hbox (10.85725pt too wide) in paragraph at lines 133--136
+\OT1/cmr/m/it/12 where $\OML/ntxmi/m/it/12 n \U/ntxmia/m/it/12 < \OT1/cmr/m/n/12 2$\OT1/cmr/m/it/12 , $\U/ntxmia/m/it/12
+ []\OML/ntxmi/m/it/12 D[]; []; q[] \U/ntxmia/m/it/12 = [][][][]\OML/ntxmi/m/it/12 D[] \LMS/ntxsy/m/n/12 Ï \OML/ntxmi/m
+/it/12 [][][] \LMS/ntxsy/m/n/12 Ï \OML/ntxmi/m/it/12 r[][][] \LMS/ntxsy/m/n/12   [][]\OML/ntxmi/m/it/12 D[] \LMS/ntxsy/
+m/n/12 Ï \OML/ntxmi/m/it/12 [][][][][][]$\OT1/cmr/m/it/12 ,
+ []
+
+[131] [132]
+File: chap6_fig/hbd_UL_outage.eps Graphic file (type eps)
+ <chap6_fig/hbd_UL_outage.eps>
+File: chap6_fig/hbd_DL_outage.eps Graphic file (type eps)
+ <chap6_fig/hbd_DL_outage.eps>
+File: chap6_fig/hbd_UL_outage_SI_cancellation.eps Graphic file (type eps)
+ <chap6_fig/hbd_UL_outage_SI_cancellation.eps>
+[133]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 219.
+
+File: chap6_fig/hbd_UL_outage_height.eps Graphic file (type eps)
+<chap6_fig/hbd_UL_outage_height.eps>
+File: chap6_fig/hbd_DL_outage_height.eps Graphic file (type eps)
+ <chap6_fig/hbd_DL_outage_height.eps> [134] [135]) [136]
+\openout2 = `ch7-NOMA_aided_multi_UAV_FD_HetNet.aux'.
+
+
+(ch7-NOMA_aided_multi_UAV_FD_HetNet.tex
+Chapter 7.
+[137
+
+
+
+]
+Overfull \hbox (8.81082pt too wide) in paragraph at lines 12--13
+\OT1/cmr/m/n/12 aided multi-UAV com-mu-ni-ca-tions in FD-HetNets en-able UL UAVs and DL UAVs, equipped
+ []
+
+
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [138]
+File: chap7_fig/block_diagram3.eps Graphic file (type eps)
+ <chap7_fig/block_diagram3.eps>
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [139]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [140]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [141]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 86.
+
+
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [142]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [143]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [144]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [145]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [146]
+Overfull \hbox (19.9995pt too wide) in paragraph at lines 269--276
+\OT1/cmr/m/n/12 and $\OML/ntxmi/m/it/12 M[][]zw[][]$\OT1/cmr/m/n/12 , over the re-spec-tive dis-tance PDFs, i.e., $\OML
+/ntxmi/m/it/12 f[]\LMS/ntxsy/m/n/12 ¹\OML/ntxmi/m/it/12 w[]\LMS/ntxsy/m/n/12 j\OML/ntxmi/m/it/12 w[]\LMS/ntxsy/m/n/12 º$
+ \OT1/cmr/m/n/12 and $\OML/ntxmi/m/it/12 f[]\LMS/ntxsy/m/n/12 ¹\OML/ntxmi/m/it/12 w[]\LMS/ntxsy/m/n/12 j\OML/ntxmi/m/it/
+12 w[]\LMS/ntxsy/m/n/12 º$\OT1/cmr/m/n/12 .
+ []
+
+
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [147]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [148]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [149]
+Overfull \hbox (2.57541pt too wide) in paragraph at lines 347--347
+[]\OT1/cmr/bx/n/14.4 Ergodic Ca-pac-ity Gains of NOMA-aided FD-HetNets over
+ []
+
+
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [150]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [151]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 379.
+
+File: chap7_fig/FD_GS_capacity.eps Graphic file (type eps)
+<chap7_fig/FD_GS_capacity.eps>
+File: chap7_fig/DL_UAV_capacity.eps Graphic file (type eps)
+ <chap7_fig/DL_UAV_capacity.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [152]
+File: chap7_fig/height_impact_sum_capacity.eps Graphic file (type eps)
+
+<chap7_fig/height_impact_sum_capacity.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [153]
+File: chap7_fig/number_deployed_UAVs_sum_capacity.eps Graphic file (type eps)
+
+<chap7_fig/number_deployed_UAVs_sum_capacity.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 4686) has occurred while \output is active []
+
+
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [154]
+File: chap7_fig/phase_noise_epsilon_sum_capacity.eps Graphic file (type eps)
+
+<chap7_fig/phase_noise_epsilon_sum_capacity.eps>
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [155]
+File: chap7_fig/ergodic_capacity_gain.eps Graphic file (type eps)
+ <chap7_fig/ergodic_capacity_gain.eps>
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [156]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [157])
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [158]
+\openout2 = `ch8-NOMA_bivariate_Rician_Shadowed.aux'.
+
+ (ch8-NOMA_bivariate_Rician_Shadowed.tex
+Chapter 8.
+[159
+
+
+
+]
+File: chap8_fig/block_diagram3.eps Graphic file (type eps)
+ <chap8_fig/block_diagram3.eps>
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [160]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [161]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [162]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 52.
+
+
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [163]
+Overfull \hbox (13.24727pt too wide) in alignment at lines 109--111
+ [][][] []
+ []
+
+
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [164]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [165]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [166]
+Overfull \hbox (9.15887pt too wide) in paragraph at lines 195--199
+\OT1/cmr/m/n/12 From (8.9[]), the up-per bound of the trun-ca-tion er-ror $[]\OML/ntxmi/m/it/12 e[][]$ \OT1/cmr/m/n/12 f
+or the joint CDF $\OML/ntxmi/m/it/12 F[]\LMS/ntxsy/m/n/12 ¹\OML/ntxmi/m/it/12 []; []\LMS/ntxsy/m/n/12 º$
+ []
+
+
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [167]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [168]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [169]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [170]
+File: chap8_fig/pdf_comparison_edited.eps Graphic file (type eps)
+ <chap8_fig/pdf_comparison_edited.eps>
+File: chap8_fig/k_factor_truncation_error.eps Graphic file (type eps)
+
+<chap8_fig/k_factor_truncation_error.eps>
+File: chap8_fig/shadowing_truncation_error.eps Graphic file (type eps)
+ <chap8_fig/shadowing_truncation_error.eps>
+File: chap8_fig/sigma_truncation_error.eps Graphic file (type eps)
+
+<chap8_fig/sigma_truncation_error.eps>
+File: chap8_fig/rho_truncation_error.eps Graphic file (type eps)
+ <chap8_fig/rho_truncation_error.eps>
+File: chap8_fig/rho_gamma_CDF_truncation_error.eps Graphic file (type eps)
+
+<chap8_fig/rho_gamma_CDF_truncation_error.eps>
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [171]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 412.
+
+
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [172]
+Underfull \vbox (badness 3375) has occurred while \output is active []
+
+
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [173]
+File: chap8_fig/outage_probability_impact_altitude.eps Graphic file (type eps)
+
+<chap8_fig/outage_probability_impact_altitude.eps>
+File: chap8_fig/outage_probability_impact_rho.eps Graphic file (type eps)
+ <chap8_fig/outage_probability_impact_rho.eps>
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [174]
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [175]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 475.
+
+File: chap8_fig/finite_snr_diversity_gain_impact_rho.eps Graphic file (type eps)
+<chap8_fig/finite_snr_diversity_gain_impact_rho.eps>
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [176])
+Overfull \vbox (8.18335pt too high) has occurred while \output is active []
+
+ [177]
+\openout2 = `ch9-conclu.aux'.
+
+ (ch9-conclu.tex
+Chapter 9.
+[178
+
+
+
+] [179] [180]
+Overfull \hbox (9.16338pt too wide) in paragraph at lines 61--62
+[]\OT1/cmr/m/n/12 Tradeoffs be-tween cost and per-for-mance is an-other chal-lenge in re-al-iz-ing FD transceivers
+ []
+
+[181] [182] [183]) [184] [185]
+\openout2 = `bm1-appendix_A.aux'.
+
+ (bm1-appendix_A.tex [186
+
+
+
+]
+Appendix A.
+
+Overfull \hbox (12.70651pt too wide) in paragraph at lines 12--14
+\OT1/cmr/m/n/12 be de-fined as $\OML/ntxmi/m/it/12 P[] \U/ntxmia/m/it/12 = \OML/ntxmi/m/it/12 Pr []$ \OT1/cmr/m/n/12 and
+ $\OML/ntxmi/m/it/12 P[] \U/ntxmia/m/it/12 = \OML/ntxmi/m/it/12 Pr []$\OT1/cmr/m/n/12 .
+ []
+
+
+Underfull \vbox (badness 5548) has occurred while \output is active []
+
+ [187
+
+] [188])
+Overfull \hbox (10.90341pt too wide) in paragraph at lines 67--67
+[]\OT1/cmr/m/n/12 From (A.5[]), It can be seen that $[][]\LMS/ntxsy/m/n/12 ¹\U/ntxmia/m/it/12 
+[]\LMS/ntxsy/m/n/12 º[] \U/ntxmia/m/it/12 = \OT1/cmr/m/n/12 1$ when $\OML/ntxmi/m/it/12 m \U/ntxmia/m/it/12 = \OT1/cmr/m
+/n/12 0$, and $[][]\LMS/ntxsy/m/n/12 ¹\U/ntxmia/m/it/12 
+[]\LMS/ntxsy/m/n/12 º[] \U/ntxmia/m/it/12 =
+ []
+
+[189] [190]
+\openout2 = `bm2-appendix_B.aux'.
+
+ (bm2-appendix_B.tex
+Appendix B.
+[191
+
+
+
+] [192]) [193]
+\openout2 = `bm3-appendix_C.aux'.
+
+ (bm3-appendix_C.tex
+Appendix C.
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <12.5> not available
+(Font)              size <12> substituted on input line 6.
+
+[194
+
+
+
+] [195] [196] [197]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [198] [199]
+Overfull \hbox (3.82137pt too wide) in paragraph at lines 209--210
+[]\OT1/cmr/m/n/12 From (C.28[]), it can be seen that $[][] \OML/ntxmi/m/it/12 Pr[]\LMS/ntxsy/m/n/12 O[][] \U/ntxmia/m/it
+/12 = \OT1/cmr/m/n/12 0$, since $[][]\LMS/ntxsy/m/n/12 ¹\U/ntxmia/m/it/12 
+[]\LMS/ntxsy/m/n/12 º[] \U/ntxmia/m/it/12 =
+ []
+
+) [200]
+\openout2 = `bm4-appendix_D.aux'.
+
+ (bm4-appendix_D.tex
+Appendix D.
+
+Overfull \hbox (8.2822pt too wide) in paragraph at lines 6--6
+[]\OT1/cmr/bx/n/17.28 Proof of Out-age Prob-a-bil-ity for the Out-age Event
+ []
+
+) [201
+
+
+
+]
+\openout2 = `bm5-appendix_E.aux'.
+
+ (bm5-appendix_E.tex
+Appendix E.
+[202
+
+
+
+]
+Underfull \vbox (badness 4454) has occurred while \output is active []
+
+ [203]) [204]
+\openout2 = `bm6-appendix_f.aux'.
+
+ (bm6-appendix_f.tex
+Appendix F.
+[205
+
+
+
+]
+Overfull \hbox (3.01738pt too wide) in paragraph at lines 43--44
+[][] [] \U/ntxmia/m/it/12 = \OT1/cmr/m/n/12 0$, $[][] [] \U/ntxmia/m/it/12 = \OT1/cmr/m/n/12 0$, and $[][] [] \U/ntxmia/
+m/it/12 =
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [206] [207] [208] [209]
+Overfull \hbox (3.53014pt too wide) in paragraph at lines 158--158
+[]\OT1/cmr/bx/n/17.28 Proof of Out-age Prob-a-bil-ity for NOMA at Down-
+ []
+
+
+Overfull \hbox (7.6739pt too wide) in alignment at lines 175--178
+ [][][] []
+ []
+
+[210]) [211] (main_thesis.bbl
+Underfull \hbox (badness 1033) in paragraph at lines 83--87
+[]\OT1/cmr/m/n/8 ------. Sin-ga-pore Spec-trum Al-lo-ca-tion Chart. Ac-cessed on 23-11-2019. [On-line]. Avail-
+ []
+
+
+Underfull \hbox (badness 1072) in paragraph at lines 83--87
+\OT1/cmr/m/n/8 able: $https : / / www . imda . gov . sg/ -[] /media / imda / les / regulation -[] licensing -[] and -[]
+ consultations / frameworks -[] and -[]
+ []
+
+
+Underfull \hbox (badness 2189) in paragraph at lines 90--94
+[]\OT1/cmr/m/n/8 ------. Spec-trum man-age-ment hand-book. Ac-cessed on 23-11-2019. [On-line]. Avail-
+ []
+
+
+Underfull \hbox (badness 1072) in paragraph at lines 90--94
+\OT1/cmr/m/n/8 able: $https : / / www . imda . gov . sg/ -[] /media / imda / les / regulation -[] licensing -[] and -[]
+ consultations / frameworks -[] and -[]
+ []
+
+[212
+
+
+] [213] [214] [215] [216] [217] [218] [219] [220] [221] [222]) [223] (main_thesis.aux (fm6-publication.aux)
+(ch1-intro.aux) (ch2-literature_review.aux) (ch3-int_mgt_HBD_ACS.aux) (ch4-JD_HBD_UCS.aux)
+(ch5-HBD_UCS_Rician_Shadowed.aux) (ch6-HBD_multi_UAV.aux) (ch7-NOMA_aided_multi_UAV_FD_HetNet.aux)
+(ch8-NOMA_bivariate_Rician_Shadowed.aux) (ch9-conclu.aux) (bm1-appendix_A.aux) (bm2-appendix_B.aux) (bm3-appendix_C.aux)
+(bm4-appendix_D.aux) (bm5-appendix_E.aux) (bm6-appendix_f.aux))
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.5pt have occurred.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 6385 strings out of 492971
+ 112732 string characters out of 3135881
+ 171590 words of memory out of 3000000
+ 9926 multiletter control sequences out of 15000+200000
+ 58437 words of font info for 161 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 43i,18n,89p,4077b,458s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on main_thesis.dvi (253 pages, 1002596 bytes).

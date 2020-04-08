@@ -1,0 +1,94 @@
+% ------------------------------------------------------------
+% This latex template is based on the version created by Xiao Xiong (NTU).
+% Compile main_thesis.tex to generate the thesis.
+%
+% Author: Tan Zheng Hui Ernest, NTU, Singapore
+% Date: 8 Apr 2020
+% ------------------------------------------------------------
+
+\input{setting}     % Input Global settings
+\usepackage{amsmath}
+\usepackage[cmintegrals]{newtxmath}
+\usepackage{longtable}
+
+\begin{document}    % Start of the text
+
+% -------------------------------------------------------------------------------- %
+% --------------------------- Part I. Front Matters ------------------------------ %
+% -------------------------------------------------------------------------------- %
+\input{fm1-cover.tex}       % Input the Cover page
+
+\setlength{\baselineskip}{20pt plus 1pt minus 1pt} % Use 1-1/2 spacing for whole document
+\pagenumbering{roman}   % Use small roman digits for the page number of front matters
+
+\input{statement_of_originality.tex} % Input state of originality	
+\input{fm2-abstract.tex}    % Input the abstract
+\input{fm3-ack.tex}					% Input the acknowledgement
+
+\setcounter{secnumdepth}{3} % section numbering depth
+\setcounter{tocdepth}{4}    % count to the depth of sections
+\tableofcontents            % table of contents appears here
+
+\newpage
+\addcontentsline{toc}{section}{\numberline{}\hspace{-.35in}{\bf List of Figures}}
+\listoffigures              % list of figures appears here
+
+\newpage
+\addcontentsline{toc}{section}{\numberline{}\hspace{-.35in}{\bf List of Tables}}
+\listoftables              % list of tables appears here
+
+\newpage
+\addcontentsline{toc}{section}{\numberline{}\hspace{-.35in}{\bf List of Abbreviations}}
+\input{fm4-abbrev.tex}      % Input the list of abbreviations and notations
+
+\newpage
+\addcontentsline{toc}{section}{\numberline{}\hspace{-.35in}{\bf List of Publications}}
+\include{fm6-publication}
+
+% -------------------------------------------------------------------------------- %
+% --------------------------- Part II.  The Body ---- ---------------------------- %
+% -------------------------------------------------------------------------------- %
+\input{format-main-body}    % Input the formating
+\include{ch1-intro}         % Include the chapters
+\include{ch2-literature_review}
+\include{ch3-int_mgt_HBD_ACS}
+\include{ch4-JD_HBD_UCS}
+\include{ch5-HBD_UCS_Rician_Shadowed}
+\include{ch6-HBD_multi_UAV}
+\include{ch7-NOMA_aided_multi_UAV_FD_HetNet}
+\include{ch8-NOMA_bivariate_Rician_Shadowed}
+\include{ch9-conclu}
+
+% -------------------------------------------------------------------------------- %
+% --------------------------- Part III. The Back Matters ------------------------- %
+% -------------------------------------------------------------------------------- %
+\appendix
+\renewcommand\chaptername{Appendix}
+\include{bm1-appendix_A}      % Appendix A
+\include{bm2-appendix_B}      % Appendix B
+\include{bm3-appendix_C}      % Appendix C
+\include{bm4-appendix_D}      % Appendix D
+\include{bm5-appendix_E}      % Appendix E
+\include{bm6-appendix_f}      % Appendix F
+
+
+% Include the references
+\newpage
+\addcontentsline{toc}{chapter}{References}
+
+
+%\newpage
+\bibliographystyle{IEEEtran}\scriptsize
+\bibliography{IEEEabrv,ref}
+
+
+
+
+
+\end{document}      % End of the text
+
+
+
+% ------------------
+% End of the File
+% ------------------

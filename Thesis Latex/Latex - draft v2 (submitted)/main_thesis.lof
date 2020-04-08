@@ -1,0 +1,104 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces An illustrated example of a MAV network and UAV network.}}{12}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {MAV Network}}}{12}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {UAV Network}}}{12}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces The organization of the chapter.}}{14}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces An overview of the topics in Section 2.2\hbox {}.}}{15}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces An overview of the topics in Section 2.3\hbox {}.}}{20}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces An example of SI mitigation in multi-antenna and single-antenna FD transceivers. For both configurations, SI mitigation through combinations of passive, analog, and digital domain techniques are possible.}}{21}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces An overview of the topics in Section 2.4\hbox {}.}}{27}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces An example of the types of interference management strategies that can be adopted for UAV-2 in the HBD-UCS.}}{28}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces The achievable instantaneous rate region of the II, SIC, and JD interference management approaches. The transmission rate of the FD-GS and UAV-1 are denoted as $R_{GS}^{HBD}$ and $R_{1}^{HBD}$, respectively. The variables $X_{gs}$ and $Y_1$ denote the SOI and interference at UAV-2, respectively.}}{33}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {II Approach}}}{33}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {SIC Approach}}}{33}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {JD Approach}}}{33}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces An overview of the topics in Section 2.5\hbox {}.}}{38}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces An example of implementing SCMA in an HBD-UCS for 3 uplink UAVs (UAV-1, UAV-2, UAV-3) and 3 downlink UAVs (UAV-4, UAV-5, UAV-6) over 4 time-frequency resource blocks. The variable $x_i$ represents the desired message of UAV-$i$.}}{42}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces An example of implementing power-domain NOMA in an HBD-UCS for 3 uplink UAVs (UAV-1, UAV-2, UAV-3) and 3 downlink UAVs (UAV-4, UAV-5, UAV-6) over the same time-frequency resource block.}}{44}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Air-Station 1 (AS-1) and Air-Station 2 (AS-2) operating in HD mode while communicating with the FD GS.}}{49}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Outage probability and finite SNR diversity gain at GS (II detector) for phase noise strength $\gamma _{\phi }^2=-130$ dBm.}}{66}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Outage probability comparison at GS}}}{66}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Finite SNR diversity gain comparison at GS}}}{66}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Outage probability and finite SNR diversity gain at AS-2 (II and SIC detectors) for $\alpha _{g,2}=1$, i.e., link between GS and AS-2 has same distance as the reference link ($d_{1,g}$).}}{67}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Outage probability comparison at AS-2}}}{67}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Finite SNR diversity gain comparison at AS-2}}}{67}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces System level outage probability and finite SNR diversity gain (II and SIC detectors) for $\alpha _{g,2}=1$,$\alpha _{g,g}=1$,$\gamma _{\phi }^2=-130$ dBm, $\epsilon \in \{0.01, 0.001\}$.}}{69}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {System level outage probability}}}{69}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {System level finite SNR diversity gain}}}{69}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Finite SNR DMT for $\alpha _{g,2}=1, \gamma _{\phi }^2=-130 \text { dBm}, \Omega _X=10 \text { dB}$.}}{71}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {GS (II detector).}}}{71}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {AS-2 (II and SIC detector).}}}{71}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces System level finite SNR DMT (II and SIC detectors) for $\alpha _{g,2}=1$, $\alpha _{g,g}=1$, $\gamma _{\phi }^2=-130 \text { dBm}$, $\Omega _X=10 \text { dB}$.}}{72}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Unmanned Aerial Vehicle 1 (UAV-1) and Unmanned Aerial Vehicle 2 (UAV-2) operating in HD mode while communicating with the FD GS.}}{77}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces The achievable instantaneous rate regions of the II, SIC and joint detectors (unshaded areas) at UAV-2 with respect to the transmission rates of the GS ${\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left (\vcenter to\@ne \big@size {}\right .$}\box \z@ }R_{GS}^{HBD}{\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left )\vcenter to\@ne \big@size {}\right .$}\box \z@ }$ and UAV-1 ${\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left (\vcenter to\@ne \big@size {}\right .$}\box \z@ }R_{1}^{HBD}{\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\nulldelimiterspace \z@ \left )\vcenter to\@ne \big@size {}\right .$}\box \z@ }$. The shaded areas, $\mathcal {O}_{JD}^{1}$ and $\mathcal {O}_{JD}^{2}$, respectively denote the outage region of the joint detector if SOI detection fails or if the sum rate constraint is not met.}}{80}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Outage probability and finite SNR diversity gain at UAV-2 (II, SIC and joint detectors) for $\alpha _{g,2}=1$.}}{91}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Outage probability comparison at UAV-2.}}}{91}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Finite SNR diversity gain comparison at UAV-2.}}}{91}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces System level outage probability and finite SNR diversity gain (II, SIC and joint detectors) for $\alpha _{g,2}=1$, $\alpha _{g,g}=1$, $\gamma _{\phi }^2=-130dBm$ and $\epsilon \in \{0.01, 0.001\}$.}}{93}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {System level outage probability comparison.}}}{93}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {System level finite SNR diversity gain comparison.}}}{93}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Finite SNR DMT at UAV-2 and system level (II, SIC and joint detectors) for $\alpha _{g,2}=1$, $\alpha _{g,g}=1$, $\gamma _{\phi }^2=-130dBm$ and $\Omega _X=10dB$.}}{94}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Finite SNR DMT at UAV-2.}}}{94}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {System level finite SNR DMT.}}}{94}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Achievable finite SNR diversity gain of the SIC detector and joint detector at UAV-2 for different multiplexing gains at UAV-1 ($r_{f,1}$) and the GS ($r_{f,gs}$) when $\alpha _{g,2}=1$, $\alpha _{1,2}=15$ and $\Omega _X=10dB$.}}{95}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {SIC detector.}}}{95}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Joint detector.}}}{95}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Overlapping finite SNR MGRs of the II, SIC and joint detectors at UAV-2 for $\alpha _{g,2}=1$, $\alpha _{1,2}=\{0.1,15\}$ and $\Omega _X=10dB$. (The MGR separation can be smoothen by plotting the regions with very high resolutions.)}}{96}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {II and joint detector, $\alpha _{1,2}=0.1$.}}}{96}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {SIC and joint detector, $\alpha _{1,2}=15$.}}}{96}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Unmanned Aerial Vehicle 1 (UAV-1) and Unmanned Aerial Vehicle 2 (UAV-2) operating in HD mode while communicating with the FD GS over Rician shadowed fading channels.}}{102}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Comparison between the exact PDF of $|h|^2$ and power series approximation equivalent for $\Omega =1$ and $K_{tr}=50$.}}{106}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Comparison between the exact PDF of $|h^{'}|^2$ and power series approximation equivalent for $\Omega =1$ and $K_{tr}=50$.}}{109}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Comparison between the exact CDF of $|h^{'}|^2$ and power series approximation equivalent for $\gamma =0.5$ and $K_{tr}=50$.}}{110}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Comparison between the exact fractional moment of $|h^{'}|^2$ and power series approximation equivalent for $\Omega =1$ and $K_{tr}=50$.}}{111}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Outage probability at GS for $\alpha _{g,g}=1$, $\epsilon =0.01$, $\gamma _{\phi }^2=-130$dBm, and $K_{X_1}=K_{Y_{si,1}}=15$.}}{118}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Impact of shadowing at GS for $m_{Y_{si,1}}=10$.}}}{118}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Impact of shadowing at GS for $\Omega _X = 5dB$ and $0.5 \leq m_{X_1}, m_{Y_{si,1}} \leq 15$.}}}{118}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Outage probability at GS (HBD vs HD) for $\alpha _{g,g}=1$, $\epsilon =0.01$, $\gamma _{\phi }^2=-130$dBm, $K_{X_1}=K_{Y_{si,1}}=15$, $m_{Y_{si,1}}=10$.}}{119}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Impact of shadowing and Rician $K$ factors on outage probability at GS for $\Omega _X = 5$dB, $\alpha _{g,g}=1$, $\epsilon =0.01$, $\gamma _{\phi }^2=-130$dBm, $K_{Y_{si,1}}=10$, $m_{Y_{si,1}}=2$.}}{120}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Outage probability at UAV-2 for $\alpha _{g,2}=1$, $K_{X_{gs}}=K_{Y_1}=15$, $m_{Y_1}=10$.}}{121}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Impact of shadowing on the II detector}}}{121}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Impact of shadowing on the joint detector}}}{121}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Comparison between the II and joint detectors at UAV-2 for $\alpha _{g,2}=1$, $K_{X_{gs}}=K_{Y_1}=15$, $m_{X_{gs}}=m_{Y_1}=10$.}}{123}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Impact of shadowing and Rician $K$ factors on outage probability at UAV-2 for $\Omega _X = 5$dB, $\alpha _{g,2}=1$, $\alpha _{1,2}=0.5$, $K_{Y_1}=10$, $m_{Y_1}=10$.}}{124}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces An illustration of the UL UAV spatial locations. The spatial location of DL UAV-1 is described in the same fashion.}}{127}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Outage probability of the HBD-UCS.}}{133}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Uplink outage probability.}}}{133}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Downlink outage probability for $\lambda _{1,1} = 1.4$, $\lambda _{2,1} = 1.3$, and $\lambda _{3,1} = 1.2$.}}}{133}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Impact of SI cancellation and phase noise on uplink outage probability.}}}{133}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Impact of height and minimum distance on the outage probability of the HBD-UCS at $P_t = 5$ dB, $\beta = 1$, $\lambda _{g,1} = 0.1$, and $D_{alt}^{UL}=D_{alt,i}^{UL}$.}}{135}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Uplink outage probability.}}}{135}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Downlink outage probability.}}}{135}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces The FD-HetNet for NOMA-aided multi-UAV communications is illustrated here. The FD-GS in the FD-HetNet enables HD uplink and downlink UAVs and the HD MBS to concurrently share the same spectrum for NOMA transmissions. Through the BPP, it is assumed that the spatial locations of the deployed UAVs and the MBS follow a uniform distribution around a disc, with origin $O$ at the FD-GS and radius $r_a$.}}{140}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Ergodic capacity comparison at the FD-GS and DL UAVs in the NOMA-aided FD-HetNet for $N_U = N_D = 3$, $H_{min} = 0.1$ km, $\omega = 0.1$, $\gamma _{\phi }^2 = -130\text { dBm}$, $\epsilon = 0.01$, and $\beta _{mbs,j} = \beta _{i,j} = (0.04)^3$.}}{153}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Ergodic Capacity at the FD-GS.}}}{153}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Ergodic Capacity at the DL UAVs.}}}{153}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Impact of height on the ergodic sum capacity of the NOMA-aided FD-HetNet and HD-HetNet for $N_U = N_D = 3$, $\gamma _{\phi }^2 = -130\text { dBm}$, $\epsilon = 0.01$, and $\beta _{mbs,j} = \beta _{i,j} = (0.04)^3$.}}{154}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Impact of the number of deployed UAVs on the ergodic sum capacity of the NOMA-aided FD-HetNet and HD-HetNet for $H_{min} = 0.1$ km, $\omega = 0.1$, $\gamma _{\phi }^2 = -130\text { dBm}$, $\epsilon = 0.01$, and $\beta _{mbs,j} = \beta _{i,j} = (0.04)^3$.}}{155}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Impact of SI cancellation and phase noise on the ergodic sum capacity of the NOMA-aided FD-HetNet for $N_U = N_D = 3$, $H_{min} = 0.1$ km, $\omega = 0.1$, and $\beta _{mbs,j} = \beta _{i,j} = (0.04)^3$.}}{156}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Impact of SI cancellation, phase noise, and residual interference on the ergodic sum capacity gain of the NOMA-aided FD-HetNet for $N_U = N_D = 3$, $H_{min} = 0.1$ km, and $\omega = 0.1$.}}{157}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {8.1}{\ignorespaces An illustration of the NOMA-aided UCS operating in a suburban environment. The GS employs downlink NOMA to transmit data to the UAVs equipped with two reception antennas. At the UAVs, selection combining is employed to recover the transmitted data from the GS.}}{161}
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Joint PDF comparison between the exact expression in (8.4\hbox {}) (denoted in red markers) and the closed-form expression in (8.5\hbox {}) for $m=10$, $K_{tr,1}=150$, and Rician $K$ factor of 10 dB.}}{172}
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Impact of the Rician $K$ factor, $m$, $\sigma $, and $\rho $ on $\mathcal {T}_{\epsilon ,upper}$ for $r_1 = r_2 = 1$ and Rician $K$ factor of 10 dB.}}{173}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Impact of the Rician $K$ factor on $\mathcal {T}_{\epsilon ,upper}$.}}}{173}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Impact of $m$ on $\mathcal {T}_{\epsilon ,upper}$.}}}{173}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Impact of $\sigma $ factor on $\mathcal {T}_{\epsilon ,upper}$.}}}{173}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Impact of $\rho $ on $\mathcal {T}_{\epsilon ,upper}$.}}}{173}
+\contentsline {figure}{\numberline {8.4}{\ignorespaces Impact of $\rho $ and $\gamma $ on $e_{upper}$ for $\gamma _1 = \gamma _2 = -10$ dB and Rician $K$ factor of 7 dB.}}{174}
+\contentsline {figure}{\numberline {8.5}{\ignorespaces Impact of minimum altitude $h_{min}$ on NOMA outage probability.}}{175}
+\contentsline {figure}{\numberline {8.6}{\ignorespaces Impact of cross correlation coefficient $\rho $ on NOMA outage probability.}}{175}
+\contentsline {figure}{\numberline {8.7}{\ignorespaces Impact of cross correlation coefficient $\rho $ on NOMA finite SNR diversity gain.}}{176}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
