@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=latex 2020.2.19)  8 APR 2020 19:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=latex 2020.2.19)  9 APR 2020 22:16
 entering extended mode
 **./main_thesis.tex
 (main_thesis.tex
@@ -485,12 +485,64 @@ LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 29.
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 ) [1
 
-]) (fm2-abstract.tex [1
+]) (statement_of_originality.tex
 
-]) (fm3-ack.tex [2]
-[3
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 3.
 
-]) [4] (main_thesis.toc
+File: statement_of_originality_pg1.eps Graphic file (type eps)
+<statement_of_originality_pg1.eps>
+Overfull \hbox (90.33612pt too wide) in paragraph at lines 6--9
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 109.06033pt on input line 9.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 13.
+
+File: statement_of_originality_pg2.eps Graphic file (type eps)
+<statement_of_originality_pg2.eps>
+Overfull \hbox (90.33612pt too wide) in paragraph at lines 16--19
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 109.06033pt on input line 19.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 23.
+
+File: statement_of_originality_pg3.eps Graphic file (type eps)
+<statement_of_originality_pg3.eps>
+Overfull \hbox (90.33612pt too wide) in paragraph at lines 26--29
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 109.06033pt on input line 29.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 32.
+
+File: statement_of_originality_pg4.eps Graphic file (type eps)
+<statement_of_originality_pg4.eps>
+Overfull \hbox (90.33612pt too wide) in paragraph at lines 35--38
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 109.06033pt on input line 38.
+
+) (fm2-abstract.tex [1] [2] [3] [4] [5
+
+]) (fm3-ack.tex [6] [7
+
+]) [8] (main_thesis.toc
 Overfull \hbox (3.98187pt too wide) detected at line 4
  []\OT1/cmr/m/n/12 xviii
  []
@@ -500,31 +552,31 @@ Overfull \hbox (3.98187pt too wide) detected at line 6
  []\OT1/cmr/m/n/12 xxiii
  []
 
-[5
+[9
 
-] [6] [7] [8] [9] [10] [11])
+] [10] [11] [12] [13] [14] [15])
 \tf@toc=\write3
 \openout3 = `main_thesis.toc'.
 
- [12] (main_thesis.lof [13
+ [16] (main_thesis.lof [17
 
-] [14] [15] [16])
+] [18] [19] [20])
 \tf@lof=\write4
 \openout4 = `main_thesis.lof'.
 
- [17] (main_thesis.lot [18
+ [21] (main_thesis.lot [22
 
 ])
 \tf@lot=\write5
 \openout5 = `main_thesis.lot'.
 
- [19]
-(fm4-abbrev.tex [20
+ [23]
+(fm4-abbrev.tex [24
 
-] [21]) [22]
+] [25]) [26]
 \openout2 = `fm6-publication.aux'.
 
- (fm6-publication.tex [23
+ (fm6-publication.tex [27
 
 
 ]
@@ -532,12 +584,12 @@ Overfull \hbox (1.85373pt too wide) in paragraph at lines 21--22
 \OT1/cmr/m/n/12 Ku-mar Kr-ishna, \NOMA-aided UAV Com-mu-ni-ca-tions over Cor-re-lated Ri-cian Shad-
  []
 
-[24]
+[28]
 Overfull \hbox (6.94028pt too wide) in paragraph at lines 24--25
 \OT1/cmr/m/n/12 tion Sys-tems un-der Ri-cian Shad-owed Fad-ing," IEEE Ac-cess, vol. 7, pp. 76949{76966,
  []
 
-) [25] (format-main-body.tex)
+) [29] (format-main-body.tex)
 \openout2 = `ch1-intro.aux'.
 
  (ch1-intro.tex
@@ -1657,12 +1709,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6370 strings out of 492971
- 112899 string characters out of 3135881
+ 6385 strings out of 492971
+ 113564 string characters out of 3135881
  171590 words of memory out of 3000000
- 9918 multiletter control sequences out of 15000+200000
+ 9926 multiletter control sequences out of 15000+200000
  58437 words of font info for 161 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,18n,89p,4077b,458s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on main_thesis.dvi (249 pages, 1001440 bytes).
+Output written on main_thesis.dvi (253 pages, 1002596 bytes).

@@ -1,9 +1,9 @@
-\contentsline {section}{\hbox to\@tempdima {\hfil }\hspace {-0.35in}{\bf Abstract}}{i}
-\contentsline {section}{\hbox to\@tempdima {\hfil }\hspace {-.35in}{\bf Acknowledgments}}{iii}
-\contentsline {section}{\hbox to\@tempdima {\hfil }\hspace {-.35in}{\bf List of Figures}}{xiii}
-\contentsline {section}{\hbox to\@tempdima {\hfil }\hspace {-.35in}{\bf List of Tables}}{xviii}
-\contentsline {section}{\hbox to\@tempdima {\hfil }\hspace {-.35in}{\bf List of Abbreviations}}{xx}
-\contentsline {section}{\hbox to\@tempdima {\hfil }\hspace {-.35in}{\bf List of Publications}}{xxiii}
+\contentsline {section}{\hbox to\@tempdima {\hfil }\hspace {-0.35in}{\bf Abstract}}{v}
+\contentsline {section}{\hbox to\@tempdima {\hfil }\hspace {-.35in}{\bf Acknowledgments}}{vii}
+\contentsline {section}{\hbox to\@tempdima {\hfil }\hspace {-.35in}{\bf List of Figures}}{xvii}
+\contentsline {section}{\hbox to\@tempdima {\hfil }\hspace {-.35in}{\bf List of Tables}}{xxii}
+\contentsline {section}{\hbox to\@tempdima {\hfil }\hspace {-.35in}{\bf List of Abbreviations}}{xxiv}
+\contentsline {section}{\hbox to\@tempdima {\hfil }\hspace {-.35in}{\bf List of Publications}}{xxvii}
 \contentsline {chapter}{\numberline {1}Introduction}{1}
 \contentsline {section}{\numberline {1.1}Background}{1}
 \contentsline {section}{\numberline {1.2}Improving Spectrum Efficiency with \\ Hybrid-Duplex Communications}{3}
