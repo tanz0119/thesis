@@ -7,6 +7,7 @@ This repository contains the latex source files that can be used for NTU SCSE's 
 The latex source files are compiled after installing MikTex, sumatra PDF, texnic center, and ghostscript.
 
 ## Author Information ##
-Author: Tan Zheng Hui Ernest, School of Computer Science and Engineering, Nanyang Technological University (NTU).  
-PhD Topic: Enhancing Spectrum Efficiency through Hybrid-Duplex Systems for Aeronautical Communications  
-PhD Supervisors: Prof. A S Madhukumar (NTU) and Dr Anoop Kumar Krishna (Airbus Singapore Pte Ltd)  
+Author: Tan Zheng Hui Ernest.  
+Affiliation: School of Computer Science and Engineering, Nanyang Technological University (NTU).  
+PhD Topic: Enhancing Spectrum Efficiency through Hybrid-Duplex Systems for Aeronautical Communications.  
+PhD Supervisors: Prof. A S Madhukumar (NTU) and Dr Anoop Kumar Krishna (Airbus Singapore Pte Ltd).  
